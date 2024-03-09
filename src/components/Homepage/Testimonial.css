@@ -1,0 +1,29 @@
+.container-testimonial {
+  width: 90vw;
+  margin: auto;
+  padding: 2rem;
+}
+
+.carousel-inner {
+  height: 538px;
+  position: relative;
+}
+
+.carousel-control-prev {
+  height: 50px;
+  left: unset !important;
+  top: unset !important;
+  position: relative;
+  top: 30%;
+  right: 50%;
+}
+
+.carousel-control-next {
+  height: 50px;
+  right: unset !important;
+  top: unset !important;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  color: gray;
+}

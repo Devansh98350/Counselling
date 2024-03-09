@@ -1,0 +1,76 @@
+.newsletter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.newsform {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.newsform-input {
+  height: 3.1rem;
+  width: 18rem;
+  padding: 15px 30px 15px 35px;
+  margin: 1rem;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  border: 1px solid grey;
+  background-color: transparent;
+}
+
+.news-btn {
+  height: 3em;
+  width: 12rem;
+  background-color: orangered;
+  color: white;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+.label1,
+.label2,
+.label3 {
+  position: relative;
+}
+
+.label1:before,
+.label2:before,
+.label3:before {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  top: 0;
+  bottom: 0;
+  width: 1em;
+  background: url("../../assests/home_page/l1.svg") center / contain no-repeat;
+}
+.label2:before {
+  background: url("../../assests/home_page/l2.svg") center / contain no-repeat;
+}
+.label3:before {
+  background: url("../../assests/home_page/l3.svg") center / contain no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .newsform form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+  }
+}

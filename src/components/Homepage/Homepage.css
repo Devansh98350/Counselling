@@ -1,0 +1,309 @@
+h1 {
+  font-size: 2.8rem;
+}
+h2 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.2rem;
+}
+.photo-bg {
+  background-image: url("../../assests/home_page/photo.jpg");
+  background-size: cover;
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 20px;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 4rem;
+  position: relative;
+  z-index: 0.9;
+}
+
+.photo-text {
+  position: absolute;
+  top: 0px;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  text-wrap: wrap;
+  gap: 1.5rem;
+  height: 100%;
+  width: 40%;
+  padding: 1rem;
+  transition: 0.3s;
+}
+
+.photo-bg:hover .photo-text {
+  scale: 1.02;
+}
+
+.sec1-para {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0;
+}
+.sec1-para span {
+  font-size: 1.2rem;
+}
+
+.community-bg {
+  background-image: url("../../assests/home_page/community.jpg");
+  background-size: cover;
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 20px;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 4rem;
+}
+.community-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: black;
+  gap: 1.5rem;
+  height: 100%;
+  width: 65%;
+  /* padding: 1rem; */
+  transition: 0.3s;
+}
+.community-bg:hover .community-text {
+  scale: 1.02;
+}
+
+.green {
+  color: orange;
+  font-weight: bold;
+}
+.photo-btn {
+  background-color: orange;
+  color: white;
+  font-weight: 700;
+  padding: 0.8rem 1.3rem;
+  border-radius: 10px;
+  border: 1px solid grey;
+  display: block;
+  margin-left: 35%;
+}
+
+.community-btn {
+  background-color: orange;
+  color: white;
+  font-weight: 700;
+  padding: 0.8rem 1.3rem;
+  border-radius: 10px;
+  border: 1px solid grey;
+  display: block;
+  margin-left: 25%;
+}
+
+.center {
+  text-align: center;
+}
+.center-text {
+  padding: 1rem;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin: auto;
+  padding: 1rem;
+}
+
+.mentor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 15rem;
+  height: 17rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: azure;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.mentor-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  scale: 1.1;
+}
+.mentor-img {
+  width: 100%;
+  height: 60%;
+}
+.mentor-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.record {
+  justify-content: space-around;
+  margin: 2rem auto;
+  gap: 1rem;
+}
+
+.record-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.counselling-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 18rem;
+  height: 20rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.counselling-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  scale: 0.95;
+}
+
+.counselling-img {
+  width: 100%;
+  height: 40%;
+  justify-content: center; /* Horizontally center the image */
+  align-items: center;
+}
+.counselling-img img {
+  height: 100%;
+  border-radius: 1rem;
+}
+.counselling-text {
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 0.8rem;
+    color: orange;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .photo-bg,
+  .community-bg {
+    height: 30vh;
+    padding: 1rem;
+  }
+
+  .photo-text {
+    margin-left: 3%;
+    width: 100%;
+    padding: 1rem;
+  }
+  .community-text {
+    width: 85%;
+    padding: 0rem;
+  }
+  .photo-text h1 {
+    color: orange;
+  }
+  .community-text h1 {
+    text-align: left;
+    font-size: 14px;
+    color: blue;
+    margin-left: 0px;
+  }
+  .community-text p {
+    width: 80%;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    margin-left: 0px;
+    margin-bottom: -20px;
+  }
+  .green {
+    color: blue;
+  }
+  .sec1-para span {
+    font-size: 0.65rem;
+  }
+  .photo-btn,
+  .community-btn {
+    font-weight: 500;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .center-text h2 {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .container {
+    width: 100%;
+  }
+  .center-text {
+    width: 96%;
+    margin: auto;
+  }
+  .mentor-card {
+    width: calc(70% - 0rem);
+    height: 17rem;
+  }
+  .mentor-text {
+    height: 0rem;
+  }
+  .record {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+  }
+  .counselling-card {
+    /* width: calc(50% - 0rem); */
+    width: 100%;
+    height: 17rem;
+  }
+  .counselling-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+  .counselling-text {
+    padding: 0rem;
+    margin: 0;
+  }
+}
