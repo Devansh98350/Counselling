@@ -1,4 +1,5 @@
 import React, { useState, Fragment } from "react";
+import { Link } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.css";
 import mainlogo from "../../assests/home_page/mainlogo.jpg";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
@@ -7,49 +8,49 @@ import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/20/solid";
 const engineering = [
   {
     name: "IIT",
-    href: "/iits-details",
+    // href: "/iits-details",
   },
   {
     name: "NIT",
-    href: "/pyq-neet",
+    // href: "/pyq-neet",
   },
   {
     name: "IIIT",
-    href: "/pyq-cbse-boards",
+    // href: "/pyq-cbse-boards",
   },
   {
     name: "GFTI",
-    href: "/pyq-ntse",
+    // href: "/pyq-ntse",
   },
   {
     name: "State Engineering",
-    href: "/pyq-kvpy",
+    // href: "/pyq-kvpy",
   },
   {
     name: "Exam Schedule 2024",
-    href: "/pyq-jee-main",
+    // href: "/pyq-jee-main",
   },
 ];
 const medical = [
   {
     name: "AIIMS",
-    href: "/exam-schedule-2024",
+    // href: "/exam-schedule-2024",
   },
   {
     name: "Dental Colleges",
-    href: "/exam-jee-main",
+    // href: "/exam-jee-main",
   },
   {
     name: "Ayurvedic Colleges",
-    href: "/exam-jee-advanced",
+    // href: "/exam-jee-advanced",
   },
   {
     name: "State Medical Colleges",
-    href: "/exam-neet",
+    // href: "/exam-neet",
   },
   {
     name: "Other Top Medical Colleges",
-    href: "/exam-ntse",
+    // href: "/exam-ntse",
   },
 ];
 const mba = [
@@ -103,10 +104,10 @@ export default function Header() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="/" className="-m-1.5 p-1.5">
+          <Link to="https://www.iitacademy.in/" className="-m-1.5 p-1.5">
             <span className="sr-only">IIT Academy</span>
             <img className="h-20 w-auto" src={mainlogo} alt="" />
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -366,10 +367,7 @@ export default function Header() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <a
-            href="/contact-us"
-            className="text-lg font-semibold leading-6 text-gray-900 mt-1"
-          >
+          <a className="text-lg font-semibold leading-6 text-gray-900 mt-1">
             Contact Us
           </a>
         </Popover.Group>
@@ -383,10 +381,10 @@ export default function Header() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="/" className=" -m-2 p-0">
+            <Link to="https://www.iitacademy.in/" className=" -m-2 p-0">
               <span className="sr-only">IIT Academy</span>
               <img className="h-20 w-auto" src={mainlogo} alt="" />
-            </a>
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-900 text-20xl"
@@ -553,10 +551,7 @@ export default function Header() {
                     </>
                   )}
                 </Disclosure>
-                <a
-                  href="/contact-us"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900  hover:bg-orange-200"
-                >
+                <a className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900  hover:bg-orange-200">
                   Contact Us
                 </a>
               </div>

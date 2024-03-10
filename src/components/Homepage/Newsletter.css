@@ -7,7 +7,7 @@
 }
 
 .newsform {
-  width: 90vw;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,7 @@
 }
 
 .newsform-input {
-  height: 3.1rem;
+  height: 3.5rem;
   width: 18rem;
   padding: 15px 30px 15px 35px;
   margin: 1rem;

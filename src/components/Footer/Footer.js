@@ -33,7 +33,7 @@ const Footer = () => {
                 </p>
                 <p>
                   Ph:-
-                  <a href="tel:7366831500">+91-7366831500</a>
+                  <a href="tel:9205704041">+91-9205704041</a>
                 </p>
               </div>
               <div className="footer-row">
@@ -79,7 +79,7 @@ const Footer = () => {
                     />
                   </a>{" "}
                   <a
-                    href="tel:7366831500"
+                    href="tel:9205704041"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -124,25 +124,28 @@ const Footer = () => {
             </div>
             <div className="footer-col">
               <h2 style={{ textAlign: "center" }}>Quick Links</h2>
-              <p>
-                <Link to="/pyq-neet">NEET PYQ</Link>
+              {/*<p>
+                <Link to="/neet-books">Medical</Link>
               </p>
               <p>
-                <Link to="/neet-books">NEET Books</Link>
+                <Link to="/pyq-neet">Engineering</Link>
               </p>
               <p>
-                <Link to="/pyq-jee-main">JEE Mains PYQ</Link>
+                <Link to="/pyq-jee-main">Management</Link>
               </p>
               <p>
-                <Link to="/jee(mains+advanced)-books">
-                  JEE (Mains+Adv.) Books
-                </Link>
+                <Link to="/pyq-jee-advanced">Apply for Counselling</Link>
               </p>
               <p>
-                <Link to="/pyq-jee-advanced">JEE Advanced PYQ</Link>
-              </p>
+                <Link to="/jee(mains+advanced)-books">Ranking 2023</Link>
+             </p>*/}
+              <p>Medical</p>
+              <p>Engineering</p>
+              <p>Management</p>
+              <p>Apply For Counselling</p>
+              <p>Ranking 2024</p>
               <p>Internships</p>
-              <p>Counseling</p>
+              <p>Resources</p>
             </div>
           </div>
           <div

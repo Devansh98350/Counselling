@@ -27,32 +27,27 @@ function SessionForm() {
     <>
       <div className="container-form">
         <div className="container-left">
-          <p className="grey">We Care About You</p>
-          <h1>Welcome to Careerkick Platform</h1>
-          <div>
-            <p>India's premier online consulting platform.</p>
+          <h1>Welcome to IIT Academy Counselling Platform</h1>
+          <div className="point">
+            <h1>India's premier counselling platform.</h1>
             <p>
               As the first and largest trusted source, we offer comprehensive
               insights into educational institutions and universities across the
               country.
             </p>
           </div>
-          <div>
-            <h2>
-              <i className="bi bi-shield-check blue"></i> Best Security Services
-            </h2>
+          <div className="point">
+            <h1>Best Security Services</h1>
             <p>
               Discussion on the measures taken to ensure user privacy. Security
               Protocols for sensitive information.
             </p>
           </div>
-          <div>
-            <h2>
-              <i className="bi bi-cloud-check blue"></i> Online info Services
-            </h2>
+          <div className="point">
+            <h1>Online info Services</h1>
             <p>
-              "India's leading IIT-JEE Counselling Services Provider - Your
-              Pathway to success starts with us."
+              "India's leading Counselling Services Provider - Your Pathway to
+              success starts with us."
             </p>
           </div>
           <button className="form-btn">
@@ -84,6 +79,14 @@ function SessionForm() {
               className="value-area"
               type="tel"
               name="mobile"
+              required
+            />
+            <p className="title">Address:</p>
+            <input
+              placeholder="Address"
+              className="value-area"
+              type="text"
+              name="address"
               required
             />
             <p className="title">Your Query:</p>

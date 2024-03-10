@@ -68,6 +68,13 @@
 .ml {
   margin: 0 2rem;
 }
+.point h1 {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  color: black;
+  margin-left: 0%;
+}
 @media only screen and (max-width: 768px) {
   .container-form {
     flex-direction: column;
@@ -82,11 +89,19 @@
   .container-left {
     padding: 1rem;
   }
-
+  .container-left h1 {
+    width: 100%;
+    margin-left: 0%;
+  }
   .container-right {
     margin-top: 2rem;
   }
-
+  .point h1 {
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+    color: black;
+  }
   .form-btn {
     width: 100%;
   }

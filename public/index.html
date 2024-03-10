@@ -3,32 +3,82 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="author" content="Devanshu Kumar" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Welcome to our IIT Academy Counseling website! Discover expert guidance and support to navigate your journey towards success in your field. Our experienced counselors provide personalized advice, insightful resources, and valuable tips to help you excel in your academic and career aspirations. Explore our services today and take the first step towards realizing your full potential."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <meta name="title" content="Counselling - IIT Academy" />
+    <meta
+      name="keywords"
+      content="iit academy, IIT Academy, IIT counseling, Engineering counseling, College counseling, Career counseling, IIT JEE counseling, Admission counseling, Counseling services, Academic counseling, Guidance counseling, Mentorship program, Exam preparation counseling, Study advice, Time management skills, Stress management techniques, Personalized counseling, Educational counseling, Career guidance, Online counseling sessions, Student support services"
+    />
+    <!--OpenGraph Metadata-->
+    <meta
+      name="title"
+      property="og:title"
+      content="Counselling - IIT Academy"
+    />
+    <meta
+      name="description"
+      property="og:description"
+      content="Welcome to our IIT Academy Counseling website! Discover expert guidance and support to navigate your journey towards success in your field. Our experienced counselors provide personalized advice, insightful resources, and valuable tips to help you excel in your academic and career aspirations. Explore our services today and take the first step towards realizing your full potential."
+    />
+    <meta
+      name="image"
+      property="og:image"
+      content="https://sites.google.com/view/loogof/home"
+    />
+    <meta property="og:url" content="https://www.counselling.iitacademy.in/" />
+    <meta property="og:site_name" content="Counselling - IIT Academy" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Counselling - IIT Academy",
+        "url": "https://www.counselling.iitacademy.in",
+        "logo": "https://sites.google.com/view/loogof/home",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-9205704041",
+          "contactType": "customer service",
+          "contactOption": "TollFree",
+          "areaServed": "India,USA"
+        },
+        "email": "info@iitacademy.in",
+        "sameAs": [
+          "https://www.instagram.com/iit_academy2.0/",
+          "https://www.linkedin.com/company/iit-aacademy/",
+          "https://www.facebook.com/profile.php?id=100095357977617"
+        ]
+      }
+    </script>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Counseling - IIT Academy</title>
+    <title>Counselling - IIT Academy</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PGP69J6XQ3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PGP69J6XQ3");
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +89,23 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      // Prevent right-clicking on the entire document
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+      document.addEventListener("copy", function (event) {
+        event.preventDefault();
+      });
+      // Disable text selection
+      document.addEventListener("selectstart", function (event) {
+        event.preventDefault();
+      });
+      document.addEventListener("contextmenu", function (e) {
+        if (e.target.nodeName === "IMG") {
+          e.preventDefault();
+        }
+      });
+    </script>
   </body>
 </html>

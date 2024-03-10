@@ -50,7 +50,12 @@ const Homepage = () => {
             <span>Unable to understand the process of Counselling!</span>
             <span>Get Updates about Cut off, Fees & Coaching.</span>
           </div>
-          <button className="photo-btn">Call Us Now</button>
+          <button
+            className="photo-btn"
+            onClick={() => (window.location.href = "tel:9205704041")}
+          >
+            Call Us Now
+          </button>
         </div>
       </div>
       <div className="community-bg">
@@ -141,18 +146,15 @@ const Homepage = () => {
         </div>
       </div>
       <h2 className="center">Best Counselling Platform</h2>
-      <h2 className="center green">Your career Begins Here</h2>
+      <h2 className="center-green">Your career Begins Here</h2>
       <div className="container">
         <div className="counselling-card">
-          <div className="counselling-imag">
+          <div className="counselling-img">
             <img src={c1} alt="img" />
           </div>
           <div className="counselling-text">
-            <h3>Overview of CareerKick:</h3>
-            <p>
-              Brief Introduction to the platform. Mission and Goals of
-              CareerKick.
-            </p>
+            <h3>Overview of Counselling Platform</h3>
+            <p>Brief Introduction to the platform and its mission and goals.</p>
           </div>
         </div>
         <div className="counselling-card">
@@ -187,7 +189,7 @@ const Homepage = () => {
       </div>
       <div
         className="container record"
-        style={{ backgroundColor: "#BEC7C6", width: "95%%" }}
+        style={{ backgroundColor: "#BEC7C6", width: "100%" }}
       >
         <div className="record-item">
           <h1>

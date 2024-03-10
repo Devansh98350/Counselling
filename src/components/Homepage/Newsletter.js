@@ -1,93 +1,170 @@
 import React, { useState } from "react";
-import { useForm } from "react-hook-form";
 import "./Newsletter.css";
 
 const NewsletterForm = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-  } = useForm();
-  const [submitting, setSubmitting] = useState(false);
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState("");
+  const [formData, setFormData] = useState({
+    email: "",
+    mobile: "",
+    domain: "",
+  });
 
-  const onSubmit = async (data) => {
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const [submissionStatus, setSubmissionStatus] = useState(null);
+  const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     try {
-      setSubmitting(true);
-      // Assuming `YOUR_GOOGLE_APPS_SCRIPT_URL` is the endpoint to handle form submission
-      const response = await fetch("YOUR_GOOGLE_APPS_SCRIPT_URL", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      setSubmissionStatus("waiting");
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbzYmeUUehOMv_LevyTNRLrEcbW_KunQqtqHS5KPbw7UGT41ODhEYCebFu7sHY4xk8MX/exec",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData), // Sending form data as JSON
+          redirect: "follow",
+        }
+      );
 
       if (response.ok) {
-        setSuccess(true);
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        setFormData({
+          email: "",
+          mobile: "",
+          domain: "",
+        });
+        setSubmissionStatus("success");
       } else {
-        setError("Failed to submit data. Please try again later.");
+        console.error("Error!", response.statusText);
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        setSubmissionStatus("error");
       }
     } catch (error) {
-      setError("Failed to submit data. Please try again later.");
-    } finally {
-      setSubmitting(false);
+      console.error("Error!", error.message);
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      setSubmissionStatus("error");
     }
+  };
+
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
   };
 
   return (
     <div className="newsletter-container">
-      <h1>Subscribe To Our News Letter</h1>
-      <p>Get College Notifications, Exam Notifications and News Updates</p>
+      <h1>Subscribe To Our Newsletter</h1>
+      <p>Get College Notifications, Exam Notifications, and News Updates</p>
       <div className="newsform">
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form
+          method="post"
+          onSubmit={handleSubmit}
+          id="newsletter"
+          name="newsletter"
+        >
           <label className="label1">
             <input
-              placeholder="Enter your email id"
-              className="newsform-input"
               type="text"
-              {...register("emailid", {
-                required: true,
-                pattern: /^\S+@\S+$/i,
-              })}
+              id="email"
+              name="email"
+              placeholder="Enter your Email Id*"
+              onChange={handleChange}
+              value={formData.email}
+              className="newsform-input"
+              required
             />
           </label>
           <label className="label2">
             <input
-              placeholder="Enter your mobile no"
-              className="newsform-input"
               type="text"
-              {...register("mobileno", { required: true, maxLength: 10 })}
+              id="mobile"
+              name="mobile"
+              placeholder="Mobile No.*"
+              onChange={handleChange}
+              value={formData.mobile}
+              className="newsform-input"
+              required
             />
           </label>
           <label className="label3">
             <select
+              id="domain"
+              name="domain"
+              value={formData.domain}
               className="newsform-input"
-              {...register("coursename", { required: true })}
+              onChange={handleChange}
+              required
             >
-              <option disabled>Choose your course</option>
-              <option value="JEE Mains">JEE Mains</option>
-              <option value="JEE Advance">JEE Advance</option>
-              <option value="NEET">NEET</option>
-              <option value="NTSE">NTSE</option>
+              <option value="">Choose your domain</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Medical">Medical</option>
+              <option value="MBA">MBA</option>
+              <option value="Law">Law</option>
+              <option value="Design">Design</option>
+              <option value="Aviation">Aviation</option>
+              <option value="Hospitality & Travel">Hospitality & Travel</option>
+              <option value="Mass Communication">Mass Communication</option>
+              <option value="Architecture & Planning">
+                Architecture & Planning
+              </option>
             </select>
           </label>
-          <input
-            disabled={isSubmitting}
+
+          <button
             type="submit"
             className="newsform-input news-btn"
-          />
-          {isSubmitting && (
-            <div className="spinner-grow text-success ml" role="status">
-              <span className="sr-only">Loading...</span>
+            style={{
+              backgroundColor: isHovered ? "green" : "orange",
+              color: "white",
+              fontSize: "20px",
+              fontWeight: isHovered ? "bold" : "normal",
+              padding: "10px",
+              border: "none",
+              cursor: "pointer",
+              borderRadius: "8px",
+              marginTop: "20px",
+              transition: "background-color 0.3s ease",
+            }}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            disabled={isButtonDisabled}
+          >
+            Submit Now
+          </button>
+          {submissionStatus === "waiting" && (
+            <div
+              style={{ marginTop: "10px", textAlign: "center", color: "blue" }}
+            >
+              Please wait! We are submitting your details...
             </div>
           )}
-          {errors.emailid && <p className="red">Email Id is required.</p>}
-          {errors.mobileno && <p className="red">Mobile no is required.</p>}
-          {errors.coursename && <p className="red">Course is required.</p>}
-          {success && <p className="green">Submitted successfully!</p>}
-          {error && <p className="red">{error}</p>}
+
+          {submissionStatus === "success" && (
+            <div
+              style={{ marginTop: "10px", textAlign: "center", color: "blue" }}
+            >
+              Thanks! We will contact you soon to resolve your query.
+            </div>
+          )}
+          {submissionStatus === "error" && (
+            <div
+              style={{ marginTop: "10px", textAlign: "center", color: "red" }}
+            >
+              An error occurred. Please try again later.
+            </div>
+          )}
         </form>
       </div>
     </div>
