@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f636b4ca.css",
-    "main.js": "/static/js/main.2672a59e.js",
+    "main.css": "/static/css/main.34d0809e.css",
+    "main.js": "/static/js/main.dc270a7d.js",
     "static/js/592.bf6ca574.chunk.js": "/static/js/592.bf6ca574.chunk.js",
     "static/media/photo.jpg": "/static/media/photo.109a786b25bfec4d7da2.jpg",
     "static/media/community.jpg": "/static/media/community.2aa45e879981e19c1d22.jpg",
@@ -33,16 +33,16 @@
     "static/media/IIT_Guwahati.png": "/static/media/IIT_Guwahati.49f749d5af4a86bf1e20.png",
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.2eb7b3ef25042305f3ff.ttf",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
-    "static/media/l2.svg": "/static/media/l2.b4a626c77be92a1af23a.svg",
     "index.html": "/index.html",
+    "static/media/l2.svg": "/static/media/l2.b4a626c77be92a1af23a.svg",
     "static/media/l3.svg": "/static/media/l3.23d9a316785c7395f9cb.svg",
     "static/media/l1.svg": "/static/media/l1.b2a8bdc6692ddcdb9d6d.svg",
-    "main.f636b4ca.css.map": "/static/css/main.f636b4ca.css.map",
-    "main.2672a59e.js.map": "/static/js/main.2672a59e.js.map",
+    "main.34d0809e.css.map": "/static/css/main.34d0809e.css.map",
+    "main.dc270a7d.js.map": "/static/js/main.dc270a7d.js.map",
     "592.bf6ca574.chunk.js.map": "/static/js/592.bf6ca574.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f636b4ca.css",
-    "static/js/main.2672a59e.js"
+    "static/css/main.34d0809e.css",
+    "static/js/main.dc270a7d.js"
   ]
 }
