@@ -25,7 +25,7 @@ const engineering = [
   },
   {
     name: "State Engineering",
-    // href: "/pyq-kvpy",
+    href: "/stateEng-details",
   },
   {
     name: "Exam Schedule 2024",
