@@ -17,6 +17,7 @@ import c4 from "../../assests/home_page/c4.png";
 import SessionForm from "./SessionForm";
 import NewsletterForm from "./Newsletter";
 import { AccordionComponent } from "./Accordian";
+import Breadcrumbs from "../Breadcrumb";
 
 const Homepage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,6 +41,7 @@ const Homepage = () => {
   }, []);
   return (
     <Layout title="Counseling - IIT Academy">
+      <Breadcrumbs />
       <div className="photo-bg">
         <div className="photo-text">
           <h1>India's One of the Best Counselling Portal</h1>

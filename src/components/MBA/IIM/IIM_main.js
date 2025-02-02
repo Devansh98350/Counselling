@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Layout from "../../Layout";
 import Card from "../../Engineering/card";
+import Breadcrumbs from "../../Breadcrumb";
 
 const Heading = [
   {
@@ -198,6 +199,7 @@ const MarginInformation = styled.div`
 const IIM_main = () => {
   return (
     <Layout title="IIM's Details">
+      <Breadcrumbs />
       <div>
         <MarginInformation>
           {Heading.map((item) => {

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Layout from "../../Layout";
 import Card1 from "../card1";
+import Breadcrumbs from "../../Breadcrumb";
 
 const Heading = [
   {
@@ -170,6 +171,7 @@ const MarginInformation = styled.div`
 const OtherM_main = () => {
   return (
     <Layout title="Other Medical Colleges in India">
+      <Breadcrumbs />
       <div>
         <MarginInformation>
           {Heading.map((item) => {

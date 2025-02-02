@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Layout from "../../Layout";
 import Card from "../card";
+import Breadcrumbs from "../../Breadcrumb";
 
 const Heading = [
   {
@@ -188,6 +189,7 @@ const MarginInformation = styled.div`
 const AIIMS_main = () => {
   return (
     <Layout title="AIIMS's Details">
+      <Breadcrumbs />
       <div>
         <MarginInformation>
           {Heading.map((item) => {

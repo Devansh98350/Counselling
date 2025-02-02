@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Layout from "../../Layout";
 import Card from "../card";
+import Breadcrumbs from "../../Breadcrumb";
 
 const Heading = [
   {
@@ -301,6 +302,7 @@ const MarginInformation = styled.div`
 const IIIT_main = () => {
   return (
     <Layout title="IIIT's Details">
+      <Breadcrumbs />
       <div>
         <MarginInformation>
           {Heading.map((item) => {
