@@ -8,6 +8,7 @@ import {
 import Homepage from "./components/Homepage/Homepage";
 // import PagenotFound from "./components/PagenotFound";
 import IITS from "./components/Engineering/IIT/IIT_main.js";
+import IIT_DELHI from "./components/Engineering/IIT/Component/Delhi/delhi.js";
 import NITS from "./components/Engineering/NIT/NIT_main.js";
 import IIITS from "./components/Engineering/IIIT/IIIT_main.js";
 import CFTIS from "./components/Engineering/CFTI/CFTI_main";
@@ -26,6 +27,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="*" element={<Navigate replace to="/" />} />
         <Route path="/iit-details" element={<IITS />} />
+        <Route path="/iit-details/iit-delhi" element={<IIT_DELHI />} />
         <Route path="/nit-details" element={<NITS />} />
         <Route path="/iiit-details" element={<IIITS />} />
         <Route path="/cfti-details" element={<CFTIS />} />
