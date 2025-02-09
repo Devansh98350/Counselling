@@ -91,35 +91,49 @@ const Footer = () => {
             <div className="footer-col">
               <h2 style={{ textAlign: "center" }}>Main Website</h2>
               <p>
-                <Link to="https://www.iitacademy.in/#/Admission-form">
+                <Link to="https://www.iitacademy.in/Admission-form">
                   Apply Online
                 </Link>
               </p>
               <p>
-                <Link to="https://www.iitacademy.in/#/fees-structure">
+                <Link to="https://www.iitacademy.in/fees-structure">
                   Fee Structure
                 </Link>
               </p>
               <p>
-                <Link to="https://www.iitacademy.in/#/admission-process">
-                  Admission Process
-                </Link>
+                <a
+                  href="https://www.iitacademy.in/board-batches"
+                  rel="noopener noreferrer"
+                >
+                  Board Batches
+                </a>
               </p>
               <p>
-                <Link to="https://www.iitacademy.in/#/why-us">
-                  Why IIT Academy
-                </Link>
+                <a
+                  href="https://www.iitacademy.in/engineering-batches"
+                  rel="noopener noreferrer"
+                >
+                  Engineering Batches
+                </a>
               </p>
               <p>
-                <Link to="https://www.iitacademy.in/#/our-policy">
-                  Privacy & Policy
-                </Link>
+                <a
+                  href="https://www.iitacademy.in/medical-batches"
+                  rel="noopener noreferrer"
+                >
+                  Medical Batches
+                </a>
               </p>
               <p>
-                <Link to="#">Contact US</Link>
+                <a
+                  href="https://www.iitacademy.in/foundation-batches"
+                  rel="noopener noreferrer"
+                >
+                  Foundation Batches
+                </a>
               </p>
               <p>
-                <Link to="https://www.iitacademy.in/#/careers">Careers</Link>
+                <Link to="https://www.iitacademy.in/careers">Careers</Link>
               </p>
             </div>
             <div className="footer-col">
@@ -144,8 +158,22 @@ const Footer = () => {
               <p>Management</p>
               <p>Apply For Counselling</p>
               <p>Ranking 2024</p>
-              <p>Internships</p>
-              <p>Resources</p>
+              <p>
+                <a
+                  href="https://www.internship.iitacademy.in"
+                  rel="noopener noreferrer"
+                >
+                  Internships
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://www.resources.iitacademy.in"
+                  rel="noopener noreferrer"
+                >
+                  Resources
+                </a>
+              </p>
             </div>
           </div>
           <div

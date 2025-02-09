@@ -16,7 +16,7 @@ function Header() {
           navbar.style.position = "fixed";
           navbar.style.top = "0";
           navbar.style.left = "0";
-          navbar.style.zIndex = "1000";
+          navbar.style.zIndex = "100";
           navbar.style.width = "100%";
         } else {
           navbar.style.position = "relative";

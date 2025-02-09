@@ -43,7 +43,7 @@ const Cutoff = () => {
 
   const h2Style = {
     color: "rgb(0,0,255)",
-    fontSize: "32 px",
+    fontSize: "32px",
     fontWeight: "700",
     textAlign: "center",
     lineHeight: "48px",
