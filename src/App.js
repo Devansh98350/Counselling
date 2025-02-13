@@ -26,18 +26,18 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="*" element={<Navigate replace to="/" />} />
-        <Route path="/iit-details" element={<IITS />} />
-        <Route path="/iit-details/iit-delhi" element={<IIT_DELHI />} />
-        <Route path="/nit-details" element={<NITS />} />
-        <Route path="/iiit-details" element={<IIITS />} />
-        <Route path="/cfti-details" element={<CFTIS />} />
-        <Route path="/stateEng-details" element={<StateEng_main />} />
-        <Route path="/state-details/:state" element={<StateDetails />} />
-        <Route path="/aiims-details" element={<AIIMS />} />
-        <Route path="/dental-colleges-details" element={<Dental />} />
-        <Route path="/other-medical-college-details" element={<OtherM />} />
-        <Route path="/iim-details" element={<IIM />} />
-        <Route path="/mba-in-iit-nit-details" element={<MBA_IIT_NIT />} />
+        <Route path="/iit-colleges" element={<IITS />} />
+        <Route path="/iit-colleges/iit-delhi" element={<IIT_DELHI />} />
+        <Route path="/nit-colleges" element={<NITS />} />
+        <Route path="/iiit-colleges" element={<IIITS />} />
+        <Route path="/cfti-colleges" element={<CFTIS />} />
+        <Route path="/stateEng-colleges" element={<StateEng_main />} />
+        <Route path="/state-colleges/:state" element={<StateDetails />} />
+        <Route path="/aiims-colleges" element={<AIIMS />} />
+        <Route path="/dental-colleges-colleges" element={<Dental />} />
+        <Route path="/other-medical-college-colleges" element={<OtherM />} />
+        <Route path="/iim-colleges" element={<IIM />} />
+        <Route path="/mba-in-iit-nit-colleges" element={<MBA_IIT_NIT />} />
       </Routes>
     </Router>
   );

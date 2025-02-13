@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 
 const formatBreadcrumb = (segment) => {
-  const specialCases = ["iit", "nit", "iiit", "cfti", "aiims"];
+  const specialCases = ["iit", "nit", "iiit", "cfti", "aiims", "iim"];
 
   return segment
     .split("-")

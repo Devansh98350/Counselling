@@ -9,38 +9,38 @@ import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/20/solid";
 const engineering = [
   {
     name: "IIT",
-    href: "/iit-details",
+    href: "/iit-colleges",
   },
   {
     name: "NIT",
-    href: "/nit-details",
+    href: "/nit-colleges",
   },
   {
     name: "IIIT",
-    href: "/iiit-details",
+    href: "/iiit-colleges",
   },
   {
     name: "CFTI",
-    href: "/cfti-details",
+    href: "/cfti-colleges",
   },
   {
     name: "State Engineering",
-    // href: "/stateEng-details",
+    // href: "/stateEng-colleges",
     href: " ",
   },
   {
-    name: "Exam Schedule 2024",
+    name: "Exam Schedule 2025",
     // href: "/pyq-jee-main",
   },
 ];
 const medical = [
   {
     name: "AIIMS",
-    href: "/aiims-details",
+    href: "/aiims-colleges",
   },
   {
     name: "Dental Colleges",
-    href: "/dental-colleges-details",
+    href: "/dental-colleges-colleges",
   },
   {
     name: "Ayurvedic Colleges",
@@ -52,17 +52,17 @@ const medical = [
   },
   {
     name: "Other Top Medical Colleges",
-    href: "/other-medical-college-details",
+    href: "/other-medical-college-colleges",
   },
 ];
 const mba = [
   {
     name: "IIM",
-    href: "/iim-details",
+    href: "/iim-colleges",
   },
   {
     name: "MBA in IIT and NIT",
-    href: "/mba-in-iit-nit-details",
+    href: "/mba-in-iit-nit-colleges",
   },
   {
     name: "Exam Schedule 2024",
