@@ -13,7 +13,7 @@ const formatBreadcrumb = (segment) => {
     .join(" ");
 };
 
-const Breadcrumbs = () => {
+const Breadcrumbs = ({ customStyles = {} }) => {
   const location = useLocation();
   const pathSegments = location.pathname.split("/").filter(Boolean);
 
@@ -23,10 +23,12 @@ const Breadcrumbs = () => {
       alignItems: "center",
       fontSize: "14px",
       marginLeft: "5%",
+      ...customStyles.breadcrumbs,
     },
     link: {
       color: "#0070f3",
       textDecoration: "none",
+      ...customStyles.link,
     },
     separator: {
       margin: "0 5px",

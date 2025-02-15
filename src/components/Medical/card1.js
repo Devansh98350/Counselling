@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 const LayoutCard = styled.div`
   width: 350px;
   height: 350px;
-  margin-left: 2%;
-  margin-bottom: 2%;
+  margin-left: 1.8vw;
+  margin-bottom: 30px;
   border: 1px solid gray;
   background-color: white;
   border-radius: 12px;
@@ -67,25 +67,27 @@ const LayoutCard = styled.div`
 
 const Card = ({ build, logo, name, location, year, link }) => {
   return (
-    <LayoutCard onClick={() => (window.location.href = link)}>
-      <div className="upper-card">
-        <img src={build} alt="college" className="imagebuilding-card" />
-        <img src={logo} alt="logo" className="logo-card" />
-      </div>
-      <div className="info-card">
-        <center>
-          <h3 style={{ marginTop: "2px", marginBottom: "4px" }}>{name}</h3>
-        </center>
-        <div className="about-card">
-          <p>
-            <strong>Location:</strong> {location}
-          </p>
-          <p className="year-card">
-            <strong>Founded in:</strong> {year}
-          </p>
+    <Link to={link}>
+      <LayoutCard>
+        <div className="upper-card">
+          <img src={build} alt="college" className="imagebuilding-card" />
+          <img src={logo} alt="logo" className="logo-card" />
         </div>
-      </div>
-    </LayoutCard>
+        <div className="info-card">
+          <center>
+            <h3 style={{ marginTop: "2px", marginBottom: "4px" }}>{name}</h3>
+          </center>
+          <div className="about-card">
+            <p>
+              <strong>Location:</strong> {location}
+            </p>
+            <p className="year-card">
+              <strong>Founded in:</strong> {year}
+            </p>
+          </div>
+        </div>
+      </LayoutCard>
+    </Link>
   );
 };
 

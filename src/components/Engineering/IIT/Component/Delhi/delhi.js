@@ -9,7 +9,7 @@ import Layout from "../../../../Layout";
 
 const delhi = () => {
   return (
-    <Layout>
+    <Layout title="IIT Delhi - IIT Academy">
       <Header />
       <div style={{ marginLeft: "2.5%", marginRight: "2.5%" }}>
         <About />

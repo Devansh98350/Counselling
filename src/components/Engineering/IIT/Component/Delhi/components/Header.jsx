@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Breadcrumbs from "../../../../../Breadcrumb";
 
 function Header() {
   const [isCutoffDropdownOpen, setIsCutoffDropdownOpen] = useState(false);
@@ -16,7 +17,7 @@ function Header() {
           navbar.style.position = "fixed";
           navbar.style.top = "0";
           navbar.style.left = "0";
-          navbar.style.zIndex = "100";
+          navbar.style.zIndex = "0";
           navbar.style.width = "100%";
         } else {
           navbar.style.position = "relative";
@@ -50,68 +51,103 @@ function Header() {
           flexWrap: "wrap",
         }}
       >
-        <img
-          src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Indian_Institute_of_Technology_Delhi_Logo.svg/800px-Indian_Institute_of_Technology_Delhi_Logo.svg.png"
-          alt="IIT Delhi Logo"
-          style={{
-            height: "100px",
-            marginRight: "20px",
-          }}
-        />
         <div
           style={{
-            flexGrow: 1,
-            textAlign: "left",
+            display: "flex",
+            flexDirection: "column",
+            width: "100%",
           }}
         >
-          <h3
-            style={{
-              fontSize: "2rem",
-              margin: "0",
-              padding: "0",
-              color: "white",
-              fontWeight: "bold",
-            }}
-          >
-            IIT Delhi: Admission 2024, Cutoff, Courses,
-          </h3>
-          <h3
-            style={{
-              fontSize: "2rem",
-              margin: "0",
-              padding: "0",
-              color: "white",
-            }}
-          >
-            Fees, Placement, Ranking
-          </h3>
           <div
             style={{
-              fontWeight: "bold",
+              marginTop: "-3rem",
+              marginBottom: "1rem",
+              fontSize: "1rem",
               color: "white",
-              marginTop: "5px",
             }}
           >
-            New Delhi | Autonomous University | Estd 2008
+            <Breadcrumbs
+              customStyles={{
+                link: { color: "#FFB30B" },
+                breadcrumbs: {
+                  marginLeft: "0%",
+                },
+              }}
+            />
           </div>
-        </div>
-        <div
-          style={{
-            backgroundColor: "#fff",
-            color: "#1d2f52",
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              flexWrap: "wrap",
+              marginTop: "0rem",
+              marginBottom: "-1rem",
+            }}
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Indian_Institute_of_Technology_Delhi_Logo.svg/800px-Indian_Institute_of_Technology_Delhi_Logo.svg.png"
+              alt="IIT Delhi Logo"
+              style={{
+                height: "100px",
+                marginRight: "20px",
+              }}
+            />
+            <div
+              style={{
+                flexGrow: 1,
+                textAlign: "left",
+              }}
+            >
+              <h3
+                style={{
+                  fontSize: "2rem",
+                  margin: "0",
+                  padding: "0",
+                  color: "white",
+                  fontWeight: "bold",
+                }}
+              >
+                IIT Delhi: Admission 2024, Cutoff, Courses,
+              </h3>
+              <h3
+                style={{
+                  fontSize: "2rem",
+                  margin: "0",
+                  padding: "0",
+                  color: "white",
+                }}
+              >
+                Fees, Placement, Ranking
+              </h3>
+              <div
+                style={{
+                  fontWeight: "bold",
+                  color: "white",
+                  marginTop: "5px",
+                }}
+              >
+                New Delhi | Autonomous University | Estd 2008
+              </div>
+            </div>
+            <div
+              style={{
+                backgroundColor: "#fff",
+                color: "#1d2f52",
 
-            borderRadius: "5px",
-            fontSize: "1.2rem",
-            fontWeight: "bold",
-            height: "2rem",
-            width: "4rem",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column",
-          }}
-        >
-          4.2 ★
+                borderRadius: "5px",
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+                height: "2rem",
+                width: "4rem",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}
+            >
+              4.2 ★
+            </div>
+          </div>
         </div>
       </header>
 

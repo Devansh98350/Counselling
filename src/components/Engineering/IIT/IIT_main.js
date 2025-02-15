@@ -24,7 +24,7 @@ const Heading = [
     logo: "https://www.logolynx.com/images/logolynx/cb/cb9a21ef6d81d3cd4637be5bb0b780d6.png",
     build: "https://diamond.iitd.ac.in/images/gallery/gallery-lg1.jpg",
     name: "IIT Delhi",
-    link: "/iit-details/iit-delhi",
+    link: "/iit-colleges/iit-delhi",
   },
   {
     id: 3,
