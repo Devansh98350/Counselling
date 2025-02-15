@@ -79,59 +79,53 @@ const FAQ = () => {
 
   const faqData = [
     {
-      question: "Which is better for MSc: IIT Delhi or IIT Madras?",
+      question: "What is the placement scenario at IIT Patna for CSE?",
       answer:
-        "IIT Delhi and IIT Madras are well known and reputed institutions in India. According to the NIRF 2023, IIT Madras ranked is 01 while IIT Delhi is ranked 03 in the Engineering category. Both the colleges offer MSc course across various specialisations with top quality education to its students. Both colleges have world class infrastructure. Both colleges have highly qualified and experienced faculty members who are experts in their respective fields. Both colleges are very good in their own way.  Which one is the best college depends on what the person is actually looking for in a college or university.",
-    },
-    {
-      question: "How much rank in JEE Advanced is required for IIT Delhi?",
-      answer:
-        "The IIT Delhi cutoff 2024 has been concluded for admission to the BTech and Integrated BTech courses. As per the JEE Advanced 2024 cutoff for the Last Round, the closing rank for BTech ranged between 116 and 4849 for the General AI category students. The toughest course to get into IIT Delhi was CSE. So, candidates seeking admission at this institute must aim to secure up to 4850 rank to be eligible for BTech admission. The required cutoff ranks will vary based on the categories you fall into. To get an idea of the category-wise JEE Advanced cutoff range for BTech admission at IIT Delhi, refer to the table below: CategoryJEE Advanced Round 1JEE Advanced Last Round General116 - 4754116 - 4849OBC89 - 306889 - 2749SC48 - 176550 - 1780ST23 - 99123- 991EWS33 - 113935 - 1215PWD5 - 1595 - 159",
-    },
-    {
-      question: "Is DMS IIT Delhi good for MBA?",
-      answer:
-        "The Department of Management Studies (DMS) of IIT Delhi is well-known for its MBA programme. It provides a demanding curriculum that aims to provide students with advanced management skills and knowledge. The programme is noted for its emphasis on analytics, technology, and innovation, which complements the institute's engineering heritage. DMS IIT Delhi has skilled teachers, good infrastructure, and strong industry links that improve learning and placement prospects. The institute is frequently ranked among the top MBA programmes in India, making it a great alternative for students looking for a complete and competitive business education.",
-    },
-    {
-      question: "How are IIT Delhi placements compared with other top IITs?",
-      answer:
-        "According to the most recent media report, during Phase I IIT Delhi placements in 2024, 1,050 offers—including PPOs—were made. Additionally, 1,000 applicants in total were chosen at random during phase 1 of the IIT Delhi placements 2024. In addition, during Phase I IIT Delhi placements 2024, more than 50 foreign offers including PPOs were received from almost 20 foreign businesses.The table below shows the IIT Delhi placements compared with other top IITs for the year 2023.College Namethe highest Package (2023)IIT DelhiINR 2.5 crore per annumIIT MadrasINR 1.31 crore per annumIIT BombayINR 1.68 crore per annumIIT KharagpurAbove INR 2.68 crore per annum",
+        "IIT Patna placement 2023 has witnessed a great start with the highest salary standing at INR 82.05 LPA and the average salary standing at INR 29.30 LPA. Students received 72 PPOs and in all 281 offers were made. Some of the Top Recruiters were Amazon, Google, Adobe, etc.",
     },
     {
       question:
-        "I've scored less than 60% in 12th boards, can I get admission in IIT Delhi for BTech?",
+        "What is lacking in the newer IITs (Patna, Indore, Jodhpur, etc.) that causes them to become less preferred by students?",
       answer:
-        "Admission to IIT Delhi BTech courses is subject to fulfiment of the eligibility requirements for JEE Main and JEE Advanced. The students who have passed Class 12 in Science stream with at least 75% aggregate (65% aggregate for SC/ST/PwD) are eligible to apply. Hence, a student scoring less than 60% is not eligible to pursue BTech at IIT Delhi. They can go for other colleges offering the course. They can also check out the colleges offering Online BTech courses.",
+        "The newer Indian Institutes of Technology (IITs) like Patna, Indore, and Jodhpur are generally less preferred by students compared to the older, more established IITs due to the following reasons:\n\n" +
+        "1. Brand recognition: The older IITs have a strong reputation and are more widely recognized, unlike the new IITs.\n" +
+        "2. Alumni network: Older IITs have a strong alumni network that can provide better placement opportunities and industry connections. This is lacking a bit in the new IITs.\n" +
+        "3. Infrastructure: Newer IITs may still be developing their infrastructure, including laboratories, research facilities, and campus amenities.\n" + // <-- Added \n before "3."
+        "4. Research opportunities: Older IITs typically have more research collaborations, funding, and ongoing projects, providing better research opportunities for students.\n" +
+        "5. Industry partnerships: Established IITs often have stronger ties with industries, leading to better internship and placement opportunities.\n" +
+        "6. Placement records: The track record of placements and average salary packages are stronger for the older IITs.",
+    },
+    {
+      question: "Can I get IIT Patna without JEE Advanced?",
+      answer:
+        "Yes, it is possible to join IIT Patna wihout JEE Advanced for courses other than BTech. For BTech programme JEE Advanced with JEE Mains is necessary. For other courses, such as M.Tech the asping candidates need to clear GATE with COAP counselling. Candidates who are seeking admission to the MTech, BBA, BSc or EMBA need not take JEE Advanced.",
     },
     {
       question:
-        "What is the branch-wise placement rate recorded during IIT Delhi BTech placements?",
+        "I would like to know about the placement records for executive MBA at IIT Patna. Can you help me with the same?",
       answer:
-        "According to unofficial sources, the branch-wise placement rate recroded during IIT Delhi BTech placements 2023 is presented below:BTech Branch Students Registered (2023)Students Placed (2023)Placement Rate (2023)Biochemical Engineering and Biotechnology463882.61%Civil Engineering635384.13%Chemical Engineering676191.04%Computer Science and Engineering959498.95%Electrical Engineering959296.84%Electrical Engineering (Power and Automation)494795.92%Mechanical Engineering705882.86%Production and Industrial Engineering686291.18%Mathematics and Computing676597.01%Engineering Physics413482.93%Textile Technology907280.00%",
+        "The EMBA programme of IIT Patna is especially designed for working professionals and, hence, provides flexible curricula. In addition, it does not involve traditional campus placements but, instead, provides career services that include access to more than 200 job postings per month, in addition to personal career guidance that will help students progress in their professional careers.",
     },
     {
       question:
-        "Can you share details about the extracurricular activities conducted at DMS IIT Delhi?",
+        "How much JEE score is required in B.Sc. (Hons.) in Computer Science and Data Analytics at IIT Patna?",
       answer:
-        "DMS IIT Delhi arranges various events, seminars, and workshops for students. There are various extracurricular activities arranged by the college. Various DMS IIT Delhi students have established their start ups. Throughout the years of their graduation, students are given the knowledge of the latest developments happening in the job world.",
+        "To get admitted to IIT Patna B.Sc. (Hons.) in Computer Science and Data Analytics course, applicants must meet the entry requirements - 60.0% in 12th. IIT Patna The total tuition fee for this course is INR 240000 for the entire duration of the course. To learn more about other courses offered under B.Sc. at IIT Patna.Additional DetailsCourse Duration: 3 yearsMode: Full-timeTotal Tuition Fees: INR 2.40 LakhUnique Feature: Hybrid (Online/Campus) mode of instructionThe admission process is competitive and requires candidates to meet both the academic and entrance exam criteria.",
     },
     {
-      question:
-        "What is the rank of IIT Delhi in QS World University Rankings 2024?",
+      question: "How is the placement of BBA in IIT Patna?",
       answer:
-        "IIT Delhi is listed as the 197th best university in the world as per the QS World University Rankings 2024. The institute is ranked 46th in the Asia University Rankings and 151-200 in the Engineering and Technology (Engineering) category. The QS World University Rankings are based on several variables, such as academic standing, employer standing, faculty-to-student ratio, number of citations per faculty, and proportion of foreign students. IIT Delhi was also ranked 717 by the US News Rankings 2022.",
+        " Placements for BBA at IIT PatnaThe placement scenario regarding BBA of IIT Patna is highly optimistic.The buoyant placement efforts of this institute, which has an effective placement cell, are working hard with many prominent companies for offering a valid opportunity for recruitment into them. It might also refer to some pre-placement talks where students get to meet potential employers and understand their perspectives on the event.Good average salary packages are available even to BBA graduates, clearly indicating that this is a full-fledged program of education and thus very much capable of preparing students for industry needs.The actual campus visits of the industry from all spheres will invite the students for interviews, tests, group discussions, and the recruitment process, making them prepared with too much opportunity for absorption into some of the best companies. ",
     },
     {
-      question:
-        "What documents are required during B.Tech admission process at IIT Delhi?",
+      question: "What is the application process of IIT Patna?",
       answer:
-        "The students need to submit important documents for verification purposes. Candidates should have scanned copies with them. Before the JEE Main 2024 registration process, students must keep the following documents and information ready for a smooth application process:Valid email ID and mobile numberAcademic details related to the Class 10 and Class 12 qualifying examsScanned copy of the category certificate (if applicable)Scanned copy of the PwD certificate (if applicable)Scanned photograph and signature as per the specification mentioned by the NTANet banking/credit card/debit card/UPI details for application fee payment",
+        "The candidate needs to be eligible for the selected programme which they are applying for (B.Tech, M.Tech, or Ph.D.). In B.Tech, candidates have to qualify through JEE Main and then advance, followed by participation in the counseling round held by JoSAA. In M.Tech, candidates need to appear for GATE examination and then register themselves at COAP and then apply on the IIT Patna portal. Ph.D. candidates require a relevant degree and have to apply online, later followed by interviews or tests. All documents should be submitted according to the guidelines provided on the IIT Patna website.",
     },
     {
-      question: "How can I get admission in IIT Delhi for MBA?",
+      question: "Can I get direct admission in IIT Patna?",
       answer:
-        "To get confirmation at DMS IIT Delhi for the MBA program, candidates to meet the qualification rules of having a graduation degree with 60% marks. The CAT exam is the primary selection criterion. In addition, if students are interested in the Executive MBA program, the CAT exam will serve as the selection parameter and similar eligibility requirements will apply. The MBA programme has a INR 11.2 Lacs tuition fee.",
+        "No, direct admission is not available for undergraduate studies at IIT Patna. It's purely on the basis of candidates' performances in JEE Advanced. For postgraduate, it may be either on the basis of their GATE scores or by entrance examinations conducted by respective courses.",
     },
   ];
 

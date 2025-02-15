@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./components/Header";
 import About from "./components/About";
 import Placement from "./components/Placement";
@@ -7,7 +7,10 @@ import Ranking from "./components/Ranking";
 import FAQ from "./components/FAQ";
 import Layout from "../../../../Layout";
 
-const delhi = () => {
+const Delhi = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Layout title="IIT Delhi - IIT Academy">
       <Header />
@@ -22,4 +25,4 @@ const delhi = () => {
   );
 };
 
-export default delhi;
+export default Delhi;

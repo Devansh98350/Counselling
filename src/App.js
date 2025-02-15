@@ -9,6 +9,7 @@ import Homepage from "./components/Homepage/Homepage";
 // import PagenotFound from "./components/PagenotFound";
 import IITS from "./components/Engineering/IIT/IIT_main.js";
 import IIT_DELHI from "./components/Engineering/IIT/Component/Delhi/delhi.js";
+import IIT_PATNA from "./components/Engineering/IIT/Component/Patna/patna.js";
 import NITS from "./components/Engineering/NIT/NIT_main.js";
 import IIITS from "./components/Engineering/IIIT/IIIT_main.js";
 import CFTIS from "./components/Engineering/CFTI/CFTI_main";
@@ -28,6 +29,7 @@ function App() {
         <Route path="*" element={<Navigate replace to="/" />} />
         <Route path="/iit-colleges" element={<IITS />} />
         <Route path="/iit-colleges/iit-delhi" element={<IIT_DELHI />} />
+        <Route path="/iit-colleges/iit-patna" element={<IIT_PATNA />} />
         <Route path="/nit-colleges" element={<NITS />} />
         <Route path="/iiit-colleges" element={<IIITS />} />
         <Route path="/cfti-colleges" element={<CFTIS />} />

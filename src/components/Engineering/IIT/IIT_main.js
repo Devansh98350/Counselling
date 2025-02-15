@@ -153,7 +153,7 @@ const Heading = [
     build:
       "https://tse3.mm.bing.net/th?id=OIP.7JYuPI4XZ8Bk8w2FEHGlqAHaEH&pid=Api&P=0&h=180",
     name: "IIT Patna",
-    link: "#",
+    link: "/iit-colleges/iit-patna",
   },
   {
     id: 15,

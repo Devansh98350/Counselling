@@ -89,98 +89,126 @@ const Ranking = () => {
       <section id="ranking">
         <h2 style={h2Style}>Ranking</h2>
         <p style={pStyle}>
-          IIT Delhi is one of Asia's top engineering institutes and consistently
-          ranks among the best in both national and international rankings. As
-          per the NIRF rankings, IIT Delhi has consistently stayed in the top 3
-          engineering colleges in India. In the QS World University Rankings
-          2025, IIT Delhi ranks among the top 150 universities globally.
+          <strong> International Ranking</strong>
         </p>
-
-        <h3 style={th3Style}>IIT Delhi International Ranking 2025</h3>
         <div
-          className="table-wrapper"
           style={{
             overflowX: "auto",
             WebkitOverflowScrolling: "touch",
             whiteSpace: "nowrap",
             msOverflowStyle: "none",
             scrollbarWidth: "none",
+            marginTop: "20px",
           }}
         >
           <table style={tableStyle}>
-            <tbody>
+            <thead>
               <tr>
-                <th style={thStyle}>Ranking Body</th>
                 <th style={thStyle}>Category</th>
-                <th style={thStyle}>Rank</th>
+                <th style={thStyle}>Latest </th>
+                <th style={thStyle}>Previous</th>
               </tr>
+            </thead>
+            <tbody>
               {[
                 {
-                  body: "QS World Ranking 2025",
-                  category: "World University",
-                  rank: "150",
+                  category: "QS Asian University Ranking - Southern Asia",
+                  latest: "106",
+                  previous: "-",
                 },
                 {
-                  body: "QS World Ranking 2024",
-                  category: "World University",
-                  rank: "197",
+                  category: "QS Asia University Rankings",
+                  latest: "401-450 (2024)",
+                  previous: "351-400 (2023)",
                 },
                 {
-                  body: "US News Ranking 2024",
-                  category: "Best Global Universities",
-                  rank: "689",
+                  category: "THE World University Rankings",
+                  latest: "601–800 (2024)",
+                  previous: "801–1000 (2023)",
                 },
                 {
-                  body: "QS World Ranking 2023",
-                  category: "World University",
-                  rank: "174+",
+                  category: "THE World University Rankings - Engineering",
+                  latest: "601–800 (2023)",
+                  previous: "601–800 (2022)",
                 },
-              ].map((item, index) => (
+                {
+                  category: "THE Asia University Rankings",
+                  latest: "201–250 (2023)",
+                  previous: "251–300 (2022)",
+                },
+              ].map((row, index) => (
                 <tr key={index}>
-                  <td style={tdStyle}>{item.body}</td>
-                  <td style={tdStyle}>{item.category}</td>
-                  <td style={tdStyle}>{item.rank}</td>
+                  <td style={tdStyle}>{row.category}</td>
+                  <td style={tdStyle}>{row.latest}</td>
+                  <td style={tdStyle}>{row.previous}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-
-        <h3 style={th3Style}>IIT Delhi National Ranking 2024</h3>
+        <p style={pStyle}>
+          <strong> National Ranking</strong>
+        </p>
         <div
-          className="table-wrapper"
           style={{
             overflowX: "auto",
             WebkitOverflowScrolling: "touch",
             whiteSpace: "nowrap",
             msOverflowStyle: "none",
             scrollbarWidth: "none",
+            marginTop: "20px",
           }}
         >
           <table style={tableStyle}>
-            <tbody>
+            <thead>
               <tr>
-                <th style={thStyle}>Ranking Body</th>
                 <th style={thStyle}>Category</th>
-                <th style={thStyle}>Rank</th>
+                <th style={thStyle}>Latest </th>
+                <th style={thStyle}>Previous </th>
               </tr>
+            </thead>
+            <tbody>
               {[
                 {
-                  body: "India Today 2024",
-                  category: "Engineering",
-                  rank: "1",
+                  category: "NIRF Overall Rankings",
+                  latest: "66 (2023)",
+                  previous: "59 (2022)",
                 },
                 {
-                  body: "The Week 2024",
-                  category: "Technical Universities",
-                  rank: "2",
+                  category: "NIRF Engineering Rankings",
+                  latest: "41 (2023)",
+                  previous: "33 (2022)",
                 },
-                { body: "NIRF 2023", category: "Engineering", rank: "2" },
-              ].map((item, index) => (
+                {
+                  category: "NIRF Research Rankings",
+                  latest: "41 (2022)",
+                  previous: "47 (2021)",
+                },
+                {
+                  category: "NIRF Innovation Rankings",
+                  latest: "151-300 (2023)",
+                  previous: "--",
+                },
+                {
+                  category: "The Week Best Technical Universities India",
+                  latest: "26 (2023)",
+                  previous: "--",
+                },
+                {
+                  category: "India Today Top Engineering Colleges",
+                  latest: "13 (2023)",
+                  previous: "--",
+                },
+                {
+                  category: "India Today Top Govt. Engineering Colleges",
+                  latest: "10 (2022)",
+                  previous: "--",
+                },
+              ].map((row, index) => (
                 <tr key={index}>
-                  <td style={tdStyle}>{item.body}</td>
-                  <td style={tdStyle}>{item.category}</td>
-                  <td style={tdStyle}>{item.rank}</td>
+                  <td style={tdStyle}>{row.category}</td>
+                  <td style={tdStyle}>{row.latest}</td>
+                  <td style={tdStyle}>{row.previous}</td>
                 </tr>
               ))}
             </tbody>
@@ -191,270 +219,223 @@ const Ranking = () => {
       <section id="scholarship">
         <h2 style={h2Style}>Scholarship</h2>
         <p style={pStyle}>
-          Indian Institute of Technology Delhi also provides financial aid to
-          students who need financial assistance. Apart from the ST/SC/PWD
-          students, scholarships are also provided to brilliant students. The
-          institution offers merit prizes to deserving students like toppers of
-          departments. IIT Delhi offers scholarships for students of UG, PG, and
-          Ph.D. programs. The Ph.D. students are offered financial assistance
-          through Teaching/Research Assistantships.
+          IIT Patna offers various scholarships to its students. These
+          scholarships are offered to ensure that the students can pursue their
+          education without any hurdles. Candidates must meet the eligibility
+          conditions set by the college to avail of the scholarships. Further
+          details regarding the IIT Patna scholarships are listed below.
         </p>
-
-        <h3 className="th3" style={th3Style}>
-          IIT Delhi UG Scholarships, Eligibility Criteria, and Amount
-        </h3>
-        <div style={{ overflowX: "auto" }}>
-          <table style={tableStyle}>
-            <thead>
-              <tr>
-                <th style={thStyle}>Name of the Scholarship</th>
-                <th style={thStyle}>Eligibility Criteria</th>
-                <th style={thStyle}>Scholarship Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                {
-                  name: "Merit-cum-Means (MCM) Scholarships",
-                  eligibility:
-                    "For the General/OBC/EWS students of engineering and technology.",
-                  amount:
-                    "The MCM scholarship grants a scholarship of Rs. 1000 per month.",
-                },
-                {
-                  name: "Institute Merit Prizes and Certificates",
-                  eligibility:
-                    "The eligible students are top 7% of the 4-year B.Tech programme and 5-year Dual-Degree Programme, of each semester till the 8th/10th semester.",
-                  amount: "The Merit Prize offers a prize value of Rs. 2500.",
-                },
-                {
-                  name: "Donor Scholarships",
-                  eligibility:
-                    "These scholarships are offered by organizations, individuals, and trusts.",
-                  amount: "Varies based on the donor.",
-                },
-              ].map((item, index) => (
-                <tr key={index}>
-                  <td style={tdStyle}>{item.name}</td>
-                  <td style={tdStyle}>{item.eligibility}</td>
-                  <td style={tdStyle}>{item.amount}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
-        <h3 className="th3" style={th3Style}>
-          IIT Delhi Scholarship for PG Programmes
-        </h3>
-        <div style={{ overflowX: "auto" }}>
-          <table style={tableStyle}>
-            <thead>
-              <tr>
-                <th style={thStyle}>Degree</th>
-                <th style={thStyle}>Scholarship Details</th>
-                <th style={thStyle}>Scholarship Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                {
-                  degree: "M.Sc. Programmes",
-                  details:
-                    "As per the government rules, this scholarship is offered only to those students whose parents' gross income is less than ₹4.5 lac per annum.",
-                  amount:
-                    "A tuition fee exemption and Merit-cum-Means scholarship of Rs. 1000 per month is offered to the eligible 25% of the total strength of M.Sc. students.",
-                },
-                {
-                  degree: "M.Tech., M.S. (Research), and M.Des.",
-                  details:
-                    "No scholarship is available for the students in this category.",
-                  amount: "-",
-                },
-              ].map((item, index) => (
-                <tr key={index}>
-                  <td style={tdStyle}>{item.degree}</td>
-                  <td style={tdStyle}>{item.details}</td>
-                  <td style={tdStyle}>{item.amount}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Research Assistance</strong>
-        </h3>
         <ul style={ulStyle}>
-          {[
-            "Research Assistance is provided to the students who are enrolled in the Ph.D. or research programs at IIT Delhi and are willing to work for the department.",
-            "Any student enrolled in the research-based programs on a full-time basis at IIT Delhi.",
-            "A minimum of INR 15,000 is awarded per month to students who can work about 20 hours a week.",
-            "For the students enrolled in the MS Research Programme, a sum of INR 24,000 is awarded per month to work 8 hours a week.",
-          ].map((item, index) => (
-            <li key={index} style={liStyle}>
-              {item}
-            </li>
-          ))}
+          <li style={liStyle}>Central Scheme Scholarships</li>
+          <li style={liStyle}>State Scheme Scholarships</li>
+          <li style={liStyle}>UGC Scheme Scholarships</li>
+          <li style={liStyle}>Institute Scholarships</li>
+          <li style={liStyle}>Donor Scholarships</li>
         </ul>
-
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Loan Scholarships</strong>
-        </h3>
         <p style={pStyle}>
-          Besides, most of the students are able to get scholarships on the
-          basis of merits and academic qualifications at IIT Delhi. Many alumni
-          have contributed and instituted scholarships that repay the interest
-          on loans students have taken. Some of the loan scholarships are
-          mentioned below:
+          <strong>Central Scheme Scholarships:</strong> The objective of the
+          scheme is to recognised and promote high-quality education among
+          children from low-income families by giving complete financial
+          support. SC students will be covered under the scheme if they wish to
+          continue their education beyond the 12th grade.
+        </p>
+        <p style={pStyle}>
+          <strong> State Scheme Scholarships:</strong> Details can be found on
+          the scholarship webpage of the relevant state government.
+        </p>
+        <p style={pStyle}>
+          <strong>UGC Scheme Scholarships:</strong> The IIT Patna scholarships
+          scheme provide equal chances for higher education in the Northeast. To
+          place a greater emphasis on professional education in the Northeast,
+          etc.
+        </p>
+        <p style={pStyle}>
+          <strong>Institute Scholarships:</strong> The IIT Patna awards
+          scholarships based on merit rather than financial need. The
+          scholarships are offered to deserving students. It is available to
+          undergraduate students or students enrolled in a two-year M.Sc degree.
+        </p>
+        <p style={pStyle}>
+          <strong>Donor Scholarships</strong>
         </p>
         <ul style={ulStyle}>
-          {[
-            "Ved & Prem Lata Gulati Loan Scholarship",
-            "Smt. Sushma Lal Loan Scholarship",
-            "Smt. Sarada Warrior Loan Scholarship",
-            "Shrimati Dharam Devi Bhatia Loan Scholarship",
-            "Shri Motiram Bulchand Shivdasani Scholarship",
-            "Samir Anand and Batch of 88 Loan Scholarship",
-          ].map((item, index) => (
-            <li key={index} style={liStyle}>
-              {item}
-            </li>
-          ))}
+          <li style={liStyle}>
+            For remarkable all-around performance, strong organisational
+            ability, and leadership qualities in a 4th-year UG student in the
+            CSE department. The CSE department will recommend a name. Cash prize
+            worth Rs 10,000 on convocation will be honoured.
+          </li>
+          <li style={liStyle}>
+            The best first-year UG student in the Civil and Environmental
+            Engineering Department, admitted through JEE, with a CPI of 8.00 or
+            higher in the second semester, would be considered for the Indian
+            Institute of Technology Patna scholarships. The scholarship would be
+            of Rs. 30,000.
+          </li>
         </ul>
       </section>
 
       <section id="campus">
-        <h2 style={h2Style}>Campus Facilities at IIT Delhi</h2>
+        <h2 style={h2Style}>Campus Facilities at IIT Patna</h2>
         <p style={pStyle}>
-          The campus of IIT Delhi is spread across an area of 320 acres, located
-          in the Hauz Khas area of South Delhi. The campus is in close proximity
-          to notable landmarks such as the Qutub Minar and Lotus Temple, and is
-          near other educational institutions like JNU and IIFT. The IIT Delhi
-          campus features a range of facilities including an amphitheatre, a
-          swimming pool, a music room, a robotics room, a club building, a
-          gymnasium hall, and a fully functional central library that is
-          accessible 24/7. These amenities contribute to a vibrant and
-          well-equipped campus environment.
+          Indian Institute of Technology, Patna offers a number of
+          infrastructural amenities to its students such as a library with a
+          wide collection of printed materials like books, magazines, journals,
+          thesis, project reports etc. Also there are digital resources
+          available for the students such as e-books, e-journals, CD/DVDs
+          available at the library.
         </p>
         <p style={pStyle}>
-          The campus is organized into several distinct areas for administrative
-          and logistical functions. The <strong>West Campus</strong> serves as
-          the hostel area, while the <strong>East Campus</strong> is designated
-          for residential purposes. The{" "}
-          <strong>Main Administrative Building</strong> handles administrative
-          functions, and the <strong>Academic Area</strong> is dedicated to
-          academic activities. This organization helps streamline operations and
-          supports the various needs of students and staff.
+          IIT Patna provides many other conveniences like 7 boys' hostels and 2
+          girls' hostels separately with amenities like food delivery service,
+          common room, internet connectivity, guest houses, an actively
+          functioning hospital with trained doctors and nurses to provide the
+          medical facility 24/7, a fully furnished auditorium, facilities for
+          playing different outdoor and indoor games like basketball,
+          volleyball, badminton, tennis, table tennis, athletics, chess, carrom
+          etc., and a computer centre to give students practical knowledge. Also
+          there are other things for students like a well-furnished auditorium,
+          classrooms built with modern technology for a better experience for
+          the students.
         </p>
-        {/*<div style={imageContainerStyle}>
-          <img src="#" alt="Campus Image 1" style={imageStyle} />
-          <img src="#" alt="Campus Image 2" style={imageStyle} />
-        </div>*/}
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Hostel Facilities</strong>
-        </h3>
-        <p style={pStyle}>
-          The IIT Delhi hostels are well-equipped with a variety of amenities to
-          ensure a comfortable and supportive living environment for students.
-          There are 13 boys hostels and 5 girls hostels on campus. Each hostel
-          features a dining hall with a mess facility, a lounge for relaxation,
-          an indoor games room for recreational activities, and a reading room
-          for quiet study. These facilities are designed to provide students
-          with a balanced and enjoyable hostel experience. IIT Delhi has boys'
-          hostels inside the campus premises. Its hostel runs in a cooperative
-          mode, which means the operation is handled by elected student
-          leadership under the guidance of designated faculty.
-        </p>
-        <p style={pStyle}>
-          The girls' hostels offer similar facilities, including recreational
-          amenities such as indoor games, a common room with TV, a reading room,
-          and a dining hall. All rooms have internet connectivity.
-        </p>
-
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Campus Facilities</strong>
-        </h3>
         <ul style={ulStyle}>
-          <li style={liStyle}>
-            <strong>IT Infrastructure:</strong>
-            <ul style={innerListStyle}>
-              <li style={liStyle}>
-                <strong>Network Type:</strong> State-of-the-art LAN with Fiber
-                Optics and enhanced CAT5/CAT6 UTP backbone
-              </li>
-              <li style={liStyle}>
-                <strong>Network Access Points:</strong> Over 9000 across the
-                campus
-              </li>
-              <li style={liStyle}>
-                <strong>Cisco Switches:</strong> About 265
-              </li>
-              <li style={liStyle}>
-                <strong>Virtual LANs:</strong> Approximately 75
-              </li>
-            </ul>
-          </li>
-          <li style={liStyle}>
-            <strong>Wi-Fi:</strong> Secure Wi-Fi available in the academic area,
-            main guest house, faculty guest house, RCA, and hospital
-          </li>
-          <li style={liStyle}>
-            <strong>Cafeteria:</strong> Several canteens located opposite
-            Aravali Hostel, in Himadri Hostel, and adjacent to Kumaon Hostel;
-            serves healthy and hygienic food; additional coffee and cold drinks
-            kiosks available
-          </li>
-          <li style={liStyle}>
-            <strong>Auditorium:</strong> Seating capacity of over 120; hosts
-            guest lectures, seminars, and other programs
-          </li>
-          <li style={liStyle}>
-            <strong>Alumni Associations:</strong> IITD Alumni Association
-            connects over 43,000 members worldwide through a network of national
-            and international chapters; one of the most active alumni
-            associations globally
-          </li>
-          <li style={liStyle}>
-            <strong>Classrooms:</strong> Fully air-conditioned; equipped with
-            LCD projectors
-          </li>
-          <li style={liStyle}>
-            <strong>Laboratories:</strong> Well-equipped laboratories,
-            workshops, and library facilities across departments
-          </li>
-          <li style={liStyle}>
-            <strong>Convenience Store:</strong> Stationery shop in the academic
-            area; Xeroxing and STD/ISD/PCO facilities available in all hostels
-          </li>
-          <li style={liStyle}>
-            <strong>Banks/ATMs:</strong> On-campus bank available for faculty
-            and student convenience
-          </li>
-          <li style={liStyle}>
-            <strong>Guest Room/Waiting Room:</strong> Guest house and waiting
-            room facilities for visiting faculty and family members of students
-          </li>
+          <li style={liStyle}>Computer Labs</li>
+          <li style={liStyle}>Sports</li>
+          <li style={liStyle}>Gym</li>
+          <li style={liStyle}>Medical Hospital</li>
+          <li style={liStyle}>Cafeteria</li>
+          <li style={liStyle}>Laboratory</li>
+          <li style={liStyle}>Library</li>
+          <li style={liStyle}>Auditorium</li>
+          <li style={liStyle}>Hostel</li>
+        </ul>
+        <p style={pStyle}>
+          IIT Patna is spread over 40 acres. It is acknowledged for its huge
+          campus and residential facilities in India. Some of the highlighting
+          features of the IIT Patna campus are given below
+        </p>
+        <ul style={ulStyle}>
+          <li style={liStyle}>Incubation Centre</li>
+          <li style={liStyle}>Library</li>
+          <li style={liStyle}>Guest House</li>
+          <li style={liStyle}>Hostel</li>
+          <li style={liStyle}>Gymnasium</li>
+          <li style={liStyle}>Mess</li>
+          <li style={liStyle}>Seminar Rooms</li>
+          <li style={liStyle}>Classroom</li>
+          <li style={liStyle}>Conference Room</li>
+          <li style={liStyle}>Wellness Centre</li>
+          <li style={liStyle}>Labs</li>
+          <li style={liStyle}>Sports Facilities</li>
+        </ul>
+        <p style={pStyle}>
+          <strong>Incubation Centre:</strong> The incubation centre is the ideal
+          destination for startups taking early entrepreneurial steps in medical
+          electronics and information and communication technology domains. The
+          college carefully designs incubation and pre-incubation programs to
+          support startups through the state of the art technical facilities
+          required for work in the ESDM sector, corporate quality office and
+          communication facilities, mentoring support from industry or
+          investors.
+        </p>
+        <p style={pStyle}>
+          <strong>Library:</strong> The library offers a wide range of
+          Information Technology (IT) services and products. It is in a fast
+          growing stage and has approximately 1000 books and one online
+          resource. The IIT Patna library is equipped with the modern technology
+          of library automation system with Online Public Access Catalogue
+          (OPAC) and self-check-in and self-check-out (Drop Box) system using
+          RFID technology. The library has 50 computers for accessing the
+          different e-resources of the library. The users can avail the library
+          facilities during opening hours.
+        </p>
+        <p style={pStyle}>
+          <strong>Guest House:</strong> IIT Patna has a guest house that
+          provides comfortable accommodation to guests visiting for official
+          work, attending conferences or seminars, meetings, etc. Accommodation
+          is also provided to the staff or faculty members and parents. The
+          second and third floors of the building, comprising 24 rooms, are used
+          to run the guest house. All the rooms are equipped with AC and a
+          high-speed Wifi internet facility. The guest house has eight rooms
+          with attached toilets, and sixteen rooms are common toilets. A
+          full-fledged canteen equipped with all modern facilities is also
+          available in the guesthouse.
+        </p>
+        <p style={pStyle}>
+          <strong>Hostel:</strong> IIT Patna hostel offers residential
+          facilities for boys and girls.
+        </p>
+        <p style={pStyle}>
+          <strong>Gymnasium:</strong> The college has a gymnasium such as
+          dumbbells, barbells, and bench presses. There are also treadmills,
+          exercise bikes, squat stations, hammer strength machines, cables and
+          pulleys, let pull down machines, and leg extension machines.
+        </p>
+        <p style={pStyle}>
+          <strong> Mess:</strong> On the ground level, the boys' hostel has two
+          mess halls while the ladies' hostel has one. Breakfast, lunch, snacks,
+          and dinner are all available. Messes adhere to a month-by-month
+          cuisine. The mess menu is rotated once a month. During breakfast and
+          snack time, coffee/tea is available. Students from all years elect a
+          mess secretary to handle mess-related matters. Messes are cleaned up
+          after, and food is prepared and served in sanitary conditions.
+        </p>
+        <p style={pStyle}>
+          <strong>Seminar Rooms:</strong> The IIT Patna campus area has a
+          seminar room. The main purpose of the seminar rooms is to conduct
+          department seminars. It can accommodate around 56 students at a time.
+          The rooms also have modern amenities, including 24x7 UPS connectivity,
+          air conditioning room, digital podium.
+        </p>
+        <p style={pStyle}>
+          <strong>Classroom:</strong> The classrooms are well-equipped and
+          provide all the necessary facilities to the students. It can
+          accommodate around 50 students at a time.
+        </p>
+        <p style={pStyle}>
+          <strong>Conference Room:</strong> The conference room can accommodate
+          around 20 students and provides various facilities like UPS
+          connectivity, air condition room, and life-size cloud video
+          conferencing solution.
+        </p>
+        <p style={pStyle}>
+          <strong>Wellness Centre:</strong> Indian Institute of Technology Patna
+          infrastructure has a wellness centre for the well-being of students
+          and encourages them to enhance their on-campus lifestyle. The centre
+          consists of faculty members across various departments of the
+          Institute. It deals with various activities, including yoga, sports,
+          music, life skill, etc. In addition to these, the centre organizes
+          various programs like workshops on happiness, motivational talks, etc.
+        </p>
+        <p style={pStyle}>
+          <strong>Labs</strong>
+        </p>
+        <ul style={ulStyle}>
+          <li style={liStyle}>Chromatography Lab</li>
+          <li style={liStyle}>Bioscience Lab</li>
+          <li style={liStyle}>B.Tech Chemistry Lab</li>
+          <li style={liStyle}>Materials Research Lab</li>
+          <li style={liStyle}>Chemistry Instrumental Lab</li>
+          <li style={liStyle}>Chemistry Wet Research Lab</li>
+        </ul>
+        <p style={pStyle}>
+          <strong>Sports Facilities</strong>
+        </p>
+        <ul style={ulStyle}>
+          <li style={liStyle}>Basketball</li>
+          <li style={liStyle}>Volleyball</li>
+          <li style={liStyle}>Tennis</li>
+          <li style={liStyle}>Badminton</li>
+          <li style={liStyle}>Table Tennis</li>
+          <li style={liStyle}>Athletics</li>
+          <li style={liStyle}>Cricket</li>
+          <li style={liStyle}>Chess</li>
+          <li style={liStyle}>Carrom</li>
         </ul>
       </section>
 
       <section id="alumni-network">
-        <h2 style={h2Style}>Alumni Network at IIT Delhi</h2>
-
-        <p style={pStyle}>
-          The IIT Delhi alumni network spans across various prominent
-          recruiters, showcasing the extensive reach and influence of our
-          graduates. Here is a snapshot of the number of alumni working with
-          some of the leading companies:
-        </p>
+        <h2 style={h2Style}>Alumni Network at IIT Patna</h2>
         <div
           style={{
             overflowX: "auto",
@@ -462,87 +443,163 @@ const Ranking = () => {
             whiteSpace: "nowrap",
             msOverflowStyle: "none",
             scrollbarWidth: "none",
+            marginTop: "20px",
           }}
         >
           <table style={tableStyle}>
             <thead>
               <tr>
-                <th style={thStyle}>Recruiter</th>
-                <th style={thStyle}>No. of Alumni</th>
+                <th style={thStyle}>Name</th>
+                <th style={thStyle}>Year</th>
+                <th style={thStyle}>Research Area</th>
+                <th style={thStyle}>Current Occupation</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td style={tdStyle}>Amazon</td>
-                <td style={tdStyle}>378</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Google</td>
-                <td style={tdStyle}>338</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Microsoft</td>
-                <td style={tdStyle}>332</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>IBM</td>
-                <td style={tdStyle}>317</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>TCS</td>
-                <td style={tdStyle}>312</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Accenture</td>
-                <td style={tdStyle}>195</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Goldman Sachs</td>
-                <td style={tdStyle}>164</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>McKinsey &amp; Co.</td>
-                <td style={tdStyle}>138</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Facebook</td>
-                <td style={tdStyle}>124</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>BCG</td>
-                <td style={tdStyle}>120</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Flipkart</td>
-                <td style={tdStyle}>108</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>AWS</td>
-                <td style={tdStyle}>90</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Bain &amp; Co.</td>
-                <td style={tdStyle}>66</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Uber</td>
-                <td style={tdStyle}>5</td>
-              </tr>
+              {[
+                {
+                  name: "Dr. Priyanka Sinha",
+                  year: "2015",
+                  research: "India's Trade Policy",
+                  occupation: "Assistant Professor, CIMP Patna",
+                },
+                {
+                  name: "Dr. Shaivya Singh",
+                  year: "2016",
+                  research: "Linguistics",
+                  occupation: "Assistant Professor, IIMT Group of Colleges",
+                },
+                {
+                  name: "Dr. Raj Rajesh",
+                  year: "2016",
+                  research: "Business Cycles",
+                  occupation: "Reserve Bank of India",
+                },
+                {
+                  name: "Dr. Partha Bhattacharjee",
+                  year: "2016",
+                  research: "English Literature",
+                  occupation: "Assistant Professor, SRM University",
+                },
+                {
+                  name: "Dr. Aimen Reyaz",
+                  year: "2016",
+                  research: "English Literature",
+                  occupation:
+                    "Assistant Professor, Jai Prakash University, Bihar",
+                },
+                {
+                  name: "Dr. Sadeqa Ghazal",
+                  year: "2019",
+                  research: "ELT",
+                  occupation: "Assistant Professor, Magadh University",
+                },
+                {
+                  name: "Dr. Anuja Akhouri",
+                  year: "2020",
+                  research: "Corporate Social Responsibility",
+                  occupation: "Assistant Professor, IIM Jammu",
+                },
+                {
+                  name: "Dr. Nusrat Begum",
+                  year: "2021",
+                  research: "Sociolinguistics",
+                  occupation:
+                    "Assistant Professor, Vellore Institute of Technology",
+                },
+                {
+                  name: "Dr. Sandeep K. Sharma",
+                  year: "2021",
+                  research: "Cognitive Linguistics",
+                  occupation: "Assistant Professor, DIT University",
+                },
+                {
+                  name: "Dr. Ratul Mahela",
+                  year: "2021",
+                  research: "Linguistic Grammar",
+                  occupation: "Assistant Professor, Rajiv Gandhi University",
+                },
+                {
+                  name: "Dr. Kumar Gaurav",
+                  year: "2021",
+                  research: "International Trade",
+                  occupation: "Assistant Professor, Magadh University",
+                },
+                {
+                  name: "Dr. Ramjit Kumar",
+                  year: "2021",
+                  research: "Science Education",
+                  occupation: "A.N. Sinha Institute of Social Sciences, Patna",
+                },
+                {
+                  name: "Dr. Anupama Singh",
+                  year: "2021",
+                  research: "Environmental Science and Technology",
+                  occupation: "Scientist-C, FARE Labs Pvt. Ltd., Gurugram",
+                },
+                {
+                  name: "Dr. Sanjib K. Biswas",
+                  year: "2021",
+                  research: "English Literature",
+                  occupation: "Assistant Teacher, West Bengal",
+                },
+                {
+                  name: "Dr. Kriti Gupta",
+                  year: "2021",
+                  research: "Psychology",
+                  occupation:
+                    "Assistant Professor, O.P. Jindal Global University",
+                },
+                {
+                  name: "Dr. Mamta Kumari",
+                  year: "2021",
+                  research: "International Trade",
+                  occupation:
+                    "Assistant Professor, Alliance University, Bengaluru",
+                },
+                {
+                  name: "Dr. Sujay Kumar Saha",
+                  year: "2022",
+                  research: "ELT",
+                  occupation: "Assistant Professor, DIET, West Bengal",
+                },
+                {
+                  name: "Dr. Chhandita Das",
+                  year: "2022",
+                  research: "English Literature",
+                  occupation:
+                    "Assistant Professor, GKC Institute of Engineering and Technology",
+                },
+                {
+                  name: "Dr. Vinayak Yashraj",
+                  year: "2022",
+                  research: "English Literature",
+                  occupation: "Assistant Professor, NIFT, Patna",
+                },
+                {
+                  name: "Dr. Mantasha Firoz",
+                  year: "2023",
+                  research: "Workplace Loneliness",
+                  occupation:
+                    "Assistant Professor, Goa Institute of Management",
+                },
+                {
+                  name: "Dr. Samrat Bisai",
+                  year: "2023",
+                  research: "Education",
+                  occupation: "Assistant Professor, RMBCE, West Bengal",
+                },
+              ].map((row, index) => (
+                <tr key={index}>
+                  <td style={tdStyle}>{row.name}</td>
+                  <td style={tdStyle}>{row.year}</td>
+                  <td style={tdStyle}>{row.research}</td>
+                  <td style={tdStyle}>{row.occupation}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
-        <br />
-
-        <p style={pStyle}>
-          IITD Alumni Association is dedicated to bringing together the alumni
-          community on a common platform to build another channel of personal
-          and professional support to members through ‘self-help’ within the
-          community. IIT Delhi Alumni Association today has a membership of over
-          43,000 graduates from our alma mater and is growing at about 1,700
-          members a year. It is one of the most active alumni associations and
-          operates through a network of national and international chapters. Our
-          alumni are spread worldwide and figure amongst who’s who worldwide.
-        </p>
       </section>
     </div>
   );

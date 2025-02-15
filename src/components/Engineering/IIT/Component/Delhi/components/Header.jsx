@@ -107,7 +107,7 @@ function Header() {
                   fontWeight: "bold",
                 }}
               >
-                IIT Delhi: Admission 2024, Cutoff, Courses,
+                IIT Delhi: Admission 2025, Cutoff, Courses,
               </h3>
               <h3
                 style={{
@@ -126,7 +126,7 @@ function Header() {
                   marginTop: "5px",
                 }}
               >
-                New Delhi | Autonomous University | Estd 2008
+                New Delhi | Autonomous University | Estd 1961
               </div>
             </div>
             <div

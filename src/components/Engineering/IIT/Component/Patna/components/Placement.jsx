@@ -55,7 +55,11 @@ const Placement = () => {
     fontSize: "24px",
     fontWeight: "700",
   };
-
+  const ulStyle = {
+    lineHeight: "1.6",
+    listStyleType: "disc",
+    marginLeft: "20px",
+  };
   const liStyle = {
     fontSize: "16px",
     lineHeight: "1.6",
@@ -67,32 +71,58 @@ const Placement = () => {
     <section id="placement" style={sectionStyle}>
       <h2 style={h2Style}>Placement</h2>
       <p style={pStyle}>
-        IIT Delhi has an outstanding placement record across all levels of
-        students. In the latest placement drive for 2024, a total of 1,000
-        students were selected, with 1,050 offers made during Phase 1. More than
-        50 international offers, including PPOs, were secured from 20
-        international companies. Top recruiters include Air India, Microsoft,
-        Bajaj Auto, and others. IIT Delhi's placement offers have seen a 20%
-        increase from 2023, with around 400 national and international
-        organizations offering more than 800 job profiles in various sectors.
+        The average package offered during IIT Patna placements 2024 for BTech,
+        M.Tech and MSc programs stood around INR 17 LPA, INR 15 LPA and INR 7
+        LPA, respectively. Further, the placement rate recorded during BTech and
+        M.Tech placements 2024 stood at 77.92% and 61.01%, respectively. It is
+        to note that placements drive 2024 was ongoing at the time the placement
+        rate was derived, hence it may vary after the final placements 2024
+        process gets completed. Earlier, the highest package offered during IIT
+        Patna placements 2023 stood at INR 82.05 LPA.
       </p>
       <p style={pStyle}>
-        According to the NIRF 2024 report, 676 UG (4-year) students were placed
-        with an average salary of INR 20 lakhs, 92 PG (5-year) students were
-        placed with a median salary of INR 22 lakhs, and 432 PG students were
-        placed with an average salary of INR 17 lakhs. Over 50 students received
-        domestic salary packages exceeding INR 1 crore during the IIT Delhi
-        placement program.
+        <strong>IIT Patna Placement Procedure</strong>
       </p>
-      <p style={pStyle}>
-        IIT Delhi MBA Placements 2023 concluded with 100% placements. The
-        highest package was INR 41.13 LPA, and the average package was INR 25.82
-        LPA. The MBA Summer Internship Placements for 2024 also concluded with
-        100% internship success, with the highest stipend standing at INR 4.04
-        lakhs per month and the average stipend at INR 2.63 lakhs per month for
-        the MBA batch.
-      </p>
-
+      <ul style={ulStyle}>
+        <li style={liStyle}>
+          The Placement Office or Placement Cell of IIT Patna contacts companies
+          and extends invitations with pertinent information.
+        </li>
+        <li style={liStyle}>
+          After submitting the completed Job Announcement Forms (JAF) via email
+          or fax, companies receive a unique login ID for the website. The JAFs
+          are made available online, making it easier for students to sign up
+          for the company.
+        </li>
+        <li style={liStyle}>
+          The Placement Cell and the company finalize the date for pre-placement
+          talks if necessary. Registered students submit their resumes for
+          shortlisting.
+        </li>
+        <li style={liStyle}>
+          A detailed schedule is prepared by the IIT Patna Placement Cell,
+          evaluating job offers, prospects, and student intake, which is
+          confirmed with all companies.
+        </li>
+        <li style={liStyle}>
+          Companies visit the IIT Patna campus, meet registered or shortlisted
+          students, and conduct interviews, tests, or group discussions as per
+          their recruitment process.
+        </li>
+        <li style={liStyle}>
+          The agreed-upon interview and recruitment schedule must be followed on
+          the designated date.
+        </li>
+        <li style={liStyle}>
+          Companies must prepare and submit the list of selected students with a
+          written confirmation letter on the interview day.
+        </li>
+        <li style={liStyle}>
+          The IIT Patna Placement Cell must receive employment offers promptly.
+          Students receiving a job offer are not allowed to participate in
+          further interviews or exams.
+        </li>
+      </ul>
       <div
         style={{
           overflowX: "auto",
@@ -100,72 +130,203 @@ const Placement = () => {
           whiteSpace: "nowrap",
           msOverflowStyle: "none",
           scrollbarWidth: "none",
+          marginTop: "20px",
         }}
       >
         <table style={tableStyle}>
-          <tbody>
+          <thead>
             <tr>
-              <th style={thStyle}>Program Name</th>
-              <th style={thStyle}>Placement (%)</th>
+              <th style={thStyle}>Particulars</th>
+              <th style={thStyle}>Placement Statistics 2023</th>
             </tr>
+          </thead>
+          <tbody>
+            {[
+              { particulars: "No. of Students Registered", stats: "295" },
+              { particulars: "No. of Students Placed", stats: "245" },
+              { particulars: "No. of PPOs", stats: "72" },
+              { particulars: "No. of Offers", stats: "413" },
+              {
+                particulars: "Highest Domestic Package",
+                stats: "INR 82.05 LPA",
+              },
+              { particulars: "Average Salary", stats: "INR 23.90 LPA" },
+              { particulars: "Median Package", stats: "INR 20 LPA" },
+            ].map((row, index) => (
+              <tr key={index}>
+                <td style={tdStyle}>{row.particulars}</td>
+                <td style={tdStyle}>{row.stats}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p style={pStyle}>
+        During IIT Patna Placements 2023, the highest salary of INR 82.05 LPA
+        was offered. The average salary stood at INR 23.90 LPA.
+      </p>
+      <p style={pStyle}>
+        <strong>
+          IIT Patna B.Tech Branch Wise Placement Statistics 2023-24
+        </strong>
+      </p>
+      <div
+        style={{
+          overflowX: "auto",
+          WebkitOverflowScrolling: "touch",
+          whiteSpace: "nowrap",
+          msOverflowStyle: "none",
+          scrollbarWidth: "none",
+          marginTop: "20px",
+        }}
+      >
+        <table style={tableStyle}>
+          <thead>
+            <tr>
+              <th style={thStyle}>Courses</th>
+              <th style={thStyle}>Maximum Salary Offered</th>
+              <th style={thStyle}>Minimum Salary Offered</th>
+              <th style={thStyle}>Average Salary Offered</th>
+            </tr>
+          </thead>
+          <tbody>
             {[
               {
-                program: "Biochemical Engineering and Biotechnology (4-Year)",
-                rate: "82.61%",
-              },
-              { program: "Civil Engineering (4-Year)", rate: "84.13%" },
-              { program: "Chemical Engineering (4-Year)", rate: "91.04%" },
-              {
-                program: "Computer Science and Engineering (4-Year)",
-                rate: "98.95%",
-              },
-              { program: "Electrical Engineering (4-Year)", rate: "96.84%" },
-              {
-                program:
-                  "Electrical Engineering (Power and Automation) (4-Year)",
-                rate: "95.92%",
-              },
-              { program: "Mechanical Engineering (4-Year)", rate: "82.86%" },
-              {
-                program: "Production and Industrial Engineering (4-Year)",
-                rate: "91.18%",
-              },
-              { program: "Mathematics and Computing (4-Year)", rate: "97.01%" },
-              { program: "Engineering Physics (4-Year)", rate: "82.93%" },
-              { program: "Textile Technology (4-Year)", rate: "80.00%" },
-              { program: "Overall B.Tech. (4-Year)", rate: "90.01%" },
-              {
-                program:
-                  "Biochemical Engineering and Biotechnology (5-Year Dual Degree)",
-                rate: "87.50%",
+                course: "B.Tech ME",
+                max: "Rs 18.8 lakhs",
+                min: "Rs 3.00 lakhs",
+                avg: "Rs 7.51 lakhs",
               },
               {
-                program: "Chemical Engineering (5-Year Dual Degree)",
-                rate: "84.21%",
+                course: "B.Tech EE",
+                max: "Rs 18.00 lakhs",
+                min: "Rs 4.5 lakhs",
+                avg: "Rs 7.6 lakhs",
               },
               {
-                program:
-                  "Computer Science and Engineering (5-Year Dual Degree)",
-                rate: "93.10%",
+                course: "B.Tech CE",
+                max: "Rs 19.00 lakhs",
+                min: "Rs 4.5 lakhs",
+                avg: "Rs 7.56 lakhs",
               },
               {
-                program: "Mathematics and Computing (5-Year Dual Degree)",
-                rate: "95.83%",
+                course: "B.Tech ECE",
+                max: "Rs 44.92 lakhs",
+                min: "Rs 4.00 lakhs",
+                avg: "Rs 11.42 lakhs",
               },
-              { program: "Overall Dual Degree", rate: "89.90%" },
-            ].map((item, index) => (
+              {
+                course: "B.Tech CSE",
+                max: "Rs 34 lakhs",
+                min: "Rs 4.00 lakhs",
+                avg: "Rs 11.3 lakhs",
+              },
+            ].map((row, index) => (
               <tr key={index}>
-                <td style={tdStyle}>{item.program}</td>
-                <td style={tdStyle}>{item.rate}</td>
+                <td style={tdStyle}>{row.course}</td>
+                <td style={tdStyle}>{row.max}</td>
+                <td style={tdStyle}>{row.min}</td>
+                <td style={tdStyle}>{row.avg}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p style={pStyle}>
+        <strong>IIT Patna B.Tech Placement Percentage 2023-24</strong>
+      </p>
+      <div
+        style={{
+          overflowX: "auto",
+          WebkitOverflowScrolling: "touch",
+          whiteSpace: "nowrap",
+          msOverflowStyle: "none",
+          scrollbarWidth: "none",
+          marginTop: "20px",
+        }}
+      >
+        <table style={tableStyle}>
+          <thead>
+            <tr>
+              <th style={thStyle}>Courses</th>
+              <th style={thStyle}>Offers Accepted</th>
+              <th style={thStyle}>Placement Percentage</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              { course: "B.Tech ME", offers: "75", percentage: "81.52%" },
+              { course: "B.Tech EE", offers: "61", percentage: "64.89%" },
+              { course: "B.Tech CE", offers: "48", percentage: "46.60%" },
+              { course: "B.Tech ECE", offers: "82", percentage: "53.24%" },
+              { course: "B.Tech CSE", offers: "138", percentage: "65.09%" },
+            ].map((row, index) => (
+              <tr key={index}>
+                <td style={tdStyle}>{row.course}</td>
+                <td style={tdStyle}>{row.offers}</td>
+                <td style={tdStyle}>{row.percentage}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p style={pStyle}>
+        * the above data is taken from the official source of IIT Patna.
+      </p>
+      <p style={pStyle}>
+        <strong>IIT Patna Placement Statistics NIRF 2023 - Overall</strong>
+      </p>
+      <p style={pStyle}>
+        The below table shows the number of students placed by the IIT Patna
+        placement cell and a comparison of placements year by year is provided
+        below.
+      </p>
+      <p style={pStyle}>
+        <strong>IIT Patna UG Placements 2023 (NIRF 2023)</strong>
+      </p>
+      <div
+        style={{
+          overflowX: "auto",
+          WebkitOverflowScrolling: "touch",
+          whiteSpace: "nowrap",
+          msOverflowStyle: "none",
+          scrollbarWidth: "none",
+          marginTop: "20px",
+        }}
+      >
+        <table style={tableStyle}>
+          <thead>
+            <tr>
+              <th style={thStyle}>Particulars</th>
+              <th style={thStyle}>Statistics</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              { particular: "Number of students in a batch", statistic: "250" },
+              { particular: "Number of students graduating", statistic: "244" },
+              { particular: "Number of students placed", statistic: "202" },
+              {
+                particular: "Median salary package offered",
+                statistic: "Rs. 20,00,000",
+              },
+              {
+                particular: "Number of students selected for higher studies",
+                statistic: "41",
+              },
+            ].map((row, index) => (
+              <tr key={index}>
+                <td style={tdStyle}>{row.particular}</td>
+                <td style={tdStyle}>{row.statistic}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
 
-      <h3 className="th3" style={th3Style}>
-        Package Offered
-      </h3>
+      <p style={pStyle}>
+        <strong>IIT Patna PG Placements (NIRF 2023)</strong>
+      </p>
       <div
         style={{
           overflowX: "auto",
@@ -173,42 +334,310 @@ const Placement = () => {
           whiteSpace: "nowrap",
           msOverflowStyle: "none",
           scrollbarWidth: "none",
+          marginTop: "20px",
         }}
       >
         <table style={tableStyle}>
+          <thead>
+            <tr>
+              <th style={thStyle}>Particulars</th>
+              <th style={thStyle}>Statistics</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr>
-              <th style={thStyle}>Domestic Placements</th>
-              <th style={thStyle}>Amount (in LPA)</th>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Median Gross Salary</td>
-              <td style={tdStyle}>17.40</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Median CTC</td>
-              <td style={tdStyle}>19.50</td>
-            </tr>
+            {[
+              { particular: "Number of students in a batch", statistic: "196" },
+              { particular: "Number of students graduating", statistic: "163" },
+              { particular: "Number of students placed", statistic: "96" },
+              {
+                particular: "Median salary package offered",
+                statistic: "Rs. 12,00,000",
+              },
+              {
+                particular: "Number of students selected for higher studies",
+                statistic: "39",
+              },
+            ].map((row, index) => (
+              <tr key={index}>
+                <td style={tdStyle}>{row.particular}</td>
+                <td style={tdStyle}>{row.statistic}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
+      </div>
 
-        <h3 className="th3" style={th3Style}>
-          Average Package Offered
-        </h3>
+      <p id="2023" style={pStyle}>
+        <strong>IIT Patna B.Tech Placements 2023</strong>
+      </p>
+      <div
+        style={{
+          overflowX: "auto",
+          WebkitOverflowScrolling: "touch",
+          whiteSpace: "nowrap",
+          msOverflowStyle: "none",
+          scrollbarWidth: "none",
+          marginTop: "20px",
+        }}
+      >
         <table style={tableStyle}>
+          <thead>
+            <tr>
+              <th style={thStyle}>Branch Name</th>
+              <th style={thStyle}>Total Students Placed</th>
+              <th style={thStyle}>Total Offers</th>
+              <th style={thStyle}>Placement %</th>
+              <th style={thStyle}>Offer %</th>
+              <th style={thStyle}>Average Salary (LPA)</th>
+              <th style={thStyle}>Median CTC (LPA)</th>
+            </tr>
+          </thead>
           <tbody>
+            {[
+              {
+                branch: "CCSE",
+                studentsPlaced: "66",
+                offers: "167",
+                placement: "100%",
+                offerPercentage: "162.12%",
+                avgSalary: "38.79",
+                medianCTC: "40",
+              },
+              {
+                branch: "EE",
+                studentsPlaced: "55",
+                offers: "79",
+                placement: "100%",
+                offerPercentage: "143.64%",
+                avgSalary: "33.04",
+                medianCTC: "25.56",
+              },
+              {
+                branch: "ME",
+                studentsPlaced: "50",
+                offers: "70",
+                placement: "100%",
+                offerPercentage: "140%",
+                avgSalary: "18.22",
+                medianCTC: "14.33",
+              },
+              {
+                branch: "CE",
+                studentsPlaced: "17",
+                offers: "28",
+                placement: "77.27%",
+                offerPercentage: "17.27%",
+                avgSalary: "17.02",
+                medianCTC: "14",
+              },
+              {
+                branch: "Chemical Engineering",
+                studentsPlaced: "14",
+                offers: "16",
+                placement: "82.35%",
+                offerPercentage: "94.12%",
+                avgSalary: "12.91",
+                medianCTC: "11",
+              },
+              {
+                branch: "Total",
+                studentsPlaced: "202",
+                offers: "300",
+                placement: "96.19%",
+                offerPercentage: "142.86%",
+                avgSalary: "28.86",
+                medianCTC: "20",
+              },
+            ].map((row, index) => (
+              <tr key={index}>
+                <td style={tdStyle}>{row.branch}</td>
+                <td style={tdStyle}>{row.studentsPlaced}</td>
+                <td style={tdStyle}>{row.offers}</td>
+                <td style={tdStyle}>{row.placement}</td>
+                <td style={tdStyle}>{row.offerPercentage}</td>
+                <td style={tdStyle}>{row.avgSalary}</td>
+                <td style={tdStyle}>{row.medianCTC}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p style={pStyle}>
+        <strong>IIT Patna Placements Comparison Data</strong>
+      </p>
+      <div
+        style={{
+          overflowX: "auto",
+          WebkitOverflowScrolling: "touch",
+          whiteSpace: "nowrap",
+          msOverflowStyle: "none",
+          scrollbarWidth: "none",
+          marginTop: "20px",
+        }}
+      >
+        <table style={tableStyle}>
+          <thead>
             <tr>
-              <th style={thStyle}>Domestic Placements</th>
-              <th style={thStyle}>Amount (in LPA)</th>
+              <th style={thStyle}>Particulars</th>
+              <th style={thStyle}>Batch 2021</th>
+              <th style={thStyle}>Batch 2023</th>
+              <th style={thStyle}>% Growth</th>
             </tr>
+          </thead>
+          <tbody>
+            {[
+              {
+                particulars: "Average Salary (B.Tech)",
+                batch2021: "₹17.13 Lakh",
+                batch2023: "₹28.59 Lakh",
+                growth: "68.47%",
+              },
+              {
+                particulars: "Average Salary (M.Tech)",
+                batch2021: "₹12.22 Lakh",
+                batch2023: "₹14.99 Lakh",
+                growth: "22.66%",
+              },
+              {
+                particulars: "Total Job Offers",
+                batch2021: "239",
+                batch2023: "412",
+                growth: "72.38%",
+              },
+              {
+                particulars: "Total Placed Students",
+                batch2021: "239",
+                batch2023: "286",
+                growth: "48.18%",
+              },
+              {
+                particulars: "No. of Companies Participated",
+                batch2021: "125",
+                batch2023: "154",
+                growth: "23.20%",
+              },
+              {
+                particulars: "No. of PPOs",
+                batch2021: "25",
+                batch2023: "50",
+                growth: "100%",
+              },
+              {
+                particulars: "% Placement (B.Tech)",
+                batch2021: "93.33%",
+                batch2023: "96.19%",
+                growth: "3.06%",
+              },
+              {
+                particulars: "% Placement (M.Tech)",
+                batch2021: "82.85%",
+                batch2023: "86.8%",
+                growth: "4.41%",
+              },
+            ].map((row, index) => (
+              <tr key={index}>
+                <td style={tdStyle}>{row.particulars}</td>
+                <td style={tdStyle}>{row.batch2021}</td>
+                <td style={tdStyle}>{row.batch2023}</td>
+                <td style={tdStyle}>{row.growth}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p style={pStyle} id="2024">
+        IIT Patna Average Package 2024
+      </p>
+      <p style={pStyle}>
+        The course-wise average package offered during IT Patna placements 2024
+        is presented below:
+      </p>
+      <div
+        style={{
+          overflowX: "auto",
+          WebkitOverflowScrolling: "touch",
+          whiteSpace: "nowrap",
+          msOverflowStyle: "none",
+          scrollbarWidth: "none",
+          marginTop: "20px",
+        }}
+      >
+        <table style={tableStyle}>
+          <thead>
             <tr>
-              <td style={tdStyle}>Average Gross Salary</td>
-              <td style={tdStyle}>18.60</td>
+              <th style={thStyle}>Course</th>
+              <th style={thStyle}>Average Package (2024)</th>
             </tr>
+          </thead>
+          <tbody>
+            {[
+              { course: "B.Tech", package: "INR 17 LPA" },
+              { course: "M.Tech", package: "INR 15 LPA" },
+              { course: "M.Sc", package: "INR 7 LPA" },
+            ].map((row, index) => (
+              <tr key={index}>
+                <td style={tdStyle}>{row.course}</td>
+                <td style={tdStyle}>{row.package}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p style={pStyle}>
+        * The average package might vary slightly as the data labels were not
+        present on the graphs of the placement brochure 2024-25.
+      </p>
+      <p style={pStyle}>
+        The course-wise average salary trends witnessed during IIT Patna
+        placements over the past three years is presented below:
+      </p>
+      <div
+        style={{
+          overflowX: "auto",
+          WebkitOverflowScrolling: "touch",
+          whiteSpace: "nowrap",
+          msOverflowStyle: "none",
+          scrollbarWidth: "none",
+          marginTop: "20px",
+        }}
+      >
+        <table style={tableStyle}>
+          <thead>
             <tr>
-              <td style={tdStyle}>Average CTC</td>
-              <td style={tdStyle}>21.90</td>
+              <th style={thStyle}>Course</th>
+              <th style={thStyle}>Average Package (2022)</th>
+              <th style={thStyle}>Average Package (2023)</th>
+              <th style={thStyle}>Average Package (2024)</th>
             </tr>
+          </thead>
+          <tbody>
+            {[
+              {
+                course: "B.Tech",
+                package2022: "INR 28.86 LPA",
+                package2023: "INR 24.9 LPA",
+                package2024: "INR 17 LPA",
+              },
+              {
+                course: "M.Tech",
+                package2022: "INR 14.99 LPA",
+                package2023: "INR 16 LPA",
+                package2024: "INR 15 LPA",
+              },
+              {
+                course: "M.Sc",
+                package2022: "INR 6.86 LPA",
+                package2023: "INR 9 LPA",
+                package2024: "INR 7 LPA",
+              },
+            ].map((row, index) => (
+              <tr key={index}>
+                <td style={tdStyle}>{row.course}</td>
+                <td style={tdStyle}>{row.package2022}</td>
+                <td style={tdStyle}>{row.package2023}</td>
+                <td style={tdStyle}>{row.package2024}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
@@ -218,195 +647,24 @@ const Placement = () => {
       </h3>
       <ul>
         {[
-          "Allen Career Institute",
-          "American Express",
-          "EXL Analytics",
-          "FIITJEE",
-          "HCL Technologies",
+          "Google",
+          "Oracle",
+          "Amazon",
+          "Optum",
+          "TVS",
+          "Bosch",
+          "Paytm",
+          "Mercedes Benz",
+          "Texas Instruments",
           "Intel",
-          "Jio Platforms",
-          "Navi Technologies",
-          "Praxis Global",
-          "Reliance Industries",
+          "Bharat Electronics",
+          "Bharat Petroleum",
         ].map((recruiter, index) => (
           <li key={index} style={liStyle}>
             {recruiter}
           </li>
         ))}
       </ul>
-
-      <h3 style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}>
-        <strong>IIT Delhi Placements 2024 Highlights</strong>
-      </h3>
-      <p style={pStyle}>The key highlights of IIT Delhi placements 2024 are:</p>
-      <ul>
-        <li style={liStyle}>Total offers: 1,050</li>
-        <li style={liStyle}>International offers: 50+</li>
-        <li style={liStyle}>
-          Top recruiting sector: Core (Technical) with 42% placement
-          distribution
-        </li>
-        <li id="2023" style={liStyle}>
-          Top recruiters: Microsoft, Goldman Sachs, Texas Instruments
-        </li>
-      </ul>
-
-      <h3 className="th3" style={th3Style}>
-        IIT Delhi Placements 2023 Highlights
-      </h3>
-      <div
-        style={{
-          overflowX: "auto",
-          WebkitOverflowScrolling: "touch",
-          whiteSpace: "nowrap",
-          msOverflowStyle: "none",
-          scrollbarWidth: "none",
-        }}
-      >
-        <table style={tableStyle}>
-          <tbody>
-            <tr>
-              <th style={thStyle}>Particulars</th>
-              <th style={thStyle}>Placement Statistics (2022)</th>
-              <th style={thStyle}>Placement Statistics (2023)</th>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Total job offers received</td>
-              <td style={tdStyle}>1,300</td>
-              <td style={tdStyle}>1,300</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>No. of unique job offers</td>
-              <td style={tdStyle}>1,100</td>
-              <td style={tdStyle}>1,150</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Total PPOs</td>
-              <td style={tdStyle}>230</td>
-              <td style={tdStyle}>260</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>No. of international offers</td>
-              <td style={tdStyle}>NA</td>
-              <td style={tdStyle}>30</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>No. of companies</td>
-              <td style={tdStyle}>600</td>
-              <td style={tdStyle}>500</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Placement rate</td>
-              <td style={tdStyle}>82%</td>
-              <td id="2024" style={tdStyle}>
-                84.94%
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3 className="th3" style={th3Style}>
-        IIT Delhi MBA Placements 2024
-      </h3>
-      <p style={pStyle}>
-        The highlights of IIT Delhi MBA placements 2024 are as follows:
-      </p>
-      <div
-        style={{
-          overflowX: "auto",
-          WebkitOverflowScrolling: "touch",
-          whiteSpace: "nowrap",
-          msOverflowStyle: "none",
-          scrollbarWidth: "none",
-        }}
-      >
-        <table style={tableStyle}>
-          <tbody>
-            <tr>
-              <th style={thStyle}>Particulars</th>
-              <th style={thStyle}>Placement Statistics 2023</th>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Placement Percentage</td>
-              <td style={tdStyle}>100%</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Highest Package</td>
-              <td style={tdStyle}>INR 41.13 LPA</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Mean Package</td>
-              <td style={tdStyle}>INR 25.82 LPA</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Median Package</td>
-              <td style={tdStyle}>INR 24.45 LPA</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Mean Package of Fresher’s</td>
-              <td style={tdStyle}>INR 24.01 LPA</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Major Domain</td>
-              <td style={tdStyle}>IT & Analytics, Sales & Marketing</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Top Recruiters</td>
-              <td style={tdStyle}>
-                Accenture, Adani, Amazon, Barclays, Capgemini, Dell, etc.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3 className="th3" style={th3Style}>
-        IIT Delhi Average Package 2023
-      </h3>
-      <p style={pStyle}>
-        The batch of 2023 received a total of 260 pre-placement offers. A total
-        of 1,300 job offers were made, with 1,150 students selected. Below is a
-        trend of the median packages offered over the past three years:
-      </p>
-      <div
-        style={{
-          overflowX: "auto",
-          WebkitOverflowScrolling: "touch",
-          whiteSpace: "nowrap",
-          msOverflowStyle: "none",
-          scrollbarWidth: "none",
-        }}
-      >
-        <table style={tableStyle}>
-          <tbody>
-            <tr>
-              <th style={thStyle}>Course</th>
-              <th style={thStyle}>Median Package (2020)</th>
-              <th style={thStyle}>Median Package (2021)</th>
-              <th style={thStyle}>Median Package (2022)</th>
-            </tr>
-            <tr>
-              <td style={tdStyle}>UG 4-year (B.Tech)</td>
-              <td style={tdStyle}>INR 15.50 LPA</td>
-              <td style={tdStyle}>INR 17.60 LPA</td>
-              <td style={tdStyle}>INR 20.50 LPA</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>UG 5-year (B.Tech + M.Tech)</td>
-              <td style={tdStyle}>INR 18.10 LPA</td>
-              <td style={tdStyle}>INR 22 LPA</td>
-              <td style={tdStyle}>INR 20 LPA</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>PG 2-year (M.Tech)</td>
-              <td style={tdStyle}>INR 11 LPA</td>
-              <td style={tdStyle}>INR 15 LPA</td>
-              <td style={tdStyle}>INR 12.50 LPA</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
     </section>
   );
 };
