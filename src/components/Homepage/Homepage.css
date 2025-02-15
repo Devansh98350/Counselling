@@ -152,7 +152,7 @@ h2 {
 }
 .record {
   justify-content: space-around;
-  margin: 2rem auto;
+  /* margin: 2rem auto; */
   gap: 1rem;
 }
 

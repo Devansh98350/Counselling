@@ -195,19 +195,19 @@ const Homepage = () => {
       >
         <div className="record-item">
           <h1>
-            {isVisible && <ReactCountup start={0} end={100} duration={2.5} />}+
+            {isVisible && <ReactCountup start={0} end={500} duration={2.5} />}+
           </h1>
           <p>TOTAL FORM FILLED</p>
         </div>
         <div className="record-item">
           <h1>
-            {isVisible && <ReactCountup start={0} end={100} duration={2.5} />}+
+            {isVisible && <ReactCountup start={0} end={470} duration={2.5} />}+
           </h1>
           <p>ADMISSION DONE</p>
         </div>
         <div className="record-item">
           <h1>
-            {isVisible && <ReactCountup start={0} end={100} duration={2.5} />}+
+            {isVisible && <ReactCountup start={0} end={120} duration={2.5} />}+
           </h1>
           <p>EXPERT COUNSELLOR</p>
         </div>
