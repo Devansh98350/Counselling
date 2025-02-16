@@ -318,7 +318,7 @@ const Sidebar = () => {
                 </DropdownItem>
                 <DropdownItem>
                   <StyledNavLink
-                    to="/dental-colleges-colleges"
+                    to="/dental-colleges"
                     className="dropdown-item"
                   >
                     <i
@@ -348,7 +348,7 @@ const Sidebar = () => {
                 </DropdownItem>
                 <DropdownItem>
                   <StyledNavLink
-                    to="/other-medical-college-colleges"
+                    to="/other-medical-college"
                     className="dropdown-item"
                   >
                     <i

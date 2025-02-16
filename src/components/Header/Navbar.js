@@ -40,7 +40,7 @@ const medical = [
   },
   {
     name: "Dental Colleges",
-    href: "/dental-colleges-colleges",
+    href: "/dental-colleges",
   },
   {
     name: "Ayurvedic Colleges",
@@ -52,7 +52,7 @@ const medical = [
   },
   {
     name: "Other Top Medical Colleges",
-    href: "/other-medical-college-colleges",
+    href: "/other-medical-college",
   },
 ];
 const mba = [

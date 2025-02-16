@@ -38,8 +38,8 @@ function App() {
         <Route path="/stateEng-colleges" element={<StateEng_main />} />
         <Route path="/state-colleges/:state" element={<StateDetails />} />
         <Route path="/aiims-colleges" element={<AIIMS />} />
-        <Route path="/dental-colleges-colleges" element={<Dental />} />
-        <Route path="/other-medical-college-colleges" element={<OtherM />} />
+        <Route path="/dental-colleges" element={<Dental />} />
+        <Route path="/other-medical-college" element={<OtherM />} />
         <Route path="/iim-colleges" element={<IIM />} />
         <Route path="/mba-in-iit-nit-colleges" element={<MBA_IIT_NIT />} />
       </Routes>
