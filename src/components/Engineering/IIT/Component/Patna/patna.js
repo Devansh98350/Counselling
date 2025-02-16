@@ -6,6 +6,8 @@ import Cutoff from "./components/Cutoff";
 import Ranking from "./components/Ranking";
 import FAQ from "./components/FAQ";
 import Layout from "../../../../Layout";
+import Banner from "../../../../Common/Banner";
+import Explore from "../../../../Common/Explore";
 
 const Patna = () => {
   useEffect(() => {
@@ -17,10 +19,16 @@ const Patna = () => {
       <div style={{ marginLeft: "2.5%", marginRight: "2.5%" }}>
         <About />
         <Cutoff />
+      </div>
+      <Banner />
+      <Explore />
+      <div style={{ marginLeft: "2.5%", marginRight: "2.5%" }}>
         <Placement />
         <Ranking />
         <FAQ />
       </div>
+      <Banner />
+      <Explore />
     </Layout>
   );
 };

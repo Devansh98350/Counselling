@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Layout from "../../Layout";
 import Card from "../card";
 import Breadcrumbs from "../../Breadcrumb";
+import Banner from "../../Common/Banner";
+import Explore from "../../Common/Explore";
 
 const Heading = [
   {
@@ -56,7 +58,7 @@ const Heading = [
     build:
       "https://tse4.mm.bing.net/th?id=OIP.26y8fCtylZ0JpDvvk5aM8QHaDj&pid=Api&P=0&h=180",
     name: "IIT Kanpur",
-    link: "#",
+    link: "/iit-colleges/iit-kanpur",
   },
   {
     id: 6,
@@ -264,6 +266,9 @@ const MarginInformation = styled.div`
 `;
 
 const IIT_main = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Layout title="IIT's Details">
       <Breadcrumbs />
@@ -283,6 +288,8 @@ const IIT_main = () => {
           })}
         </MarginInformation>
       </div>
+      <Banner />
+      <Explore />
     </Layout>
   );
 };

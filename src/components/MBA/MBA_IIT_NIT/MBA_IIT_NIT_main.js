@@ -1,8 +1,10 @@
-import React from "react";
+import React,{ useEffect } from "react";
 import styled from "styled-components";
 import Layout from "../../Layout";
 import Card from "../../Engineering/card";
 import Breadcrumbs from "../../Breadcrumb";
+import Banner from "../../Common/Banner";
+import Explore from "../../Common/Explore";
 
 const Heading = [
   {
@@ -196,7 +198,9 @@ const MarginInformation = styled.div`
   margin-top: 2%;
 `;
 
-const MBA_IIT_NIT_main = () => {
+const MBA_IIT_NIT_main = () => { useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
   return (
     <Layout title="MBA in IIT's and NIT's">
       <Breadcrumbs />
@@ -216,6 +220,8 @@ const MBA_IIT_NIT_main = () => {
           })}
         </MarginInformation>
       </div>
+      <Banner />
+      <Explore />
     </Layout>
   );
 };

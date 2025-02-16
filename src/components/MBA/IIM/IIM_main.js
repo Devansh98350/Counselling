@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Layout from "../../Layout";
 import Card from "../../Engineering/card";
 import Breadcrumbs from "../../Breadcrumb";
+import Banner from "../../Common/Banner";
+import Explore from "../../Common/Explore";
 
 const Heading = [
   {
@@ -197,6 +199,9 @@ const MarginInformation = styled.div`
 `;
 
 const IIM_main = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Layout title="IIM's Details">
       <Breadcrumbs />
@@ -216,6 +221,8 @@ const IIM_main = () => {
           })}
         </MarginInformation>
       </div>
+      <Banner />
+      <Explore />
     </Layout>
   );
 };

@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Layout from "../../Layout";
 import Card1 from "../card1";
 import Breadcrumbs from "../../Breadcrumb";
+import Banner from "../../Common/Banner";
+import Explore from "../../Common/Explore";
 
 const Heading = [
   {
@@ -334,7 +336,9 @@ const MarginInformation = styled.div`
   margin-top: 2%;
 `;
 
-const Dental_main = () => {
+const Dental_main = () => { useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
   return (
     <Layout title="Top Dental Colleges in India">
       <Breadcrumbs />
@@ -354,6 +358,8 @@ const Dental_main = () => {
           })}
         </MarginInformation>
       </div>
+      <Banner />
+      <Explore />
     </Layout>
   );
 };

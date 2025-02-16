@@ -18,6 +18,8 @@ import SessionForm from "./SessionForm";
 import NewsletterForm from "./Newsletter";
 import { AccordionComponent } from "./Accordian";
 import Breadcrumbs from "../Breadcrumb";
+import Banner from "../Common/Banner";
+import Explore from "../Common/Explore";
 
 const Homepage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -215,6 +217,8 @@ const Homepage = () => {
       <SessionForm />
       <NewsletterForm />
       <AccordionComponent />
+      <Banner />
+      <Explore />
     </Layout>
   );
 };

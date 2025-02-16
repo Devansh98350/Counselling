@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Layout from "../../Layout";
 import Card from "../card";
 import Breadcrumbs from "../../Breadcrumb";
+import Banner from "../../Common/Banner";
+import Explore from "../../Common/Explore";
 
 const Heading = [
   {
@@ -356,6 +358,9 @@ const MarginInformation = styled.div`
 `;
 
 const NIT_main = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Layout title="NIT's Details">
       <Breadcrumbs />
@@ -375,6 +380,8 @@ const NIT_main = () => {
           })}
         </MarginInformation>
       </div>
+      <Banner />
+      <Explore />
     </Layout>
   );
 };

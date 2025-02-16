@@ -9,12 +9,12 @@ import Layout from "../../../../Layout";
 import Banner from "../../../../Common/Banner";
 import Explore from "../../../../Common/Explore";
 
-const Delhi = () => {
+const Kanpur = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <Layout title="IIT Delhi - IIT Academy">
+    <Layout title="IIT Kanpur - IIT Academy">
       <Header />
       <div style={{ marginLeft: "2.5%", marginRight: "2.5%" }}>
         <About />
@@ -33,4 +33,4 @@ const Delhi = () => {
   );
 };
 
-export default Delhi;
+export default Kanpur;
