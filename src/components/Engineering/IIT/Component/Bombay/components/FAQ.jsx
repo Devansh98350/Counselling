@@ -79,59 +79,57 @@ const FAQ = () => {
 
   const faqData = [
     {
-      question: "Which is better for MSc: IIT Delhi or IIT Madras?",
+      question: "What is the eligibility for MBA at IIT Bombay?",
       answer:
-        "IIT Delhi and IIT Madras are well known and reputed institutions in India. According to the NIRF 2023, IIT Madras ranked is 01 while IIT Delhi is ranked 03 in the Engineering category. Both the colleges offer MSc course across various specialisations with top quality education to its students. Both colleges have world class infrastructure. Both colleges have highly qualified and experienced faculty members who are experts in their respective fields. Both colleges are very good in their own way.  Which one is the best college depends on what the person is actually looking for in a college or university.",
+        "Candidates must pass a bachelor's degree with at least 60% aggregate (55% aggregate in case of aspirants belonging to SC/ ST/ PwD category) or a minimum CPI of 6.5 (6 in case of aspirants belonging to SC/ ST/ PwD category) out of 10 to apply for IIT Bombay MBA. Aspirants in the final year of the degree and those awaiting results can also apply. The applicant should have scored an aggregate of 60% (55% aggregate  in case of candidates belonging to SC/ ST/PWD category) or equivalent till the latest exam that has been completed and whose scores are available. ",
     },
     {
-      question: "How much rank in JEE Advanced is required for IIT Delhi?",
+      question: "How should I study if I want to get into IITB BTech CSE?",
       answer:
-        "The IIT Delhi cutoff 2024 has been concluded for admission to the BTech and Integrated BTech courses. As per the JEE Advanced 2024 cutoff for the Last Round, the closing rank for BTech ranged between 116 and 4849 for the General AI category students. The toughest course to get into IIT Delhi was CSE. So, candidates seeking admission at this institute must aim to secure up to 4850 rank to be eligible for BTech admission. The required cutoff ranks will vary based on the categories you fall into. To get an idea of the category-wise JEE Advanced cutoff range for BTech admission at IIT Delhi, refer to the table below: CategoryJEE Advanced Round 1JEE Advanced Last Round General116 - 4754116 - 4849OBC89 - 306889 - 2749SC48 - 176550 - 1780ST23 - 99123- 991EWS33 - 113935 - 1215PWD5 - 1595 - 159",
+        "Before an understanding of how one can study to get into BTech CSE, candidates should know what they have to study for admission to the BTech CSE at IIT Bombay. For admission, the university accepts the scores of JEE Mains and JEE Advanced. Hence, candidates should focus on Physics, Chemistry, and Mathematics with conceptual and application-based questions, which are the most important parts of the JEE Mains and JEE Advanced syllabus. Check out the useful tips and tricks for preparation for BTech courses at IIT Bombay below: Candidates must complete the Class 11 and 12 syllabus thoroughly of Physics, Chemistry, and Mathematics subjects. Additionally, try the 'example problems' as well for more practice with objective questions.Create a weekly plan, and according to that, make up the schedule that you wish to complete in that week. The small goals can lead aspirants towards the biggest achievement. In addition, candidates should stick to their weekly plans to cover the syllabus swiftly and on time. All of the questions in the exams are taken from the JEE Main and JEE Advanced syllabuses. Hence, make sure that applicants complete the syllabus of the mentioned exams thoroughly. Create the revision strategy and invest an hour or so in the whole day to revise everything that you have studied the whole day. Making a schedule that works. Do not attempt anything new right before the exam, as candidates may forget what they have already learned.",
     },
     {
-      question: "Is DMS IIT Delhi good for MBA?",
+      question: "What is the placement scenario at IIT Bombay?",
       answer:
-        "The Department of Management Studies (DMS) of IIT Delhi is well-known for its MBA programme. It provides a demanding curriculum that aims to provide students with advanced management skills and knowledge. The programme is noted for its emphasis on analytics, technology, and innovation, which complements the institute's engineering heritage. DMS IIT Delhi has skilled teachers, good infrastructure, and strong industry links that improve learning and placement prospects. The institute is frequently ranked among the top MBA programmes in India, making it a great alternative for students looking for a complete and competitive business education.",
+        "The overall placement rate recorded during IIT Bombay 2024 placements was 74.53%. The average package and median package stood at INR 23.5 LPA and INR 17.92 LPA, respectively. Further, a total of 364 recruiters visited the campus. Check the complete insights of IIT Bombay placements 2024 from the table below:ParticularsPlacement Statistics (2024)Placement rate74.53%Average package INR 23.5 LPAMedian package INR 17.92 LPATotal companies visited 364Top recruiters ISRO, Google, Intel, Samsung, Qualcomm.",
     },
     {
-      question: "How are IIT Delhi placements compared with other top IITs?",
+      question: "How can I apply for BDes at IIT Bombay?",
       answer:
-        "According to the most recent media report, during Phase I IIT Delhi placements in 2024, 1,050 offers—including PPOs—were made. Additionally, 1,000 applicants in total were chosen at random during phase 1 of the IIT Delhi placements 2024. In addition, during Phase I IIT Delhi placements 2024, more than 50 foreign offers including PPOs were received from almost 20 foreign businesses.The table below shows the IIT Delhi placements compared with other top IITs for the year 2023.College Namethe highest Package (2023)IIT DelhiINR 2.5 crore per annumIIT MadrasINR 1.31 crore per annumIIT BombayINR 1.68 crore per annumIIT KharagpurAbove INR 2.68 crore per annum",
+        "Candidates seeking admission to the Bachelor of Design (BDes) programme offered at IIT Bombay must apply for UCEED first, and then submit a duly filled application to the institute. To apply for BDes, follow the step-wise application process:Step 1: Visit the official website of UCEED.Step 2: Click on the Registration button and then on Registration Portal.Step 3: Register using a valid email ID and enter the required details and submit them.Step 4: Log in to the registered account to fill out the application form.Step 5: Choose preferred exam cities (three) and upload the scanned documents.Step 6: Payment of the application fee and submit the application.",
     },
     {
-      question:
-        "I've scored less than 60% in 12th boards, can I get admission in IIT Delhi for BTech?",
+      question: "Which are the MDes specialisations offered at IIT Bombay?",
       answer:
-        "Admission to IIT Delhi BTech courses is subject to fulfiment of the eligibility requirements for JEE Main and JEE Advanced. The students who have passed Class 12 in Science stream with at least 75% aggregate (65% aggregate for SC/ST/PwD) are eligible to apply. Hence, a student scoring less than 60% is not eligible to pursue BTech at IIT Delhi. They can go for other colleges offering the course. They can also check out the colleges offering Online BTech courses.",
-    },
-    {
-      question:
-        "What is the branch-wise placement rate recorded during IIT Delhi BTech placements?",
-      answer:
-        "According to unofficial sources, the branch-wise placement rate recroded during IIT Delhi BTech placements 2023 is presented below:BTech Branch Students Registered (2023)Students Placed (2023)Placement Rate (2023)Biochemical Engineering and Biotechnology463882.61%Civil Engineering635384.13%Chemical Engineering676191.04%Computer Science and Engineering959498.95%Electrical Engineering959296.84%Electrical Engineering (Power and Automation)494795.92%Mechanical Engineering705882.86%Production and Industrial Engineering686291.18%Mathematics and Computing676597.01%Engineering Physics413482.93%Textile Technology907280.00%",
+        "IIT Bombay offers an array of specialisations under its MDes programme. Listed below are the specialisations offered with the MDes programme:Animation Design, Communication Design, Industrial Design, Interaction Design, Mobility & Vehicle Design .",
     },
     {
       question:
-        "Can you share details about the extracurricular activities conducted at DMS IIT Delhi?",
+        "Looking for Product Lifecycle Management courses including BOM management Change Management in IIT Bombay, IIT Hyderabad, Bits Pilani?",
       answer:
-        "DMS IIT Delhi arranges various events, seminars, and workshops for students. There are various extracurricular activities arranged by the college. Various DMS IIT Delhi students have established their start ups. Throughout the years of their graduation, students are given the knowledge of the latest developments happening in the job world.",
+        "The Professional Certificate in Product Management at IIT Roorkee provides students with training on Product Lifecycle Management together with BOM management and Change Management practices. There are no dedicated Product Lifecycle Management courses at IIT Bombay or Hyderabad nor at Bits Pilani although the IIT Roorkee live programme with campus experience costs 1,60,000 INR more GST. This programme features 10+ realistic business scenarios and a product toolkit containing 6+ practical tools and access to professional experts. As part of the programme participants will have the opportunity to join the 3-day campus immersion session at IIT Roorkee.",
+    },
+    {
+      question: "Does IIT Bombay accept GATE Score?",
+      answer:
+        "Yes, IIT Bombay accept GATE scores for the admission to M.S/ M.Tech courses for various All India categories. Further, as per the IIT Bombay cutoff 2024, the last-round ranged between 325 and 725 for the General AI category candidates. Among all the categories, the most difficult course to get into IIT Bombay was M.Tech. in Computer Science and Engineering having a last-round cutoff 750.",
+    },
+    {
+      question: "Does IIT Bombay (SJSOM) take non-engineer students?",
+      answer:
+        "Hi,  Yes, IIT Bombay's Shailesh J. Mehta School of Management (SJSOM) does accept non-engineer students for its MBA program. While a significant portion of the student body typically comes from engineering backgrounds, SJSOM values diversity in its batch and welcomes candidates from various academic disciplines, including commerce, science, arts, and more.  The admission process primarily evaluates your CAT score, academic background, work experience (if applicable), and performance in the personal interview. A strong CAT percentile, paired with good communication skills and clarity about your career goals, can help you stand out regardless of your academic background.  If you're passionate about pursuing management studies at SJSOM, focus on building a strong application that highlights your unique skills and experiences.  all the very best  for your preparation and application process!",
     },
     {
       question:
-        "What is the rank of IIT Delhi in QS World University Rankings 2024?",
+        "What are the job profiles open to MDes students of IIT Bombay?",
       answer:
-        "IIT Delhi is listed as the 197th best university in the world as per the QS World University Rankings 2024. The institute is ranked 46th in the Asia University Rankings and 151-200 in the Engineering and Technology (Engineering) category. The QS World University Rankings are based on several variables, such as academic standing, employer standing, faculty-to-student ratio, number of citations per faculty, and proportion of foreign students. IIT Delhi was also ranked 717 by the US News Rankings 2022.",
+        "IIT Bombay offers MDes courses for two years in five specialisations i.e., Interaction Design (IN), Mobility and Vehicle Design (MD), Animation Design (AN), Communication Design (CD), and Industrial Design (ID). The scope after completing MDes from IIT Bombay is huge as it opens opportunities for various job profiles such as Fashion designer, Product Research Analyst, Graphic designer, Product Designer, Visual Designer, Design Manager, Game Designer and Industrial Designer.",
     },
     {
       question:
-        "What documents are required during B.Tech admission process at IIT Delhi?",
+        "I want to know about the latest cutoff information for Python training at IIT Bombay.",
       answer:
-        "The students need to submit important documents for verification purposes. Candidates should have scanned copies with them. Before the JEE Main 2024 registration process, students must keep the following documents and information ready for a smooth application process:Valid email ID and mobile numberAcademic details related to the Class 10 and Class 12 qualifying examsScanned copy of the category certificate (if applicable)Scanned copy of the PwD certificate (if applicable)Scanned photograph and signature as per the specification mentioned by the NTANet banking/credit card/debit card/UPI details for application fee payment",
-    },
-    {
-      question: "How can I get admission in IIT Delhi for MBA?",
-      answer:
-        "To get confirmation at DMS IIT Delhi for the MBA program, candidates to meet the qualification rules of having a graduation degree with 60% marks. The CAT exam is the primary selection criterion. In addition, if students are interested in the Executive MBA program, the CAT exam will serve as the selection parameter and similar eligibility requirements will apply. The MBA programme has a INR 11.2 Lacs tuition fee.",
+        "To get admission to BTech in Computer Science and Engineering (CSE) at IIT Bombay, one generally needs to score in the top 65 in JEE Advanced. To get a rank between 1 and 70, one needs to score around 285-290 out of 360. Admission to IIT Bombay requires clearing JEE Main and JEE Advanced followed by JoSAA counselling. JoSAA handles seat allocation in 97 institutes including 23 IITs. IIT Bombay Admission Tips:Admission to IIT Bombay is based on JEE Advanced scores. BTech cutoffs vary based on applicant category and residency/quota. CSE is the most competitive specialisation at IIT Bombay. To get admission to IIT Bombay, one needs to score between 85-95 percentile in JEE Main. Expected cutoff score for JEE Main 2025: General 91+, OBC 74+, EWS 76+.",
     },
   ];
 
