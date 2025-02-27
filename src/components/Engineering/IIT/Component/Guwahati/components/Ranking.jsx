@@ -89,14 +89,19 @@ const Ranking = () => {
       <section id="ranking">
         <h2 style={h2Style}>Ranking</h2>
         <p style={pStyle}>
-          IIT Delhi is one of Asia's top engineering institutes and consistently
-          ranks among the best in both national and international rankings. As
-          per the NIRF rankings, IIT Delhi has consistently stayed in the top 3
-          engineering colleges in India. In the QS World University Rankings
-          2025, IIT Delhi ranks among the top 150 universities globally.
+          IIT Guwahati gained rank 32 globally in the ‘Research Citations per Faculty’
+          category and overall 364 rank in the QS World University Rankings 2024
+          released recently. IIT Guwahati has retained the 7th position among the best
+          engineering institutions of the country in the ‘India Rankings 2023’ declared by
+          the National Institutional Ranking Framework (NIRF) of the Union Ministry of
+          Education. <br /> <br />
+          IIT Guwahati is the only technical institute from the North-Eastern region of India
+          to be placed among the top 10 engineering institutes of the country in NIRF
+          Rankings. The college has been successful in maintaining a ranking of #7 in the
+          engineering category list of NIRF from past 4 years.
         </p>
 
-        <h3 style={th3Style}>IIT Delhi International Ranking 2025</h3>
+        <h3 style={th3Style}>International Ranking</h3>
         <div
           className="table-wrapper"
           style={{
@@ -110,35 +115,20 @@ const Ranking = () => {
           <table style={tableStyle}>
             <tbody>
               <tr>
-                <th style={thStyle}>Ranking Body</th>
-                <th style={thStyle}>Category</th>
+                <th style={thStyle}>Ranking body</th>
                 <th style={thStyle}>Rank</th>
               </tr>
               {[
-                {
-                  body: "QS World Ranking 2025",
-                  category: "World University",
-                  rank: "150",
-                },
-                {
-                  body: "QS World Ranking 2024",
-                  category: "World University",
-                  rank: "197",
-                },
-                {
-                  body: "US News Ranking 2024",
-                  category: "Best Global Universities",
-                  rank: "689",
-                },
-                {
-                  body: "QS World Ranking 2023",
-                  category: "World University",
-                  rank: "174+",
-                },
+                { label: "QS World University Rankings 2024", rank: "285" },
+                { label: "QS World University Rankings 2023", rank: "384" },
+                { label: "QS World University Rankings - Engineering & Technology 2023", rank: "301-350" },
+                { label: "QS Asia University Rankings 2023", rank: "124" },
+                { label: "QS Asian University Ranking - South Asia", rank: "16" },
+                { label: "THE World University Rankings 2023", rank: "1001-1200" },
+                { label: "THE World University Rankings - Engineering 2023", rank: "601-800" },
               ].map((item, index) => (
                 <tr key={index}>
-                  <td style={tdStyle}>{item.body}</td>
-                  <td style={tdStyle}>{item.category}</td>
+                  <td style={tdStyle}>{item.label}</td>
                   <td style={tdStyle}>{item.rank}</td>
                 </tr>
               ))}
@@ -146,7 +136,7 @@ const Ranking = () => {
           </table>
         </div>
 
-        <h3 style={th3Style}>IIT Delhi National Ranking 2024</h3>
+        <h3 style={th3Style}>National Ranking</h3>
         <div
           className="table-wrapper"
           style={{
@@ -160,26 +150,17 @@ const Ranking = () => {
           <table style={tableStyle}>
             <tbody>
               <tr>
-                <th style={thStyle}>Ranking Body</th>
-                <th style={thStyle}>Category</th>
+                <th style={thStyle}>Ranking body</th>
                 <th style={thStyle}>Rank</th>
               </tr>
               {[
-                {
-                  body: "India Today 2024",
-                  category: "Engineering",
-                  rank: "1",
-                },
-                {
-                  body: "The Week 2024",
-                  category: "Technical Universities",
-                  rank: "2",
-                },
-                { body: "NIRF 2023", category: "Engineering", rank: "2" },
+                { label: "NIRF Overall Rankings 2023", rank: "9" },
+                { label: "NIRF Engineering Rankings 2023", rank: "7" },
+                { label: "NIRF Research Rankings 2023", rank: "9" },
+                { label: "India Today (Top Public Colleges in India)", rank: "6" },
               ].map((item, index) => (
                 <tr key={index}>
-                  <td style={tdStyle}>{item.body}</td>
-                  <td style={tdStyle}>{item.category}</td>
+                  <td style={tdStyle}>{item.label}</td>
                   <td style={tdStyle}>{item.rank}</td>
                 </tr>
               ))}
@@ -191,270 +172,333 @@ const Ranking = () => {
       <section id="scholarship">
         <h2 style={h2Style}>Scholarship</h2>
         <p style={pStyle}>
-          Indian Institute of Technology Delhi also provides financial aid to
-          students who need financial assistance. Apart from the ST/SC/PWD
-          students, scholarships are also provided to brilliant students. The
-          institution offers merit prizes to deserving students like toppers of
-          departments. IIT Delhi offers scholarships for students of UG, PG, and
-          Ph.D. programs. The Ph.D. students are offered financial assistance
-          through Teaching/Research Assistantships.
+          The Indian Institute of Technology, Guwahati, offers scholarships to
+          undergraduate and postgraduate students for the academic growth and
+          development of meritorious students. The IIT Guwahati Scholarships include
+          Institute Merit Scholarships, Institute Merit-cum-Means Scholarships, SC/ST
+          Scholarships. The IIT Guwahati allows students to avail of scholarships awarded
+          by external Gov./non-Govt. organizations, provided they do not come into conflict
+          with any ordinance or rules of the institute. The details of the scholarship are
+          given below.
         </p>
 
         <h3 className="th3" style={th3Style}>
-          IIT Delhi UG Scholarships, Eligibility Criteria, and Amount
+          IIT Guwahati Institute Merit Scholarship (IMS)
         </h3>
         <div style={{ overflowX: "auto" }}>
           <table style={tableStyle}>
-            <thead>
-              <tr>
-                <th style={thStyle}>Name of the Scholarship</th>
-                <th style={thStyle}>Eligibility Criteria</th>
-                <th style={thStyle}>Scholarship Amount</th>
-              </tr>
-            </thead>
             <tbody>
-              {[
-                {
-                  name: "Merit-cum-Means (MCM) Scholarships",
-                  eligibility:
-                    "For the General/OBC/EWS students of engineering and technology.",
-                  amount:
-                    "The MCM scholarship grants a scholarship of Rs. 1000 per month.",
-                },
-                {
-                  name: "Institute Merit Prizes and Certificates",
-                  eligibility:
-                    "The eligible students are top 7% of the 4-year B.Tech programme and 5-year Dual-Degree Programme, of each semester till the 8th/10th semester.",
-                  amount: "The Merit Prize offers a prize value of Rs. 2500.",
-                },
-                {
-                  name: "Donor Scholarships",
-                  eligibility:
-                    "These scholarships are offered by organizations, individuals, and trusts.",
-                  amount: "Varies based on the donor.",
-                },
-              ].map((item, index) => (
-                <tr key={index}>
-                  <td style={tdStyle}>{item.name}</td>
-                  <td style={tdStyle}>{item.eligibility}</td>
-                  <td style={tdStyle}>{item.amount}</td>
-                </tr>
-              ))}
+              <tr>
+                <th style={thStyle}>Particulars</th>
+                <th style={thStyle}>Details</th>
+              </tr>
+              <tr>
+                <td style={tdStyle}><b>Eligibility Criteria</b></td>
+                <td style={tdStyle}>
+                  <ul>
+                    <li>The candidate has to complete the following without any break:</li>
+                    <ul>
+                      <li>I and II semesters, for the second-year scholarship.</li>
+                      <li>III-IV semester, for the third-year scholarship (for B.Des/B.Tech students only).</li>
+                      <li>V-VI semester, for the fourth-year scholarship (for B.Des/B.Tech students only).</li>
+                    </ul>
+                    <li>The candidate should have cleared all the courses of the concerned semesters in the first attempt.</li>
+                    <li>The candidate should have secured the highest yearly performance index (YPI) in the semesters taken for reckoning.</li>
+                    <li>The student should not have been awarded any major disciplinary action imposed by the institute disciplinary committee (IDC).</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td style={tdStyle}><b>Period of the scholarship</b></td>
+                <td style={tdStyle}>The scholarship is given for a period of two semesters: August-November and January-April covering 8 months in total.  </td>
+              </tr>
+              <tr>
+                <td style={tdStyle}><b>Benefits</b></td>
+                <td style={tdStyle}>
+                  A fixed monthly stipend of Rs. 500 for two semesters (August–November and January–April, totaling 8 months). Tuition fee waiver for two semesters.
+                </td>
+              </tr>
+              <tr>
+                <td style={tdStyle}><b>Top-up Scholarships</b></td>
+                <td style={tdStyle}>
+                  If the sum of all scholarships awarded to the student does not exceed 1.5 times the amount of the institute merit scholarship (IMS), they may be combined with any other external scholarships (apart from those that do not permit funding from multiple sources). The student may only get external scholarships and not IMS scholarships if the value of the external scholarship is greater than or equal to 1.5 times the amount of the IMS. If the amount of the external scholarship is less than 1.5 times the IMS scholarship, the student may receive both the external scholarship and an additional sum from the IMS scholarship, as long as the additional sum does not exceed 1.5 times the IMS scholarship.
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
 
         <h3 className="th3" style={th3Style}>
-          IIT Delhi Scholarship for PG Programmes
+          IIT Guwahati Institute Merit-cum-Means (McM) Scholarship
         </h3>
         <div style={{ overflowX: "auto" }}>
           <table style={tableStyle}>
-            <thead>
-              <tr>
-                <th style={thStyle}>Degree</th>
-                <th style={thStyle}>Scholarship Details</th>
-                <th style={thStyle}>Scholarship Amount</th>
-              </tr>
-            </thead>
             <tbody>
-              {[
-                {
-                  degree: "M.Sc. Programmes",
-                  details:
-                    "As per the government rules, this scholarship is offered only to those students whose parents' gross income is less than ₹4.5 lac per annum.",
-                  amount:
-                    "A tuition fee exemption and Merit-cum-Means scholarship of Rs. 1000 per month is offered to the eligible 25% of the total strength of M.Sc. students.",
-                },
-                {
-                  degree: "M.Tech., M.S. (Research), and M.Des.",
-                  details:
-                    "No scholarship is available for the students in this category.",
-                  amount: "-",
-                },
-              ].map((item, index) => (
-                <tr key={index}>
-                  <td style={tdStyle}>{item.degree}</td>
-                  <td style={tdStyle}>{item.details}</td>
-                  <td style={tdStyle}>{item.amount}</td>
-                </tr>
-              ))}
+              <tr>
+                <th style={thStyle}>Particulars</th>
+                <th style={thStyle}>Details</th>
+              </tr>
+              <tr>
+                <td style={tdStyle}><b>Eligibility Criteria</b></td>
+                <td style={tdStyle}>
+                  For General Students  Parents' income should not be more than the allotted annual cap. (The prescribed income limit is now Rs. 4.5 lakhs per year and is governed by government announcements.) Students who passed their +2 exams from institutions charging more than Rs. 30,000.00 in monthly tuition are not given consideration for McM scholarships. iii. All first-year B.Tech., B.Des., M.Sc., and MA students may submit an application. For second, third, and fourth-year undergraduates, as well as second-year M.Sc./MA students, a CPI of 6.0 is necessary. According to the statutes, a maximum of 25% of non-SC/ST students enrolled in B.Tech./B.Des, M.Sc./M.A., and B.Tech./B.Des programmes are eligible for the McM Scholarship.
+                </td>
+              </tr>
+              <tr>
+                <td style={tdStyle}><b>Calculation of points based on which selection is made</b></td>
+                <td style={tdStyle}>
+                  Weightage of parent’s income 60%  Weightage of merit 40%  Parents’ Income weightage:  Annual income below  Rs.1,50,000.00 -50.0 marks Rs. 1,50,000.00 - 2,50,000.00- 47.5 marks Rs. 2,50,000.00 - 3,50,000.00 -45.0 marks Rs. 3,50,000.00 - 4,50,000.00 -42.5 marks  Merit weightage: CPI multiplied by five for 2nd, 3rd and 4th year students and for 1st year students percentage of marks obtained in the qualifying examination is divided by two.
+
+                </td>
+              </tr>
+              <tr>
+                <td style={tdStyle}><b>Period of the Scholarship</b></td>
+                <td style={tdStyle}>Students will receive the scholarship for a period of two semesters: August-November and January-April covering 8 (eight) months in total.</td>
+              </tr>
+              <tr>
+                <td style={tdStyle}><b>Benefits</b></td>
+                <td style={tdStyle}>
+                  A fixed monthly stipend of Rs. 1000 for two semesters (August–November and January–April, totaling 8 months). Tuition fee waiver for two semesters.
+                </td>
+              </tr>
+              <tr>
+                <td style={tdStyle}><b>Top-up Scholarship</b></td>
+                <td style={tdStyle}>
+                  If the total amount of scholarships does not exceed 1.5 times the value of the McM, a student may be eligible to receive both the McM scholarship and any other external scholarships (aside from those that do not permit support from multiple sources). A student may only get external scholarships and not McM scholarships if the sum of the external scholarships is larger than or equal to 1.5 times the McM scholarship. If the value of the external scholarship is less than 1.5 times the McM scholarship, the student may receive both the external scholarship and a portion of the McM scholarship as long as the combined sum does not exceed 1.5 times the McM scholarship.
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
 
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Research Assistance</strong>
+        <h3 className="th3" style={th3Style}>
+          IIT Guwahati SC-ST Scholarships
         </h3>
-        <ul style={ulStyle}>
-          {[
-            "Research Assistance is provided to the students who are enrolled in the Ph.D. or research programs at IIT Delhi and are willing to work for the department.",
-            "Any student enrolled in the research-based programs on a full-time basis at IIT Delhi.",
-            "A minimum of INR 15,000 is awarded per month to students who can work about 20 hours a week.",
-            "For the students enrolled in the MS Research Programme, a sum of INR 24,000 is awarded per month to work 8 hours a week.",
-          ].map((item, index) => (
-            <li key={index} style={liStyle}>
-              {item}
-            </li>
-          ))}
-        </ul>
+        <div style={{ overflowX: "auto" }}>
+          <table style={tableStyle}>
+            <tbody>
+              <tr>
+                <th style={thStyle}>Particulars</th>
+                <th style={thStyle}>Details</th>
+              </tr>
+              <tr>
+                <td style={tdStyle}><b>Eligibility Criteria</b></td>
+                <td style={tdStyle}>
+                  The annual mandated income limit for parents must not be exceeded (it is now Rs. 4.5 lakhs per year and is subject to government notifications). If a student has passed their +2 examination from a school with an annual tuition charge of more than Rs. 30,000.00, they are not eligible for SC-ST scholarships. All B.Tech., B.Des., M.Sc., and M.A. students may submit an application.
+                </td>
+              </tr>
+              <tr>
+                <td style={tdStyle}><b>Period of the Scholarship</b></td>
+                <td style={tdStyle}>
+                  Eligible students will receive the scholarship for a period of two semesters: August-November and January-April covering 8 (eight) months in total.
+                </td>
+              </tr>
+              <tr>
+                <td style={tdStyle}><b>Benefits</b></td>
+                <td style={tdStyle}>
+                  A fixed monthly stipend of Rs. 250 for two semesters (August–November and January–April, totaling 8 months). Free messing  (only for the basic menu) A waiver of the dorm room fee. <br />  Tuition fees are waived for all SC/ST students by the statutes, irrespective of availing SC-ST scholarship or not.
+                </td>
+              </tr>
+              <tr>
+                <td style={tdStyle}><b>Top-up Scholarships</b></td>
+                <td style={tdStyle}>
+                  If the total amount of scholarships awarded to a student does not exceed 1.5 times the amount of the SC-ST scholarship, they may receive both the SC-ST scholarship and any other external scholarships (apart from those that do not permit support from multiple sources). The student may only get external scholarships and not SC-ST scholarships if the value of the external scholarship is larger than or equal to 1.5 times the amount of the SC-ST scholarship. <br />If the amount of the external scholarship is less than 1.5 times the amount of the SC-ST scholarship, the student may receive both the external scholarship and an additional amount from the SC-ST scholarship, as long as the sum does not exceed 1.5 times the amount of the SC-ST scholarship. <br />The messing fees from the most recent month will be used to determine how much the scholarship will be worth.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Loan Scholarships</strong>
+        <h3 className="th3" style={th3Style}>
+          IIT Guwahati Indian Women’s Association, Bonn (IWAB) Scholarship
         </h3>
-        <p style={pStyle}>
-          Besides, most of the students are able to get scholarships on the
-          basis of merits and academic qualifications at IIT Delhi. Many alumni
-          have contributed and instituted scholarships that repay the interest
-          on loans students have taken. Some of the loan scholarships are
-          mentioned below:
-        </p>
-        <ul style={ulStyle}>
-          {[
-            "Ved & Prem Lata Gulati Loan Scholarship",
-            "Smt. Sushma Lal Loan Scholarship",
-            "Smt. Sarada Warrior Loan Scholarship",
-            "Shrimati Dharam Devi Bhatia Loan Scholarship",
-            "Shri Motiram Bulchand Shivdasani Scholarship",
-            "Samir Anand and Batch of 88 Loan Scholarship",
-          ].map((item, index) => (
-            <li key={index} style={liStyle}>
-              {item}
-            </li>
-          ))}
-        </ul>
+        <div style={{ overflowX: "auto" }}>
+          <table style={tableStyle}>
+            <tbody>
+              <tr>
+                <th style={thStyle}>Particulars</th>
+                <th style={thStyle}>Details</th>
+              </tr>
+              <tr>
+                <td style={tdStyle}><b>Eligibility Criteria</b></td>
+                <td style={tdStyle}>
+                  The girl students may apply during the even
+                  semester of an academic year.
+                  If the minimum SPI of 1st semester is 7.0 for the
+                  candidate to be eligible to apply for the scholarship.
+                  The final recommendation made by the scholarship
+                  committee is on the consideration of both
+                  merit-cum-means of the candidate.
+                  A recipient of a McM Scholarship during the same
+                  academic period may not be awarded an IWAB
+                  scholarship.
+                </td>
+              </tr>
+              <tr>
+                <td style={tdStyle}><b>Period of the Scholarship</b></td>
+                <td style={tdStyle}>The scholarship is awarded for 1 year.</td>
+              </tr>
+              <tr>
+                <td style={tdStyle}><b>Benefits</b></td>
+                <td style={tdStyle}>The scholarship amount is currently Rs. 15,000/- for one time.</td>
+              </tr>
+              <tr>
+                <td style={tdStyle}><b>Calculation of points based on which selection is made </b></td>
+                <td style={tdStyle}>
+                  <ul>
+                    <li>Weightage of parent's income: 50%</li>
+                    <li>Weightage of merit: 50%</li>
+                    <li>
+                      Annual income weightage:
+                      <ul>
+                        <li>Below Rs. 1,50,000 - 50.0 marks</li>
+                        <li>Rs. 1,50,000 - 2,50,000 - 47.5 marks</li>
+                        <li>Rs. 2,50,000 - 3,50,000 - 45.0 marks</li>
+                        <li>Rs. 3,50,000 - 4,50,000 - 42.5 marks</li>
+                      </ul>
+                    </li>
+                    <li>Merit weightage: SPI multiplied by 5.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section id="campus">
-        <h2 style={h2Style}>Campus Facilities at IIT Delhi</h2>
+        <h2 style={h2Style}>Campus Facilities at IIT Guwahati</h2>
         <p style={pStyle}>
-          The campus of IIT Delhi is spread across an area of 320 acres, located
-          in the Hauz Khas area of South Delhi. The campus is in close proximity
-          to notable landmarks such as the Qutub Minar and Lotus Temple, and is
-          near other educational institutions like JNU and IIFT. The IIT Delhi
-          campus features a range of facilities including an amphitheatre, a
-          swimming pool, a music room, a robotics room, a club building, a
-          gymnasium hall, and a fully functional central library that is
-          accessible 24/7. These amenities contribute to a vibrant and
-          well-equipped campus environment.
+          From academic facilities to sports, they have it all for their students. IIT
+          Guwahati facilities are robust and modern and offer a comfortable environment
+          for students. IIT Guwahati facilities include a central library, gym, auditorium,
+          WIFI, sports grounds, labs, classrooms, stadiums, hospital, commercial complex
+          and others. The accommodation facility at IIT Guwahati is quite good since there
+          are separate rooms provided to every student. <br /> <br />
+          A total of 2 girls' hostels and ten boys' hostel is situated inside the campus, with
+          every hostel having its mess facilities. There are various inter-hostel events
+          conducted every year as well, which keep the students engaged and help them
+          develop an all-round perspective.  The internet facility provided is also quite
+          efficient, with high-speed Wi-fi and a computer lab available 24-7 for the
+          students. IIT Guwahati facilities make sure students do not face any
+          inconvenience at the campus.
         </p>
-        <p style={pStyle}>
-          The campus is organized into several distinct areas for administrative
-          and logistical functions. The <strong>West Campus</strong> serves as
-          the hostel area, while the <strong>East Campus</strong> is designated
-          for residential purposes. The{" "}
-          <strong>Main Administrative Building</strong> handles administrative
-          functions, and the <strong>Academic Area</strong> is dedicated to
-          academic activities. This organization helps streamline operations and
-          supports the various needs of students and staff.
-        </p>
-        {/*<div style={imageContainerStyle}>
-          <img src="#" alt="Campus Image 1" style={imageStyle} />
-          <img src="#" alt="Campus Image 2" style={imageStyle} />
-        </div>*/}
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Hostel Facilities</strong>
-        </h3>
-        <p style={pStyle}>
-          The IIT Delhi hostels are well-equipped with a variety of amenities to
-          ensure a comfortable and supportive living environment for students.
-          There are 13 boys hostels and 5 girls hostels on campus. Each hostel
-          features a dining hall with a mess facility, a lounge for relaxation,
-          an indoor games room for recreational activities, and a reading room
-          for quiet study. These facilities are designed to provide students
-          with a balanced and enjoyable hostel experience. IIT Delhi has boys'
-          hostels inside the campus premises. Its hostel runs in a cooperative
-          mode, which means the operation is handled by elected student
-          leadership under the guidance of designated faculty.
-        </p>
-        <p style={pStyle}>
-          The girls' hostels offer similar facilities, including recreational
-          amenities such as indoor games, a common room with TV, a reading room,
-          and a dining hall. All rooms have internet connectivity.
-        </p>
+
+        <ul style={ulStyle}>
+          {[
+            {
+              title: "Boys Hostel",
+              description:
+                "All the Boys students of the Institute have been provided with hostel rooms on the campus.The accommodation is single- seater.These hostels are equipped with all modern amenities. There are facilities for sports and recreation such as satellite TV, indoor games and a gymnasium. Facilities for outdoor games like volleyball, basketball, and football are also there. Every room in the hostels is provided with network connectivity. Separate accommodation is provided to the girl students. Around-the-clock canteen is in operation to cater to the needs of the students. "
+            },
+            {
+              title: "Girls Hostel",
+              description:
+                "All the Girls students of the Institute have been provided with hostel rooms on the campus. The accommodation is single-seater. These hostels are equipped with all modern amenities. There are facilities for sports and recreation such as satellite TV, indoor games and a gymnasium. Facilities for outdoor games like volleyball, basketball, and football are also there. Every room in the hostels is provided with network connectivity. Separate accommodation is provided to the girl students. Around-the-clock canteen is in operation to cater to the needs of the students."
+            },
+            {
+              title: "Medical/Hospital",
+              description:
+                "An in-campus hospital with approximately 30beds is available for the students, faculties or staff members 24×7 in case of health emergencies. "
+            },
+            {
+              title: "Gym",
+              description:
+                "A well-equipped gym is provided by IIT, Guwahati for the students to help them maintain a healthy lifestyle and stay fresh. "
+            },
+            {
+              title: "Library",
+              description:
+                "The Central Library, one of the important central facilities of the Institute, currently has a collection of over 1, 17,000 items including 2605 subscribed online journals and magazines."
+            },
+            {
+              title: "Sports",
+              description:
+                "The complex has an indoor sports stadium with table tennis, badminton, gymnasium, squash courts, student Gymkhana office. It also has a swimming pool which is 8lane 50 metre long. A field for conducting all outdoor games provides ample space and opportunities for the students."
+            },
+            {
+              title: "I.T Infrastructure",
+              description:
+                "The IIT Guwahati has excellent IT Infrastructure facility for the students."
+            },
+            {
+              title: "Cafeteria",
+              description:
+                "The IIT Guwahati has a canteen facility for staff and students."
+            },
+            {
+              title: "Auditorium",
+              description:
+                "IIT, Guwahati has a conference centre with 2 halls of 150 intake and 2 more halls with 200 intake along with a food court for students, faculty and staff members."
+            },
+            {
+              title: "Alumni Associations",
+              description:
+                "This association, IITGAA provides a platform to connect with the IIT, Guwahati's alumni, faculty, students, and staff."
+            },
+            {
+              title: "Wifi",
+              description:
+                "Wide network on a Gigabit Ethernet Backbone with connection in every hostel room, campus is available for the students, faculty and staff members of IIT, Guwahati. "
+            },
+            {
+              title: "Swimming Pool",
+              description:
+                "The IIT Guwahati has the Swimming Pool facility for its faculty, staff, and students."
+            },
+            {
+              title: "Classrooms",
+              description:
+                "A well-maintained classrooms with proper ventilation, space and good environment is present in the campus for providing best quality education to its students. It also four different lecture halls with 250 seat capacity plus an auditorium with 1500 capacity for events, teaching or even cultural programmes, workshops and guest lectures from eminent personalities among others. "
+            },
+            {
+              title: "Guest Room/Waiting Room",
+              description:
+                "A guest with 72room, faculty quarters, and hostels is available for the guest or students guardian to make their stay at the institute comfortable."
+            },
+          ].map((item, index) => (
+            <li key={index} style={liStyle}>
+              <strong>{item.title}:</strong> {item.description}
+            </li>
+          ))}
+        </ul>
 
         <h3
           style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
         >
-          <strong>Campus Facilities</strong>
+          <strong>IIT Guwahati Hostel for Male and Female</strong>
         </h3>
-        <ul style={ulStyle}>
-          <li style={liStyle}>
-            <strong>IT Infrastructure:</strong>
-            <ul style={innerListStyle}>
-              <li style={liStyle}>
-                <strong>Network Type:</strong> State-of-the-art LAN with Fiber
-                Optics and enhanced CAT5/CAT6 UTP backbone
-              </li>
-              <li style={liStyle}>
-                <strong>Network Access Points:</strong> Over 9000 across the
-                campus
-              </li>
-              <li style={liStyle}>
-                <strong>Cisco Switches:</strong> About 265
-              </li>
-              <li style={liStyle}>
-                <strong>Virtual LANs:</strong> Approximately 75
-              </li>
-            </ul>
-          </li>
-          <li style={liStyle}>
-            <strong>Wi-Fi:</strong> Secure Wi-Fi available in the academic area,
-            main guest house, faculty guest house, RCA, and hospital
-          </li>
-          <li style={liStyle}>
-            <strong>Cafeteria:</strong> Several canteens located opposite
-            Aravali Hostel, in Himadri Hostel, and adjacent to Kumaon Hostel;
-            serves healthy and hygienic food; additional coffee and cold drinks
-            kiosks available
-          </li>
-          <li style={liStyle}>
-            <strong>Auditorium:</strong> Seating capacity of over 120; hosts
-            guest lectures, seminars, and other programs
-          </li>
-          <li style={liStyle}>
-            <strong>Alumni Associations:</strong> IITD Alumni Association
-            connects over 43,000 members worldwide through a network of national
-            and international chapters; one of the most active alumni
-            associations globally
-          </li>
-          <li style={liStyle}>
-            <strong>Classrooms:</strong> Fully air-conditioned; equipped with
-            LCD projectors
-          </li>
-          <li style={liStyle}>
-            <strong>Laboratories:</strong> Well-equipped laboratories,
-            workshops, and library facilities across departments
-          </li>
-          <li style={liStyle}>
-            <strong>Convenience Store:</strong> Stationery shop in the academic
-            area; Xeroxing and STD/ISD/PCO facilities available in all hostels
-          </li>
-          <li style={liStyle}>
-            <strong>Banks/ATMs:</strong> On-campus bank available for faculty
-            and student convenience
-          </li>
-          <li style={liStyle}>
-            <strong>Guest Room/Waiting Room:</strong> Guest house and waiting
-            room facilities for visiting faculty and family members of students
-          </li>
-        </ul>
+        <p style={pStyle}>
+          Fee: ₹11,500 <br />
+          <h3
+            style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
+          >
+            <strong>Hostel Fee Structure:-</strong>
+          </h3>
+          One-Time Fees:- <br />
+          <ul style={ulStyle}>
+            <li style={liStyle}>Hostel Admission Fee – Rs. 400</li>
+            <li style={liStyle}>Mess Establishment Charge – Rs. 2,500 </li>
+          </ul>
+          One-Time Deposits (At the time of admission) & Refundable:-  <br />
+          <ul style={ulStyle}>
+            <li style={liStyle}>Hostel Caution Money – Rs. 4,000</li>
+            <li style={liStyle}>Mess Deposit – Rs. 6000</li>
+          </ul>
+          Payable at Every Semester:-<br />
+          <ul style={ulStyle}>
+            <li style={liStyle}>Hostel Fund – Rs. 600 </li>
+            <li style={liStyle}>Hostel Rent – Rs 1000</li>
+            <li style={liStyle}>Hostel Maintenance Charge – Rs. 3,000 </li>
+            <li style={liStyle}>Electricity and Water Charges – Rs. 2,500</li>
+            <li style={liStyle}>Adjustable Mess Advance – Rs. 18,000</li>
+          </ul>
+        </p>
       </section>
 
       <section id="alumni-network">
-        <h2 style={h2Style}>Alumni Network at IIT Delhi</h2>
-
-        <p style={pStyle}>
-          The IIT Delhi alumni network spans across various prominent
-          recruiters, showcasing the extensive reach and influence of our
-          graduates. Here is a snapshot of the number of alumni working with
-          some of the leading companies:
-        </p>
+        <h2 style={h2Style}>Alumni Network at IIT Guwahati</h2>
+        <h3 style={th3Style}>IIT Guwahati Alumni Network</h3>
         <div
           style={{
             overflowX: "auto",
@@ -465,73 +509,35 @@ const Ranking = () => {
           }}
         >
           <table style={tableStyle}>
-            <thead>
-              <tr>
-                <th style={thStyle}>Recruiter</th>
-                <th style={thStyle}>No. of Alumni</th>
-              </tr>
-            </thead>
             <tbody>
               <tr>
-                <td style={tdStyle}>Amazon</td>
-                <td style={tdStyle}>378</td>
+                <th style={thStyle}>Name of Organizations</th>
+                <th style={thStyle}>Number of Alumni</th>
               </tr>
-              <tr>
-                <td style={tdStyle}>Google</td>
-                <td style={tdStyle}>338</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Microsoft</td>
-                <td style={tdStyle}>332</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>IBM</td>
-                <td style={tdStyle}>317</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>TCS</td>
-                <td style={tdStyle}>312</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Accenture</td>
-                <td style={tdStyle}>195</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Goldman Sachs</td>
-                <td style={tdStyle}>164</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>McKinsey &amp; Co.</td>
-                <td style={tdStyle}>138</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Facebook</td>
-                <td style={tdStyle}>124</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>BCG</td>
-                <td style={tdStyle}>120</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Flipkart</td>
-                <td style={tdStyle}>108</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>AWS</td>
-                <td style={tdStyle}>90</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Bain &amp; Co.</td>
-                <td style={tdStyle}>66</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Uber</td>
-                <td style={tdStyle}>5</td>
-              </tr>
+              {[
+                { org: "Indian Institute of Technology, Guwahati", alumni: "1036" },
+                { org: "Alcheringa, IIT Guwahati", alumni: "313" },
+                { org: "Microsoft", alumni: "300" },
+                { org: "Amazon", alumni: "262" },
+                { org: "Techniche, IIT Guwahati", alumni: "222" },
+                { org: "Qualcomm", alumni: "151" },
+                { org: "Oracle", alumni: "147" },
+                { org: "Consulting & Analytics Club, IIT Guwahati", alumni: "122" },
+                { org: "E-cell, IIT Guwahati", alumni: "116" },
+                { org: "Goldman Sachs", alumni: "103" },
+                { org: "Coding Club, IIT Guwahati", alumni: "97" },
+                { org: "Intel Corporation", alumni: "94" },
+                { org: "Finance & Economics Club - IIT Guwahati", alumni: "87" },
+                { org: "Adobe", alumni: "66" },
+              ].map((item, index) => (
+                <tr key={index}>
+                  <td style={tdStyle}>{item.org}</td>
+                  <td style={tdStyle}>{item.alumni}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
-        <br />
 
         <p style={pStyle}>
           IITD Alumni Association is dedicated to bringing together the alumni
@@ -543,6 +549,44 @@ const Ranking = () => {
           operates through a network of national and international chapters. Our
           alumni are spread worldwide and figure amongst who’s who worldwide.
         </p>
+
+        <h3 style={th3Style}>Alumni</h3>
+        <div
+          style={{
+            overflowX: "auto",
+            WebkitOverflowScrolling: "touch",
+            whiteSpace: "nowrap",
+            msOverflowStyle: "none",
+            scrollbarWidth: "none",
+          }}
+        >
+          <table style={tableStyle}>
+            <tbody>
+              <tr>
+                <th style={thStyle}>Alumni</th>
+                <th style={thStyle}>Designation</th>
+                <th style={thStyle}>Company Name</th>
+              </tr>
+              {[
+                { name: "Aditya Singh", designation: "Quantitative Trader", company: "Citadel LLC" },
+                { name: "Archit Gupta", designation: "Founder and CEO", company: "ClearTax" },
+                { name: "Atanu Guchhait", designation: "5G NR Wireless Access (PHY) Development", company: "Samsung" },
+                { name: "Jaspreet Singh", designation: "Founder and CEO", company: "Druva Inc." },
+                { name: "Rameshwar M Paswan", designation: "Manager", company: "Petroleumsoft Limited" },
+                { name: "Ritwik Tewari", designation: "Engineering Manager, Ads Manager and Metrics - San Francisco Bay Area", company: "Facebook Inc." },
+                { name: "Saurabh Nangia", designation: "Tech Entrepreneur", company: "" },
+                { name: "Theophilus Thomas", designation: "Head of Design Planning, Samsung Design Delhi", company: "Samsung Electronics Co. Ltd." },
+                { name: "Vaibhav Aggarwal", designation: "Founder and CEO", company: "" },
+              ].map((item, index) => (
+                <tr key={index}>
+                  <td style={tdStyle}>{item.name}</td>
+                  <td style={tdStyle}>{item.designation}</td>
+                  <td style={tdStyle}>{item.company}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </section>
     </div>
   );

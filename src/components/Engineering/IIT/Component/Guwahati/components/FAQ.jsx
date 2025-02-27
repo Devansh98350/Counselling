@@ -79,59 +79,58 @@ const FAQ = () => {
 
   const faqData = [
     {
-      question: "Which is better for MSc: IIT Delhi or IIT Madras?",
+      question: "Does IIT Guwahati follow semester pattern for MBA programme?",
       answer:
-        "IIT Delhi and IIT Madras are well known and reputed institutions in India. According to the NIRF 2023, IIT Madras ranked is 01 while IIT Delhi is ranked 03 in the Engineering category. Both the colleges offer MSc course across various specialisations with top quality education to its students. Both colleges have world class infrastructure. Both colleges have highly qualified and experienced faculty members who are experts in their respective fields. Both colleges are very good in their own way.  Which one is the best college depends on what the person is actually looking for in a college or university.",
+        "Yes, IIT Guwahati does follow a semester pattern for its MBA programme. The institute offers a two-year full-time MBA programme, which is further segregated into four semesters. This semester-based pattern helps students with systematic learning. To apply for the course, interested candidates must visit the official website to apply online.",
     },
     {
-      question: "How much rank in JEE Advanced is required for IIT Delhi?",
+      question: "Is MBA programme available at IIT Guwahati?",
       answer:
-        "The IIT Delhi cutoff 2024 has been concluded for admission to the BTech and Integrated BTech courses. As per the JEE Advanced 2024 cutoff for the Last Round, the closing rank for BTech ranged between 116 and 4849 for the General AI category students. The toughest course to get into IIT Delhi was CSE. So, candidates seeking admission at this institute must aim to secure up to 4850 rank to be eligible for BTech admission. The required cutoff ranks will vary based on the categories you fall into. To get an idea of the category-wise JEE Advanced cutoff range for BTech admission at IIT Delhi, refer to the table below: CategoryJEE Advanced Round 1JEE Advanced Last Round General116 - 4754116 - 4849OBC89 - 306889 - 2749SC48 - 176550 - 1780ST23 - 99123- 991EWS33 - 113935 - 1215PWD5 - 1595 - 159",
+        "Yes, IIT Guwahati offers an MBA with a course duration of two years. To be eligible for the programme, students must meet the requisite eligibility criteria. For more insight, candidates can refer to the following table: ParticularHighlightsDuration2 yearsCourse LevelPG DegreeMode of CourseFull TimeTotal Tuition FeesINR 5.54 LakhSeat breakup16NOTE: The above-mentioned information is taken from the official website/sanctioning body. It is still subject to change and, hence, is indicative.",
     },
     {
-      question: "Is DMS IIT Delhi good for MBA?",
+      question: "Does IIT Guwahati offer direct admission for any course?",
       answer:
-        "The Department of Management Studies (DMS) of IIT Delhi is well-known for its MBA programme. It provides a demanding curriculum that aims to provide students with advanced management skills and knowledge. The programme is noted for its emphasis on analytics, technology, and innovation, which complements the institute's engineering heritage. DMS IIT Delhi has skilled teachers, good infrastructure, and strong industry links that improve learning and placement prospects. The institute is frequently ranked among the top MBA programmes in India, making it a great alternative for students looking for a complete and competitive business education.",
+        "No, admission to IIT Guwahati courses is entrance-based, except for certificate course. There is no provision for direct admission. The below table mentions course-wise accepted entrance exams:CoursesAccepted Entrance ExamBTechJEE Main/JEE Advanced +JoSAA CounsellingBDesUCEED + CounsellingMTechGATE + COAP CounsellingMScIIT JAM +CCMN CounsellingMDesCEED +GDPIMBACAT +PIMAWriiten Test +PI+ Counselling conducted by IIT Guwahati.",
     },
     {
-      question: "How are IIT Delhi placements compared with other top IITs?",
+      question: "What is the eligibility criteria for MA at IIT Guwahati?",
       answer:
-        "According to the most recent media report, during Phase I IIT Delhi placements in 2024, 1,050 offers—including PPOs—were made. Additionally, 1,000 applicants in total were chosen at random during phase 1 of the IIT Delhi placements 2024. In addition, during Phase I IIT Delhi placements 2024, more than 50 foreign offers including PPOs were received from almost 20 foreign businesses.The table below shows the IIT Delhi placements compared with other top IITs for the year 2023.College Namethe highest Package (2023)IIT DelhiINR 2.5 crore per annumIIT MadrasINR 1.31 crore per annumIIT BombayINR 1.68 crore per annumIIT KharagpurAbove INR 2.68 crore per annum",
+        "IIT Guwahati offers a full-time MA programme lasting two years. To be eligible for MA admission, candidates must have completed their graduation in any discipline from a recognised university. To be eligible, they must have scored a minimum of 60% aggregate in their graduation. Additionally, they must present the relevant documents to prove their eligibility at the time of admission. The selection is based on the scores obtained in the accepted entrance examination.",
     },
     {
-      question:
-        "I've scored less than 60% in 12th boards, can I get admission in IIT Delhi for BTech?",
+      question: "How many seats are available for IIT Guwahati MSc courses?",
       answer:
-        "Admission to IIT Delhi BTech courses is subject to fulfiment of the eligibility requirements for JEE Main and JEE Advanced. The students who have passed Class 12 in Science stream with at least 75% aggregate (65% aggregate for SC/ST/PwD) are eligible to apply. Hence, a student scoring less than 60% is not eligible to pursue BTech at IIT Delhi. They can go for other colleges offering the course. They can also check out the colleges offering Online BTech courses.",
-    },
-    {
-      question:
-        "What is the branch-wise placement rate recorded during IIT Delhi BTech placements?",
-      answer:
-        "According to unofficial sources, the branch-wise placement rate recroded during IIT Delhi BTech placements 2023 is presented below:BTech Branch Students Registered (2023)Students Placed (2023)Placement Rate (2023)Biochemical Engineering and Biotechnology463882.61%Civil Engineering635384.13%Chemical Engineering676191.04%Computer Science and Engineering959498.95%Electrical Engineering959296.84%Electrical Engineering (Power and Automation)494795.92%Mechanical Engineering705882.86%Production and Industrial Engineering686291.18%Mathematics and Computing676597.01%Engineering Physics413482.93%Textile Technology907280.00%",
+        "There are a total of 170 seats for MSc courses at IIT Guwahati. This seat allotment varies for each of the course specialisations. The admission of the candidates is as per the selection criteria and sanctioned seat count. Moreover, the maximum number of seats are for MSc in Physic and MSc in Chemistry - 60. It must be noted that the seat intake mentioned is as per the official website. It is, however, subject to changes and hence, is indicative.",
     },
     {
       question:
-        "Can you share details about the extracurricular activities conducted at DMS IIT Delhi?",
+        "What are the steps to apply online for the BTech programme at IIT Guwahati?",
       answer:
-        "DMS IIT Delhi arranges various events, seminars, and workshops for students. There are various extracurricular activities arranged by the college. Various DMS IIT Delhi students have established their start ups. Throughout the years of their graduation, students are given the knowledge of the latest developments happening in the job world.",
+        "To apply for the BTech programme at IIT Guwahati, candidates need to complete the application form for the course-specific entrance exam. Candidates should follow these below mentioned steps to apply online for the BTech course at IIT Guwahati:Step 1: Open the IIT Guwahati official website. On its homepage, click the tab reading 'Admission' and select 'UG' from the dropdown menu.Step 2: Click on 'Application Procedure' to proceed further. The online application portal opens up. The admission brochure and course structure PDFs can be downloaded from this page.Step 3: Click on 'New User Register Here'. Fill out the registration form with name, email ID, contact number, course preference, etc. Create an alpha-numeric password for password for latter logins.Step 4: Further, fill in the remaining application form by addressing other details, including guardian info, address of communication, etc. At this step, upload a passport-size photograph and signature.Step 5: Pay an application fee in the online mode through the SBI payment gateway using a debit card, credit card, or net banking.Step 6: Fill in the second to last step of the application form, which includes the entrance exam, work experience if any, references and publications if applicable for PhD applicants, and academic details.Step 7: Close the application form by finalising the self-declaration and clicking on the 'Submit' button.",
+    },
+    {
+      question: "What is the total seat intake for B.Tech at IIT Guwahati?",
+      answer:
+        "The total seat intake for the BTech programme at IIT Guwahati is 962, encompassing various specialisations. Among these, the fields of Computer Science and Engineering (CSE), Electronics and Communication Engineering (ECE), Mechanical Engineering, and Civil Engineering have the highest seat allocations, with counts of 114, 104, 119, and 117, respectively. Candidates can secure admission to the BTech programme by meeting the necessary eligibility criteria.",
     },
     {
       question:
-        "What is the rank of IIT Delhi in QS World University Rankings 2024?",
+        "What is the eligibility criteria for B.Tech course at IIT Guwahati?",
       answer:
-        "IIT Delhi is listed as the 197th best university in the world as per the QS World University Rankings 2024. The institute is ranked 46th in the Asia University Rankings and 151-200 in the Engineering and Technology (Engineering) category. The QS World University Rankings are based on several variables, such as academic standing, employer standing, faculty-to-student ratio, number of citations per faculty, and proportion of foreign students. IIT Delhi was also ranked 717 by the US News Rankings 2022.",
+        "Candidates seeking admission to the IIT Guwahati must ensure that they meet the required eligibility criteria. The below-mentioned table includes IIT Guwahati BTech eligibility and selection criteria:CourseEligibility CriteriaSelection CriteriaBTechPass Class 12 in the Science stream with Chemistry, Physics, and Mathematics as compulsory subjectsJEE Main + JEE Advanced + JoSAA Counselling.",
     },
     {
       question:
-        "What documents are required during B.Tech admission process at IIT Delhi?",
+        "What is the highest placement package offered at IIT Guwahati?",
       answer:
-        "The students need to submit important documents for verification purposes. Candidates should have scanned copies with them. Before the JEE Main 2024 registration process, students must keep the following documents and information ready for a smooth application process:Valid email ID and mobile numberAcademic details related to the Class 10 and Class 12 qualifying examsScanned copy of the category certificate (if applicable)Scanned copy of the PwD certificate (if applicable)Scanned photograph and signature as per the specification mentioned by the NTANet banking/credit card/debit card/UPI details for application fee payment",
+        "The overall the highest package for the 2024 drive stood at INR 2.05 crore per annum and was offered to BTech students. The table below represents the course-wise IIT Guwahati the highest package 2024:Coursethe highest Package (2024)BTechINR 2.05 crore per annumBDesINR 95 LPAMTechINR 65.70 LPAMScINR 65.70 LPAMDesINR 52 LPAMSRINR 21.74 LPAMBAINR 15 LPAMAINR 8 LPAThe highest package for MSR increased from 2022 to 2023 and was the same in 2023 and 2024. On the other hand, a fluctuating trend was recorded in the MA and MSc the highest packages.",
     },
     {
-      question: "How can I get admission in IIT Delhi for MBA?",
+      question:
+        "Which is the top recruiting sector during IIT Guwahati placement drive?",
       answer:
-        "To get confirmation at DMS IIT Delhi for the MBA program, candidates to meet the qualification rules of having a graduation degree with 60% marks. The CAT exam is the primary selection criterion. In addition, if students are interested in the Executive MBA program, the CAT exam will serve as the selection parameter and similar eligibility requirements will apply. The MBA programme has a INR 11.2 Lacs tuition fee.",
+        "SDE emerged as the top recruiting sector with 31.90% of students placed in it. The second in the sequence was the Core sector. The table below represents the sector-wise distribution of IIT Guwahati placements 2024:SectorPlacement Percentage (2024)SDE31.90%Core23.10%Others16.20%Analyst7.30%EdTech6.90%Finance5%Design4.60%Consulting2.70%Data Science2.30%.",
     },
   ];
 

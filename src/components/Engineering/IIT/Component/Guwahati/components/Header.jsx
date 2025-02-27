@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Breadcrumbs from "../../../../../Breadcrumb";
+import Guwahati from "../../../../../../assests/components/IIT/banner/guwahati.jpeg";
 
 function Header() {
   const [isCutoffDropdownOpen, setIsCutoffDropdownOpen] = useState(false);
@@ -17,7 +18,7 @@ function Header() {
           navbar.style.position = "fixed";
           navbar.style.top = "0";
           navbar.style.left = "0";
-          navbar.style.zIndex = "0";
+          navbar.style.zIndex = "100";
           navbar.style.width = "100%";
         } else {
           navbar.style.position = "relative";
@@ -42,8 +43,7 @@ function Header() {
           display: "flex",
           alignItems: "center",
           justifyContent: "flex-start",
-          backgroundImage:
-            'url("https://imgs.search.brave.com/vrCHshJEy0b3FhEkkcvLcNaW141JQDMkcx6xnmcYG78/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9k/L2RkL0lJVF9EZWxo/aV9FbnRyYW5jZS5q/cGc")',
+          backgroundImage: `url(${Guwahati})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -51,6 +51,7 @@ function Header() {
           flexWrap: "wrap",
         }}
       >
+        {" "}
         <div
           style={{
             display: "flex",
@@ -85,8 +86,8 @@ function Header() {
             }}
           >
             <img
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Indian_Institute_of_Technology_Delhi_Logo.svg/800px-Indian_Institute_of_Technology_Delhi_Logo.svg.png"
-              alt="IIT Delhi Logo"
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/IIT_Guwahati_Logo.svg/1200px-IIT_Guwahati_Logo.svg.png"
+              alt="IIT Guwahati Logo"
               style={{
                 height: "100px",
                 marginRight: "20px",
@@ -107,7 +108,7 @@ function Header() {
                   fontWeight: "bold",
                 }}
               >
-                IIT Delhi: Admission 2025, Cutoff, Courses,
+                IIT Guwahati: Admission 2024, Cutoff, Courses,
               </h3>
               <h3
                 style={{
@@ -126,7 +127,7 @@ function Header() {
                   marginTop: "5px",
                 }}
               >
-                New Delhi | Autonomous University | Estd 1961
+                Guwahati | Autonomous University | Estd 1994
               </div>
             </div>
             <div
