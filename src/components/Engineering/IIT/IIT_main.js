@@ -16,7 +16,7 @@ const Heading = [
     build:
       "https://theindianwire.com/wp-content/uploads/2019/01/IIT-Madras.jpg",
     name: "IIT Madras",
-    link: "#",
+    link: "/iit-colleges/iit-madras",
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ const Heading = [
     logo: "https://tse4.mm.bing.net/th?id=OIP.LAsUtuCpoItNz4jmyAh7twHaFj&pid=Api&P=0&h=180",
     build: "https://media.glassdoor.com/l/5c/ee/8f/d6/main-building.jpg",
     name: "IIT Bombay",
-    link: "#",
+    link: "/iit-colleges/iit-bombay",
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const Heading = [
     build:
       "https://tse2.mm.bing.net/th?id=OIP.ljofhfPaOurAnzjjjpHLbwHaEA&pid=Api&P=0&h=180",
     name: "IIT Guwahati",
-    link: "#",
+    link: "/iit-colleges/iit-guwahati",
   },
   {
     id: 5,

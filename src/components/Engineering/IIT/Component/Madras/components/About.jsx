@@ -56,53 +56,43 @@ const About = () => {
   return (
     <div style={sectionStyle}>
       <section id="about">
-        <h2 style={h2Style}>About IIT Delhi</h2>
+        <h2 style={h2Style}>About IIT Madras</h2>
         <p style={pStyle}>
-          IIT Delhi, popularly known as the Indian Institute of Technology
-          Delhi, is one of the most prestigious IIT institutions in India.
-          Established in 1961 as an engineering college, IIT Delhi was later
-          declared an institution of national importance under the Institutes of
-          Technology (Amendment) Act of 1963. It is one of the 23 IITs in the
-          country and was founded with the mission to be a center of excellence
-          for training, research, and development across various disciplines,
-          including engineering, science, technology, and humanities.
-        </p>
-        <p style={pStyle}>
-          In terms of rankings, IIT Delhi has consistently been recognized as
-          one of the top institutions in India and the world:
-        </p>
-        <ul style={ulStyle}>
-          <li style={liStyle}>
-            Ranked 2nd by the NIRF 2023 in the Engineering category.
-          </li>
-          <li style={liStyle}>Ranked 3rd overall by NIRF 2023.</li>
-          <li style={liStyle}>
-            Ranked 150th by the QS World University Ranking 2025, rising 47
-            places from its previous rank of 197.
-          </li>
-          <li style={liStyle}>
-            Ranked 1st by India Today 2023 in both the Engineering (Government)
-            category and overall Engineering category.
-          </li>
-        </ul>
-        <p style={pStyle}>
-          IIT Delhi accepts various national-level entrance exams for admission,
-          including JEE Main, JEE Advanced, GATE, UCEED, IIT JAM, and CAT, among
-          others.
+          IIT Madras (Indian institute of technology madras) was established in 1959
+          and located in Chennai. It is one of the eminent institutions of national
+          importance; it is also one of the eight public IOE (Institutes of Eminence) of
+          India. It is the 3rd IIT to be set up by the GOI and it is autonomous statutory
+          institute governed by IIT council. <br /><br />
+          IIT madras has performed exceptionally well in NIRF ranking.it secured the 1st
+          rank in overall for the 4th time in a row and engineering and 15th in
+          management.it has secured the 227th position in the overall category of QS
+          world university ranking 2025. <br /><br />
+          IIT madras has 16 departments,4 national and 10 institute research centers
+          which offer more than 100+`courses through UG, PG, and Doctoral Level in
+          engineering, Science, Humanities and Management. Recently the institute
+          launched the country’s 1st online BSC program in programming in data
+          science. If you want to get admission in IIT madras you have to give national
+          level entrance exam and some  special course you have to clear JEE
+          Advance. <br /><br />
+          The children who are not financially strong there are scholarship for them and
+          there are more than 20+ numbers of scholarship are provided on different
+          based like Merit –based, need based, merit –cum- need based. <br />
         </p>
       </section>
 
       <section id="courses">
-        <h2 style={h2Style}>Course Fees and Structure</h2>
+        <h2 style={h2Style}>IIT Madras courses and fees</h2>
         <p style={pStyle}>
-          The fee structure at IIT Delhi is composed of various components such
-          as tuition fees, hostel fees, library fees, canteen fees, etc. Some
-          components are charged only once, while others, like the tuition fee,
-          are paid semester-wise or annually. The total cost of fees depends on
-          the chosen course. The table below shows the fee breakdown for various
-          courses:
+          IIT madras offers more than 100+ courses thorough UG, PG and PHD
+          degrees. The courses are offer in engineering, science, humanities and
+          management. They give joint degree, exchange and research programs. They
+          also give dual degrees in Btech-Mtech and BS-MS and integrated course in
+          M.A., M.Tech, and M.Sc. IIT Madras also offer joint PhD and JDP programs
+          and for that they signed MoUs with foreign universities for it. <br /><br />
+          IITM is also known for QIP which is sponsored by AICTE. There are the few
+          popular programs provided by IITM in different streams are given below:
         </p>
-        <h3 style={th3Style}>Fee Breakdown</h3>
+
         <div
           style={{
             overflowX: "auto",
@@ -115,211 +105,76 @@ const About = () => {
           <table style={tableStyle}>
             <thead>
               <tr>
-                <th style={thStyle}>Course</th>
+                <th style={thStyle}>Stream</th>
+                <th style={thStyle}>No. of Courses</th>
                 <th style={thStyle}>Tuition Fee</th>
-                <th style={thStyle}>Hostel Fee</th>
-                <th style={thStyle}>One-time Fee</th>
               </tr>
             </thead>
             <tbody>
               {[
-                {
-                  course: "B.Tech",
-                  tuition: "INR 8-10L",
-                  hostel: "INR 4.58L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "M.Tech",
-                  tuition: "INR 3L",
-                  hostel: "INR 2.29L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "MA",
-                  tuition: "INR 3L",
-                  hostel: "INR 2.29L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "B.Des",
-                  tuition: "INR 8L",
-                  hostel: "INR 4.32L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "M.Des",
-                  tuition: "INR 3L",
-                  hostel: "INR 2.29L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "MBA",
-                  tuition: "INR 11.20L",
-                  hostel: "INR 2.29L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "MSc",
-                  tuition: "INR 30,000-3L",
-                  hostel: "INR 2.29L",
-                  oneTime: "INR 16,000",
-                },
+                { stream: "B.Sc", courses: "9", tuition: "INR 1.2L-10L" },
+                { stream: "B.E./B.Tech", courses: "35", tuition: "INR 5.3L-10L" },
+                { stream: "M.E./M.Tech", courses: "54", tuition: "INR 20K-10L" },
+                { stream: "M.Sc.", courses: "6", tuition: "INR 10K-10L" },
+                { stream: "M.A.", courses: "5", tuition: "INR 20K" },
+                { stream: "Master Of Surgery", courses: "10", tuition: "INR 10K" },
+                { stream: "U.G. Diploma", courses: "6", tuition: "INR 55K-70.5K" },
+                { stream: "Certificate", courses: "9", tuition: "INR 32K-2.5L" },
+                { stream: "B.A.", courses: "2", tuition: "--" },
+                { stream: "MBA/PGDM", courses: "2", tuition: "INR 1.3L-17L" },
+                { stream: "Executive MBA/PGDM", courses: "2", tuition: "INR 13L-13.5L" },
+                { stream: "M.S.", courses: "2", tuition: "INR 10K" },
+                { stream: "PG Diploma", courses: "1", tuition: "--" },
+                { stream: "Ph.D.", courses: "2", tuition: "INR 15K" },
               ].map((row, index) => (
                 <tr key={index}>
-                  <td style={tdStyle}>{row.course}</td>
+                  <td style={tdStyle}>{row.stream}</td>
+                  <td style={tdStyle}>{row.courses}</td>
                   <td style={tdStyle}>{row.tuition}</td>
-                  <td style={tdStyle}>{row.hostel}</td>
-                  <td style={tdStyle}>{row.oneTime}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-
-        <h3>One-Time Charges (For Every Fresh Allotment)</h3>
-        <ul style={ulStyle}>
-          <li style={liStyle}>
-            Seat Allotment Charges (Non-refundable): INR 7,000
-          </li>
-          <li style={liStyle}>Security Deposit (Refundable): INR 15,000</li>
-        </ul>
-
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Per-Semester Charges</strong>
-        </h3>
-        <p style={pStyle}>
-          Note: No pro-rata is applicable due to hostel operations being fully
-          cooperative in nature.
-        </p>
-        <ul style={ulStyle}>
-          <li style={liStyle}>
-            <strong>
-              Hostel Mess Charges (Include food, kitchen consumables, human
-              resources, IGL, and associated costs):
-            </strong>
-          </li>
-          <ul style={ulStyle}>
-            <li style={liStyle}>Old Hostel (Non-A/C): INR 35,000</li>
-            <li style={liStyle}>
-              New Hostels (Centralized A/C, only for non-MSc PG students): INR
-              35,000
-            </li>
-          </ul>
-          <li style={liStyle}>
-            <strong>Additional Charges:</strong>
-          </li>
-          <ul style={ulStyle}>
-            <li style={liStyle}>All students in old hostels: INR 8,600</li>
-            <li style={liStyle}>
-              All students in new hostels: INR 23,600 (Break-up: INR 8,600 + INR
-              15,000)
-            </li>
-          </ul>
-        </ul>
       </section>
 
       <section id="admission">
         <h2 style={h2Style}>Admission</h2>
         <p style={pStyle}>
-          Admission to IIT Delhi is based on national entrance tests. The
-          institute offers a variety of programs at the undergraduate (UG),
-          postgraduate (PG), and doctoral levels. Admission to the B.Tech
-          program is determined by JEE Advanced scores, followed by JoSAA
-          counseling. For B.Des at the UG level, students can apply through
-          UCEED.
-        </p>
-        <p style={pStyle}>
-          IIT Delhi also offers M.Tech, MSc, M.Des, and MBA programs. Admission
-          to these programs requires qualifying exams like GATE, IIT JAM, UCEED,
-          and CAT, respectively. The institute also offers EMBA and MPP programs
-          at the PG level, where selection is based on an interview round. For
-          Ph.D. programs, IIT Delhi accepts GATE, CSIR, UGC NET, CEED, ICAR, and
-          DST INSPIRE fellowship scores.
+          IIT madras admission is completely entrance based for B.Tech, M.Tech, M.sc,
+          and B.sc courses. <br /><br />
+          IIT madras admissions are mostly done through national level entrance exam
+          including JEE Main /JEE advance IIT jam and gate among other.
         </p>
 
-        <h3 style={th3Style}>Eligibility and Selection Criteria</h3>
         <div style={{ overflowX: "auto" }}>
           <table style={tableStyle}>
             <thead>
               <tr>
                 <th style={thStyle}>Course</th>
-                <th style={thStyle}>Eligibility Criteria</th>
-                <th style={thStyle}>Selection Criteria</th>
+                <th style={thStyle}>Entrance exam accepted</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td style={tdStyle}>B.Tech</td>
-                <td style={tdStyle}>
-                  Passed class 10+2 with PCM with a minimum of 75% from a
-                  recognized board
-                </td>
-                <td style={tdStyle}>
-                  JEE Main + JEE Advanced + JoSAA Counseling
-                </td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>B.Des</td>
-                <td style={tdStyle}>
-                  Passed class 10+2 with a minimum of 60% marks (40% for
-                  reserved categories)
-                </td>
-                <td style={tdStyle}>UCEED scores + Counseling</td>
+                <td style={tdStyle}>B.Tech/B.Tech-M.Tech </td>
+                <td style={tdStyle}>JEE advance</td>
               </tr>
               <tr>
                 <td style={tdStyle}>M.Tech</td>
-                <td style={tdStyle}>
-                  Minimum of 60% marks or 6.00 CGPA on a 10-point scale (5%
-                  relaxation for SC/ST/PWD)
-                </td>
-                <td style={tdStyle}>
-                  GATE score + COAP counseling + Written Test + Interview
-                </td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>MS</td>
-                <td style={tdStyle}>
-                  Minimum of 60% marks or 6.00 CGPA on a 10-point scale (5%
-                  relaxation for SC/ST/PWD)
-                </td>
                 <td style={tdStyle}>GATE</td>
               </tr>
               <tr>
-                <td style={tdStyle}>M.Sc.</td>
-                <td style={tdStyle}>
-                  At least 55% marks or 5.5 CGPA (5% relaxation for SC/ST/PH)
-                </td>
-                <td style={tdStyle}>IIT JAM + JOAPS Counseling</td>
+                <td style={tdStyle}>M.Sc</td>
+                <td style={tdStyle}>IIT JAM</td>
               </tr>
               <tr>
                 <td style={tdStyle}>MBA</td>
-                <td style={tdStyle}>
-                  Bachelor's degree or its equivalent with at least 60% marks
-                </td>
-                <td style={tdStyle}>
-                  CAT scores + Group Discussion + Interview Round
-                </td>
+                <td style={tdStyle}>CAT</td>
               </tr>
               <tr>
-                <td style={tdStyle}>M.Des</td>
-                <td style={tdStyle}>
-                  B.Tech/B.Des/B.Arch or equivalent with at least 60% marks
-                </td>
-                <td style={tdStyle}>CEED score + Interview</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Ph.D.</td>
-                <td style={tdStyle}>
-                  At least 60% marks or 6.00 CGPA (5% relaxation for SC/ST/PWD)
-                  in master's degree or an equivalent
-                </td>
-                <td style={tdStyle}>
-                  GATE/CSIR/UGC NET/ICAR/ICMR/CEED/DST-INSPIRE fellowship +
-                  Written Test + Interview
-                </td>
+                <td style={tdStyle}>PHD</td>
+                <td style={tdStyle}>Gate/UGC-NET/CSIR-NET/ICAR or ICMR</td>
               </tr>
             </tbody>
           </table>
@@ -331,18 +186,62 @@ const About = () => {
           <strong>Application Process</strong>
         </h3>
         <p style={pStyle}>
-          The application process for IIT Delhi is as follows:
+          For applying in IIT Madras, there are three steps which are as follows:
         </p>
         <ul style={ulStyle}>
-          <li style={liStyle}>
-            Fill in the application form on the IIT Delhi official website.
+          <li style={liStyle}>The eligible candidates first have to visit the official website of the university then after they will have to fill out the application form of the university.
           </li>
-          <li style={liStyle}>Pay the application fee.</li>
-          <li style={liStyle}>Submit the necessary documents.</li>
-          <li style={liStyle}>
-            Attend the counseling session (if applicable).
-          </li>
+          <li style={liStyle}>Candidate must attach the original documents which are required and then they have to pay the IITM application fee.</li>
+          <li style={liStyle}>After paying the fee, the candidate can apply.</li>
         </ul>
+        <p style={pStyle}>There are certain eligibility criteria and selection processes of some
+          popular course are in the below tabulate are:- </p>
+
+        <div
+          style={{
+            overflowX: "auto",
+          }}
+        >
+          <table style={tableStyle}>
+            <thead>
+              <tr>
+                <th style={thStyle}>Course</th>
+                <th style={thStyle}>Eligibility Criteria</th>
+                <th style={thStyle}>Selection Process</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                {
+                  course: "B.Tech",
+                  eligibility: "Passes 10+2 from PCM from a recognized board with a minimum of 75% marks",
+                  selection: "JEE Mains + JoAAA counseling"
+                },
+                {
+                  course: "M.Tech",
+                  eligibility: "Passed in B.E./B.Tech/equivalent degree in the relevant stream",
+                  selection: "GATE Score + COAP counseling"
+                },
+                {
+                  course: "MBA",
+                  eligibility: "Bachelor’s degree in Engineering /Technology/ Architecture /Pharmacy /B.Sc. Agri. Engg. (Minimum 4 years after 10+2) with at least 60% marks OR Master’s degree in any relevant branch with a minimum of 60% marks",
+                  selection: "CAT + Group Discussion + Interview Round"
+                },
+                {
+                  course: "Ph.D.",
+                  eligibility: "M.E./ M.Tech or MD degree with at least 60% (55% for SC/ST/PH) marks in aggregate OR 60% (55% for SC/ST/PH) marks in MBBS/ M.Sc./ MBA/ MA OR Minimum 70% marks in B.E/B.Tech",
+                  selection: "GATE/ UGC-NET/ CSIR-NET/ ICAR or ICMR score OR Written Test and Interview"
+                },
+              ].map((row, index) => (
+                <tr key={index}>
+                  <td style={tdStyle}>{row.course}</td>
+                  <td style={tdStyle}>{row.eligibility}</td>
+                  <td style={tdStyle}>{row.selection}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </section>
     </div>
   );

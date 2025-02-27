@@ -67,30 +67,13 @@ const Placement = () => {
     <section id="placement" style={sectionStyle}>
       <h2 style={h2Style}>Placement</h2>
       <p style={pStyle}>
-        IIT Delhi has an outstanding placement record across all levels of
-        students. In the latest placement drive for 2024, a total of 1,000
-        students were selected, with 1,050 offers made during Phase 1. More than
-        50 international offers, including PPOs, were secured from 20
-        international companies. Top recruiters include Air India, Microsoft,
-        Bajaj Auto, and others. IIT Delhi's placement offers have seen a 20%
-        increase from 2023, with around 400 national and international
-        organizations offering more than 800 job profiles in various sectors.
-      </p>
-      <p style={pStyle}>
-        According to the NIRF 2024 report, 676 UG (4-year) students were placed
-        with an average salary of INR 20 lakhs, 92 PG (5-year) students were
-        placed with a median salary of INR 22 lakhs, and 432 PG students were
-        placed with an average salary of INR 17 lakhs. Over 50 students received
-        domestic salary packages exceeding INR 1 crore during the IIT Delhi
-        placement program.
-      </p>
-      <p style={pStyle}>
-        IIT Delhi MBA Placements 2023 concluded with 100% placements. The
-        highest package was INR 41.13 LPA, and the average package was INR 25.82
-        LPA. The MBA Summer Internship Placements for 2024 also concluded with
-        100% internship success, with the highest stipend standing at INR 4.04
-        lakhs per month and the average stipend at INR 2.63 lakhs per month for
-        the MBA batch.
+        IITM is one the reputed institute in the field of technological education and
+        research in India. The institute has always been a favorite destination of
+        recruitments for many firms either domestic or international. <br /><br />
+        The first phase of the placement in IIT Madras were conducted on 14th Dec,
+        22023 by setting milestone as the 50% student were selected on the opening
+        day. In phase 1 with the median package of INR 19 LPA in the below table
+        there are few highlight s of IIT Madras placement 2024 of phase 1 are:-
       </p>
 
       <div
@@ -102,69 +85,48 @@ const Placement = () => {
           scrollbarWidth: "none",
         }}
       >
-        <table style={tableStyle}>
+        <table style={tableStyle} id="2024">
           <tbody>
             <tr>
-              <th style={thStyle}>Program Name</th>
-              <th style={thStyle}>Placement (%)</th>
+              <th style={thStyle}>Particular</th>
+              <th style={thStyle}>Placement statistic (phase 1)(2024)</th>
             </tr>
             {[
               {
-                program: "Biochemical Engineering and Biotechnology (4-Year)",
-                rate: "82.61%",
-              },
-              { program: "Civil Engineering (4-Year)", rate: "84.13%" },
-              { program: "Chemical Engineering (4-Year)", rate: "91.04%" },
-              {
-                program: "Computer Science and Engineering (4-Year)",
-                rate: "98.95%",
-              },
-              { program: "Electrical Engineering (4-Year)", rate: "96.84%" },
-              {
-                program:
-                  "Electrical Engineering (Power and Automation) (4-Year)",
-                rate: "95.92%",
-              },
-              { program: "Mechanical Engineering (4-Year)", rate: "82.86%" },
-              {
-                program: "Production and Industrial Engineering (4-Year)",
-                rate: "91.18%",
-              },
-              { program: "Mathematics and Computing (4-Year)", rate: "97.01%" },
-              { program: "Engineering Physics (4-Year)", rate: "82.93%" },
-              { program: "Textile Technology (4-Year)", rate: "80.00%" },
-              { program: "Overall B.Tech. (4-Year)", rate: "90.01%" },
-              {
-                program:
-                  "Biochemical Engineering and Biotechnology (5-Year Dual Degree)",
-                rate: "87.50%",
+                particular: "Median package",
+                statistic: "INR 19 LPA",
               },
               {
-                program: "Chemical Engineering (5-Year Dual Degree)",
-                rate: "84.21%",
+                particular: "Internship offers",
+                statistic: "19% increased",
               },
               {
-                program:
-                  "Computer Science and Engineering (5-Year Dual Degree)",
-                rate: "93.10%",
+                particular: "Placement rate",
+                statistic: "50% student placed",
               },
               {
-                program: "Mathematics and Computing (5-Year Dual Degree)",
-                rate: "95.83%",
+                particular: "Top recruiters",
+                statistic: "Adobe, JP, Morgan chase etc.",
               },
-              { program: "Overall Dual Degree", rate: "89.90%" },
             ].map((item, index) => (
               <tr key={index}>
-                <td style={tdStyle}>{item.program}</td>
-                <td style={tdStyle}>{item.rate}</td>
+                <td style={tdStyle}>{item.particular}</td>
+                <td style={tdStyle}>{item.statistic}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
 
+      <p style={pStyle}>The highest package in MBA is 29 LPA; lowest is 16.93 LPA and average
+        package is 20.40 LPA. In the MS highest package is 21.63 LPA and the
+        average is 19.31LPA <br />
+        Top recruiters of IIT Madras are Amazon, Deloitte, TCS, Accenture, Dell, etc. <br />
+        There is a remarkable placement in MBA in 2024 with 37% PPO. The
+        placement of 2023 and 2024 of IIT madras are given below.</p>
+
       <h3 className="th3" style={th3Style}>
-        Package Offered
+        Placement Statistics (2023 vs 2024)
       </h3>
       <div
         style={{
@@ -176,58 +138,182 @@ const Placement = () => {
         }}
       >
         <table style={tableStyle}>
+          <thead>
+            <tr>
+              <th style={thStyle}>Parameter</th>
+              <th style={thStyle}>Placement Statistics (2023)</th>
+              <th style={thStyle}>Placement Statistics (2024)</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr>
-              <th style={thStyle}>Domestic Placements</th>
-              <th style={thStyle}>Amount (in LPA)</th>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Median Gross Salary</td>
-              <td style={tdStyle}>17.40</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Median CTC</td>
-              <td style={tdStyle}>19.50</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3 className="th3" style={th3Style}>
-          Average Package Offered
-        </h3>
-        <table style={tableStyle}>
-          <tbody>
-            <tr>
-              <th style={thStyle}>Domestic Placements</th>
-              <th style={thStyle}>Amount (in LPA)</th>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Average Gross Salary</td>
-              <td style={tdStyle}>18.60</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Average CTC</td>
-              <td style={tdStyle}>21.90</td>
-            </tr>
+            {[
+              {
+                parameter: "Highest package",
+                data2023: [
+                  "INR 30.60 LPA (MBA)",
+                  "INR 21.63 LPA (MS)",
+                  "INR 22 LPA (Tech-MBA)",
+                ],
+                data2024: [
+                  "INR 29.65 LPA (MBA)",
+                  "INR 20 LPA (MS)",
+                  "INR 48.29 LPA (Tech-MBA)",
+                ],
+              },
+              {
+                parameter: "Average package",
+                data2023: [
+                  "INR 20.19 LPA (MBA)",
+                  "INR 19.31 LPA (MS)",
+                  "INR 18.90 LPA (Tech-MBA)",
+                ],
+                data2024: [
+                  "INR 16.93 LPA (MBA)",
+                  "INR 14.37 LPA (MS)",
+                  "INR 27.37 LPA (Tech-MBA)",
+                ],
+              },
+              {
+                parameter: "Median package",
+                data2023: ["NA"],
+                data2024: [
+                  "INR 16.39 LPA (MBA)",
+                  "INR 14.75 LPA (MS)",
+                  "INR 21.59 LPA (Tech-MBA)",
+                ],
+              },
+              {
+                parameter: "Companies visited (MBA)",
+                data2023: ["26"],
+                data2024: ["32"],
+              },
+              {
+                parameter: "PPO (MBA)",
+                data2023: ["42%"],
+                data2024: ["37%"],
+              },
+              {
+                parameter: "Placement rate",
+                data2023: ["100%"],
+                data2024: ["100%"],
+              },
+            ].map((row, index) => (
+              <tr key={index}>
+                <td style={tdStyle}>{row.parameter}</td>
+                <td style={tdStyle}>
+                  {row.data2023.map((item, i) => (
+                    <div key={i}>- {item}</div>
+                  ))}
+                </td>
+                <td style={tdStyle}>
+                  {row.data2024.map((item, i) => (
+                    <div key={i}>- {item}</div>
+                  ))}
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
 
+      <h3 style={th3Style}>Average Package (2024)</h3>
+      <div
+        style={{
+          overflowX: "auto",
+          WebkitOverflowScrolling: "touch",
+          whiteSpace: "nowrap",
+          msOverflowStyle: "none",
+          scrollbarWidth: "none",
+        }}
+      >
+        <table style={tableStyle}>
+          <thead>
+            <tr>
+              <th style={thStyle}>Course</th>
+              <th style={thStyle}>Average Package (2024)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              {
+                course: "MBA",
+                package: [
+                  "INR 16.93 LPA (overall)",
+                  "INR 21.89 LPA (top 25%)",
+                ],
+              },
+              {
+                course: "TECH MBA",
+                package: ["INR 27.37 LPA"],
+              },
+              {
+                course: "MS",
+                package: ["INR 14.37 LPA"],
+              },
+            ].map((row, index) => (
+              <tr key={index}>
+                <td style={tdStyle}>{row.course}</td>
+                <td style={tdStyle}>
+                  {row.package.map((item, i) => (
+                    <div key={i}>{item}</div>
+                  ))}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h3 style={th3Style}>Comparison between placement packages of IIT Madras of last 3 years</h3>
+      <div
+        style={{
+          overflowX: "auto",
+          WebkitOverflowScrolling: "touch",
+          whiteSpace: "nowrap",
+          msOverflowStyle: "none",
+          scrollbarWidth: "none",
+        }}
+      >
+        <table style={tableStyle}>
+          <thead>
+            <tr>
+              <th style={thStyle}>Course</th>
+              <th style={thStyle}>Placement Statistics (2022)</th>
+              <th style={thStyle}>Placement Statistics (2023)</th>
+              <th style={thStyle}>Placement Statistics (2024)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              { course: "MBA", stats: ["INR 16.66 LPA", "INR 20.19 LPA", "INR 16.93 LPA"] },
+              { course: "MS", stats: ["INR 18.98 LPA", "INR 19.31 LPA", "INR 14.37 LPA"] },
+              { course: "Tech MBA", stats: ["NA", "INR 18.90 LPA", "INR 27.37 LPA"] },
+            ].map((row, index) => (
+              <tr key={index}>
+                <td style={tdStyle}>{row.course}</td>
+                {row.stats.map((item, i) => (
+                  <td key={i} style={tdStyle}>{item}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p style={pStyle}>Here are the top recruiters of IIT Madras:- </p>
       <h3 style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}>
-        <strong>Top Recruiters</strong>
+        <strong>DOMS IIT Madras Top Recruiters </strong>
       </h3>
       <ul>
         {[
-          "Allen Career Institute",
-          "American Express",
-          "EXL Analytics",
-          "FIITJEE",
-          "HCL Technologies",
-          "Intel",
-          "Jio Platforms",
-          "Navi Technologies",
-          "Praxis Global",
-          "Reliance Industries",
+          "Accenture",
+          "Cognizant",
+          "Dell",
+          "Deloitte ",
+          "IBM",
+          "ICICI Bank",
+          "Morgan Stanley",
+          "P&G",
+          "Mahindra",
         ].map((recruiter, index) => (
           <li key={index} style={liStyle}>
             {recruiter}
@@ -235,25 +321,12 @@ const Placement = () => {
         ))}
       </ul>
 
-      <h3 style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}>
-        <strong>IIT Delhi Placements 2024 Highlights</strong>
-      </h3>
-      <p style={pStyle}>The key highlights of IIT Delhi placements 2024 are:</p>
-      <ul>
-        <li style={liStyle}>Total offers: 1,050</li>
-        <li style={liStyle}>International offers: 50+</li>
-        <li style={liStyle}>
-          Top recruiting sector: Core (Technical) with 42% placement
-          distribution
-        </li>
-        <li id="2023" style={liStyle}>
-          Top recruiters: Microsoft, Goldman Sachs, Texas Instruments
-        </li>
-      </ul>
+      <p style={pStyle}>Currently 1091 students  were placed in the phase 1 and phase 2 of
+        2023-2024 placement in this 235ppos were accepted out of 300, and the total
+        count of companies which are participating stood at 256 in which 44
+        international offers were made. </p>
 
-      <h3 className="th3" style={th3Style}>
-        IIT Delhi Placements 2023 Highlights
-      </h3>
+      <h3 style={th3Style}>Placement Statistics (2022-2023)</h3>
       <div
         style={{
           overflowX: "auto",
@@ -264,54 +337,42 @@ const Placement = () => {
         }}
       >
         <table style={tableStyle}>
-          <tbody>
+          <thead>
             <tr>
               <th style={thStyle}>Particulars</th>
               <th style={thStyle}>Placement Statistics (2022)</th>
               <th style={thStyle}>Placement Statistics (2023)</th>
             </tr>
-            <tr>
-              <td style={tdStyle}>Total job offers received</td>
-              <td style={tdStyle}>1,300</td>
-              <td style={tdStyle}>1,300</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>No. of unique job offers</td>
-              <td style={tdStyle}>1,100</td>
-              <td style={tdStyle}>1,150</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Total PPOs</td>
-              <td style={tdStyle}>230</td>
-              <td style={tdStyle}>260</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>No. of international offers</td>
-              <td style={tdStyle}>NA</td>
-              <td style={tdStyle}>30</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>No. of companies</td>
-              <td style={tdStyle}>600</td>
-              <td style={tdStyle}>500</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Placement rate</td>
-              <td style={tdStyle}>82%</td>
-              <td id="2024" style={tdStyle}>
-                84.94%
-              </td>
-            </tr>
+          </thead>
+          <tbody>
+            {[
+              { label: "No. of offers", stats: ["1,491", "1,612"] },
+              { label: "Companies visited", stats: ["480+", "480+"] },
+              { label: "PPOs", stats: ["231", "350"] },
+              { label: "Highest package", stats: ["INR 2.14 crore per annum", "INR 1.31 crore per annum"] },
+              { label: "Lowest package", stats: ["INR 3 LPA", "INR 5.40 LPA"] },
+              { label: "Offers above INR 30 LPA", stats: ["203", "172"] },
+              { label: "Offers between INR 25 LPA - INR 30 LPA", stats: ["75", "48"] },
+              { label: "Offers between INR 20 LPA - INR 25 LPA", stats: ["134", "135"] },
+              { label: "Offers between INR 15 LPA - INR 20 LPA", stats: ["264", "312"] },
+              { label: "Offers between INR 10 LPA - INR 15 LPA", stats: ["342", "226"] },
+              { label: "Offers between INR 5 LPA - INR 10 LPA", stats: ["154", "152"] },
+              { label: "Offers less than INR 5 LPA", stats: ["4", "N/A"] },
+            ].map((row, index) => (
+              <tr key={index}>
+                <td style={tdStyle}>{row.label}</td>
+                {row.stats.map((item, i) => (
+                  <td key={i} style={tdStyle}>{item}</td>
+                ))}
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
 
-      <h3 className="th3" style={th3Style}>
-        IIT Delhi MBA Placements 2024
-      </h3>
-      <p style={pStyle}>
-        The highlights of IIT Delhi MBA placements 2024 are as follows:
-      </p>
+      <p style={pStyle}>There are comparison between some other IITs of India</p>
+
+      <h3 style={th3Style} id="2023">IIT Placement Statistics (2023)</h3>
       <div
         style={{
           overflowX: "auto",
@@ -322,53 +383,33 @@ const Placement = () => {
         }}
       >
         <table style={tableStyle}>
+          <thead>
+            <tr>
+              <th style={thStyle}>IIT University Name</th>
+              <th style={thStyle}>Highest Package (2023)</th>
+              <th style={thStyle}>No. of Offers (2023)</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr>
-              <th style={thStyle}>Particulars</th>
-              <th style={thStyle}>Placement Statistics 2023</th>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Placement Percentage</td>
-              <td style={tdStyle}>100%</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Highest Package</td>
-              <td style={tdStyle}>INR 41.13 LPA</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Mean Package</td>
-              <td style={tdStyle}>INR 25.82 LPA</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Median Package</td>
-              <td style={tdStyle}>INR 24.45 LPA</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Mean Package of Fresher’s</td>
-              <td style={tdStyle}>INR 24.01 LPA</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Major Domain</td>
-              <td style={tdStyle}>IT & Analytics, Sales & Marketing</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>Top Recruiters</td>
-              <td style={tdStyle}>
-                Accenture, Adani, Amazon, Barclays, Capgemini, Dell, etc.
-              </td>
-            </tr>
+            {[
+              { university: "IIT Madras", highestPackage: "INR 1.31 crore per annum", offers: "1,612" },
+              { university: "IIT Delhi", highestPackage: "INR 2.40 crore per annum (international)", offers: "1,300" },
+              { university: "IIT Bombay", highestPackage: "INR 3.67 crore per annum (international), INR 1.68 crore per annum (domestic)", offers: "1,788" },
+              { university: "IIT Kanpur", highestPackage: "INR 1.90 crore per annum (domestic)*", offers: "1,200*" },
+            ].map((row, index) => (
+              <tr key={index}>
+                <td style={tdStyle}>{row.university}</td>
+                <td style={tdStyle}>{row.highestPackage}</td>
+                <td style={tdStyle}>{row.offers}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
 
-      <h3 className="th3" style={th3Style}>
-        IIT Delhi Average Package 2023
-      </h3>
-      <p style={pStyle}>
-        The batch of 2023 received a total of 260 pre-placement offers. A total
-        of 1,300 job offers were made, with 1,150 students selected. Below is a
-        trend of the median packages offered over the past three years:
-      </p>
+      <p style={pStyle}>IIT Madras placement report of last five in which see the gradual increase in
+        the number of student got selected are given below:- </p>
+      <h3 style={th3Style}>Student Selection Statistics</h3>
       <div
         style={{
           overflowX: "auto",
@@ -379,31 +420,25 @@ const Placement = () => {
         }}
       >
         <table style={tableStyle}>
+          <thead>
+            <tr>
+              <th style={thStyle}>Year</th>
+              <th style={thStyle}>No. of Students Selected</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr>
-              <th style={thStyle}>Course</th>
-              <th style={thStyle}>Median Package (2020)</th>
-              <th style={thStyle}>Median Package (2021)</th>
-              <th style={thStyle}>Median Package (2022)</th>
-            </tr>
-            <tr>
-              <td style={tdStyle}>UG 4-year (B.Tech)</td>
-              <td style={tdStyle}>INR 15.50 LPA</td>
-              <td style={tdStyle}>INR 17.60 LPA</td>
-              <td style={tdStyle}>INR 20.50 LPA</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>UG 5-year (B.Tech + M.Tech)</td>
-              <td style={tdStyle}>INR 18.10 LPA</td>
-              <td style={tdStyle}>INR 22 LPA</td>
-              <td style={tdStyle}>INR 20 LPA</td>
-            </tr>
-            <tr>
-              <td style={tdStyle}>PG 2-year (M.Tech)</td>
-              <td style={tdStyle}>INR 11 LPA</td>
-              <td style={tdStyle}>INR 15 LPA</td>
-              <td style={tdStyle}>INR 12.50 LPA</td>
-            </tr>
+            {[
+              { year: "2022-2023", students: "1612" },
+              { year: "2021-2022", students: "1491" },
+              { year: "2020-2021", students: "1047" },
+              { year: "2019-2020", students: "1078" },
+              { year: "2018-2019", students: "1151" },
+            ].map((row, index) => (
+              <tr key={index}>
+                <td style={tdStyle}>{row.year}</td>
+                <td style={tdStyle}>{row.students}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

@@ -79,59 +79,56 @@ const FAQ = () => {
 
   const faqData = [
     {
-      question: "Which is better for MSc: IIT Delhi or IIT Madras?",
+      question: "Can I do MTech in IIT Madras without GATE?",
       answer:
-        "IIT Delhi and IIT Madras are well known and reputed institutions in India. According to the NIRF 2023, IIT Madras ranked is 01 while IIT Delhi is ranked 03 in the Engineering category. Both the colleges offer MSc course across various specialisations with top quality education to its students. Both colleges have world class infrastructure. Both colleges have highly qualified and experienced faculty members who are experts in their respective fields. Both colleges are very good in their own way.  Which one is the best college depends on what the person is actually looking for in a college or university.",
+        "The admission to M.Tech at IIT Madras is entirely based on GATE scores. Hence, aspirants must meet eligibility requirements and have valid score of GATE. However, MS candidates can apply without the entrance score. Aspirants who have completed a BTech degree from one of the IITs with a CGPA of 8.0 and above can apply without a GATE score for MS.",
     },
     {
-      question: "How much rank in JEE Advanced is required for IIT Delhi?",
+      question: "What is the placement trend at IIT Madras?",
       answer:
-        "The IIT Delhi cutoff 2024 has been concluded for admission to the BTech and Integrated BTech courses. As per the JEE Advanced 2024 cutoff for the Last Round, the closing rank for BTech ranged between 116 and 4849 for the General AI category students. The toughest course to get into IIT Delhi was CSE. So, candidates seeking admission at this institute must aim to secure up to 4850 rank to be eligible for BTech admission. The required cutoff ranks will vary based on the categories you fall into. To get an idea of the category-wise JEE Advanced cutoff range for BTech admission at IIT Delhi, refer to the table below: CategoryJEE Advanced Round 1JEE Advanced Last Round General116 - 4754116 - 4849OBC89 - 306889 - 2749SC48 - 176550 - 1780ST23 - 99123- 991EWS33 - 113935 - 1215PWD5 - 1595 - 159",
-    },
-    {
-      question: "Is DMS IIT Delhi good for MBA?",
-      answer:
-        "The Department of Management Studies (DMS) of IIT Delhi is well-known for its MBA programme. It provides a demanding curriculum that aims to provide students with advanced management skills and knowledge. The programme is noted for its emphasis on analytics, technology, and innovation, which complements the institute's engineering heritage. DMS IIT Delhi has skilled teachers, good infrastructure, and strong industry links that improve learning and placement prospects. The institute is frequently ranked among the top MBA programmes in India, making it a great alternative for students looking for a complete and competitive business education.",
-    },
-    {
-      question: "How are IIT Delhi placements compared with other top IITs?",
-      answer:
-        "According to the most recent media report, during Phase I IIT Delhi placements in 2024, 1,050 offers—including PPOs—were made. Additionally, 1,000 applicants in total were chosen at random during phase 1 of the IIT Delhi placements 2024. In addition, during Phase I IIT Delhi placements 2024, more than 50 foreign offers including PPOs were received from almost 20 foreign businesses.The table below shows the IIT Delhi placements compared with other top IITs for the year 2023.College Namethe highest Package (2023)IIT DelhiINR 2.5 crore per annumIIT MadrasINR 1.31 crore per annumIIT BombayINR 1.68 crore per annumIIT KharagpurAbove INR 2.68 crore per annum",
+        "IIT Madras has released its placements report for 2023. As per the report, 172 offers were presented above INR 30 LPA. Check the complete insights of IIT Madras placements 2023 and 2022 from the table below:ParticularsPlacement Statistics (2022)Placement Statistics (2023)No. of offers1,4911,612Companies visited480+480+PPOs231350the highest packageINR 2.14 crore per annumINR 1.31 crore per annumthe lowest packageINR 3 LPAINR 5.40 LPAOffers above INR 30 LPA203172Offers between INR 25 LPA - INR 30 LPA7548Offers between INR 20 LPA - INR 25 LPA134135Offers between INR 15 LPA - INR 20 LPA264312Offers between INR 10 LPA - INR 15 LPA342226Offers between INR 5 LPA - INR 10 LPA154152Offers less than INR 5 LPA4N/APopular recruitersAtlassian, Deloitte India, Capgemini, American Express, Cogoport, SAP Labs.",
     },
     {
       question:
-        "I've scored less than 60% in 12th boards, can I get admission in IIT Delhi for BTech?",
+        "I want to crack JEE Mains to join IIT Madras. Is the JEE Mains results enough to get admission?",
       answer:
-        "Admission to IIT Delhi BTech courses is subject to fulfiment of the eligibility requirements for JEE Main and JEE Advanced. The students who have passed Class 12 in Science stream with at least 75% aggregate (65% aggregate for SC/ST/PwD) are eligible to apply. Hence, a student scoring less than 60% is not eligible to pursue BTech at IIT Delhi. They can go for other colleges offering the course. They can also check out the colleges offering Online BTech courses.",
+        "To get admission to IIT Madras the JEE Mains Results alone are not enough. A qualifying qualification in the JEE Mains examination is required to first qualify as it serves as a preliminary test. However, to secure a place in the IIT Madras B.Tech programme you will also need to take the JEE Advanced exam which is the second stage of the admission process. Admission is mainly based on your performance in the JEE Advanced. You must achieve a competitive rank to be considered for popular courses like computer science or electrical engineering which are very challenging It is therefore important to perform well in both exams to get a chance of admission to IIT Madras.",
+    },
+    {
+      question: "What is the average package offered at IIT Madras?",
+      answer:
+        "The IIT Madras average package has not been released. However, the median salary is out. Comparing the last two-year median package details, an improving trend was recorded in IIT Madras MBA and M.Tech courses. For UG (BTech, DD, IDDD), MS (Science streams), and PhD courses, the median package dropped from 2022 to 2023. Alongside this, the median package for MS (Engineering streams) and MA (Humanities and Social Sciences) has been stagnant over the past two years. For a better understanding, take a look at the below table depicting the IIT Madras placement package comparison for 2022 and 2023:CourseMedian Package (2022)Median Package (2023)UG (BTech, DD, IDDD)INR 18 LPAINR 17 LPAMTechINR 13.02 LPAINR 15 LPAMS- Engineering StreamsINR 15 LPAINR 15 LPAMSc- Science StreamINR 14 LPAINR 9.62 LPAMA (Humanities and Social Sciences)INR 13.69 LPAINR 10.95 LPAMBAINR 15.35 LPAINR 20.80 LPAPhDINR 16.50 LPAINR 15 LPA",
+    },
+    {
+      question: "Can I do an MSc at IIT Madras?",
+      answer:
+        "Yes, you can do an MSc at IIT Madras. The institute offers a two-year postgraduate degree for this course. Students can pursue the course in the field of Physics, Chemistry, and Mathematics. Those looking to enrol in IIT Madras MSc need to clear JAM exam. Additionally, to be eligible for MSc admission at IIT Madras, students must have passed an UG degree or should be currently studying in the final year of the UG programme. Proof of having passed the undergraduate degree must be submitted at the time of admission. Interested candidates can visit the official website of IITM to know more about the course. ",
+    },
+    {
+      question: "What is the NIRF ranking of IIT Madras in 2024?",
+      answer:
+        "As per the NIRF ranking 2024, Indian Institute of Technology, (IIT) Madras emerged to be the No. 1 Engineering college in India. For the sixth consecutive year,  IIT Madras has maintained its status as the top college overall and as the finest engineering school for the eighth consecutive year. Indian Institute of Technology, (IIT) Delhi retained its position as the No. 2 among the Engineering category.",
+    },
+    {
+      question: "Is MBA available at IIT Madras?",
+      answer:
+        "Yes, IIT Madras offers MBA/PGDM in a full time mode. The duration of this course is of 2 years. Under this course, two specializations are offered which are MBA and Tech MBA. The total tuition fees for these courses are INR 1.26 L and INR 17 L respectively. For admission IIT Madras MBA, students must have completed their graduation with an aggregate score of 60%. However, admissions to MBA course is entirely entrance-based and scores of CAT exam is accepted for this purpose followed group discussion and personal interview round.",
     },
     {
       question:
-        "What is the branch-wise placement rate recorded during IIT Delhi BTech placements?",
+        "Can I take admission in IIT Madras BTech course without JEE Mains?",
       answer:
-        "According to unofficial sources, the branch-wise placement rate recroded during IIT Delhi BTech placements 2023 is presented below:BTech Branch Students Registered (2023)Students Placed (2023)Placement Rate (2023)Biochemical Engineering and Biotechnology463882.61%Civil Engineering635384.13%Chemical Engineering676191.04%Computer Science and Engineering959498.95%Electrical Engineering959296.84%Electrical Engineering (Power and Automation)494795.92%Mechanical Engineering705882.86%Production and Industrial Engineering686291.18%Mathematics and Computing676597.01%Engineering Physics413482.93%Textile Technology907280.00%",
+        "No, admissions to the IIT Madras is not possible without JEE Main scores as JEE Main is the major accepted entrance examination for admission to the BTech course. The JEE Main exam is also an eligibility test for the JEE Advanced. This exam is conducted for admission to major IITs. JEE Main is held twice a year, that gives students two opportunities to secure a good score. Students have the option to appear in one or both attempts.",
     },
     {
-      question:
-        "Can you share details about the extracurricular activities conducted at DMS IIT Delhi?",
+      question: "What is the fee for BTech at IIT Madras?",
       answer:
-        "DMS IIT Delhi arranges various events, seminars, and workshops for students. There are various extracurricular activities arranged by the college. Various DMS IIT Delhi students have established their start ups. Throughout the years of their graduation, students are given the knowledge of the latest developments happening in the job world.",
+        "The IIT Madras fee includes Institute Fees, Hostel Fee, and various other fee components. The fee is exclusive of various charges such as tuition fee, admission fee, and others. For knowing the exact fee details, please visit the official website of the college and ask for the details. Till the time, students can check the below fee breakup:CoursesTuition FeesB.E. / B.Tech5.3 L - 10 LB.Sc.1.2 L - 17 LB.Sc.1.2 L - 10 L.",
     },
     {
-      question:
-        "What is the rank of IIT Delhi in QS World University Rankings 2024?",
+      question: "How can I get admission in IIT Madras?",
       answer:
-        "IIT Delhi is listed as the 197th best university in the world as per the QS World University Rankings 2024. The institute is ranked 46th in the Asia University Rankings and 151-200 in the Engineering and Technology (Engineering) category. The QS World University Rankings are based on several variables, such as academic standing, employer standing, faculty-to-student ratio, number of citations per faculty, and proportion of foreign students. IIT Delhi was also ranked 717 by the US News Rankings 2022.",
-    },
-    {
-      question:
-        "What documents are required during B.Tech admission process at IIT Delhi?",
-      answer:
-        "The students need to submit important documents for verification purposes. Candidates should have scanned copies with them. Before the JEE Main 2024 registration process, students must keep the following documents and information ready for a smooth application process:Valid email ID and mobile numberAcademic details related to the Class 10 and Class 12 qualifying examsScanned copy of the category certificate (if applicable)Scanned copy of the PwD certificate (if applicable)Scanned photograph and signature as per the specification mentioned by the NTANet banking/credit card/debit card/UPI details for application fee payment",
-    },
-    {
-      question: "How can I get admission in IIT Delhi for MBA?",
-      answer:
-        "To get confirmation at DMS IIT Delhi for the MBA program, candidates to meet the qualification rules of having a graduation degree with 60% marks. The CAT exam is the primary selection criterion. In addition, if students are interested in the Executive MBA program, the CAT exam will serve as the selection parameter and similar eligibility requirements will apply. The MBA programme has a INR 11.2 Lacs tuition fee.",
+        "Students who have missed the JEE Main exams must not worry, these students can apply again the next year. Candidates willing to get admission must take part in the IIT Madras admission process before the last date of application. Candidates must know their eligibility criteria and apply accordingly. Follow the IIT Madras application process mentioned below:Step 1: Visit the official website to register for the JEE Main examination.Step 2: Appear for the JEE Main exam.Step 3: Register for the counselling.Step 4: Pay the admission fee to the selected and the allotted college.",
     },
   ];
 

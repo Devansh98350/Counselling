@@ -87,18 +87,17 @@ const Ranking = () => {
   return (
     <div style={sectionStyle}>
       <section id="ranking">
-        <h2 style={h2Style}>Ranking</h2>
+        <h2 style={h2Style}>IIT Madras ranking</h2>
         <p style={pStyle}>
-          IIT Delhi is one of Asia's top engineering institutes and consistently
-          ranks among the best in both national and international rankings. As
-          per the NIRF rankings, IIT Delhi has consistently stayed in the top 3
-          engineering colleges in India. In the QS World University Rankings
-          2025, IIT Delhi ranks among the top 150 universities globally.
+          IIT Madras remain top of the chart of NIRF ranking top college ranking 1st for
+          the consecutive for the 3 years defeating IIT Delhi, IIT Bombay,, IIT Kanpur, IIT
+          Kharagpur IIT Roorkee, IIT Guwahati etc. as 2nd, 3rd,4th,5th, 6th,7th as
+          respectively for 3 year <br /> <br />
+          IIT Madras NIRF ranking with other institution in last year is given below:
         </p>
 
-        <h3 style={th3Style}>IIT Delhi International Ranking 2025</h3>
+        <h3 style={th3Style}>Institution Rankings</h3>
         <div
-          className="table-wrapper"
           style={{
             overflowX: "auto",
             WebkitOverflowScrolling: "touch",
@@ -108,47 +107,38 @@ const Ranking = () => {
           }}
         >
           <table style={tableStyle}>
-            <tbody>
+            <thead>
               <tr>
-                <th style={thStyle}>Ranking Body</th>
-                <th style={thStyle}>Category</th>
-                <th style={thStyle}>Rank</th>
+                <th style={thStyle}>Institutions</th>
+                <th style={thStyle}>2024</th>
+                <th style={thStyle}>2023</th>
+                <th style={thStyle}>2022</th>
               </tr>
+            </thead>
+            <tbody>
               {[
-                {
-                  body: "QS World Ranking 2025",
-                  category: "World University",
-                  rank: "150",
-                },
-                {
-                  body: "QS World Ranking 2024",
-                  category: "World University",
-                  rank: "197",
-                },
-                {
-                  body: "US News Ranking 2024",
-                  category: "Best Global Universities",
-                  rank: "689",
-                },
-                {
-                  body: "QS World Ranking 2023",
-                  category: "World University",
-                  rank: "174+",
-                },
-              ].map((item, index) => (
+                { institution: "IIT Madras", rank2024: "1", rank2023: "1", rank2022: "1" },
+                { institution: "IIT Delhi", rank2024: "2", rank2023: "2", rank2022: "2" },
+                { institution: "IIT Bombay", rank2024: "3", rank2023: "3", rank2022: "3" },
+              ].map((row, index) => (
                 <tr key={index}>
-                  <td style={tdStyle}>{item.body}</td>
-                  <td style={tdStyle}>{item.category}</td>
-                  <td style={tdStyle}>{item.rank}</td>
+                  <td style={tdStyle}>{row.institution}</td>
+                  <td style={tdStyle}>{row.rank2024}</td>
+                  <td style={tdStyle}>{row.rank2023}</td>
+                  <td style={tdStyle}>{row.rank2022}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
 
-        <h3 style={th3Style}>IIT Delhi National Ranking 2024</h3>
+        <p style={pStyle}>The ranking of IIT Madras has been improving each year in the world ranking.
+          In QS Global university ranking in 2023 is 250 and Asia ranking it makes it to
+          53 and it maintain to 53 in 2024 as well but in world ranking it slide to 285 but it
+          improve in 2024 by ranking 227.</p>
+
+        <h3 style={th3Style}>IIT Madras QS world university ranking 2025 </h3>
         <div
-          className="table-wrapper"
           style={{
             overflowX: "auto",
             WebkitOverflowScrolling: "touch",
@@ -158,390 +148,404 @@ const Ranking = () => {
           }}
         >
           <table style={tableStyle}>
-            <tbody>
+            <thead>
               <tr>
-                <th style={thStyle}>Ranking Body</th>
                 <th style={thStyle}>Category</th>
-                <th style={thStyle}>Rank</th>
+                <th style={thStyle}>2023</th>
+                <th style={thStyle}>2024</th>
+                <th style={thStyle}>2025</th>
               </tr>
+            </thead>
+            <tbody>
               {[
-                {
-                  body: "India Today 2024",
-                  category: "Engineering",
-                  rank: "1",
-                },
-                {
-                  body: "The Week 2024",
-                  category: "Technical Universities",
-                  rank: "2",
-                },
-                { body: "NIRF 2023", category: "Engineering", rank: "2" },
-              ].map((item, index) => (
+                { category: "Asia", rank2023: "53", rank2024: "53", rank2025: "74" },
+                { category: "Southern Asia", rank2023: "4", rank2024: "3", rank2025: "3" },
+                { category: "Top global Universities", rank2023: "250", rank2024: "285", rank2025: "227" },
+              ].map((row, index) => (
                 <tr key={index}>
-                  <td style={tdStyle}>{item.body}</td>
-                  <td style={tdStyle}>{item.category}</td>
-                  <td style={tdStyle}>{item.rank}</td>
+                  <td style={tdStyle}>{row.category}</td>
+                  <td style={tdStyle}>{row.rank2023}</td>
+                  <td style={tdStyle}>{row.rank2024}</td>
+                  <td style={tdStyle}>{row.rank2025}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
+
+        <p style={pStyle}>Some other IIT Madras ranking in the world is:
+          <ul style={ulStyle}>
+            <li style={liStyle}>By QS world university ranking- 227th</li>
+            <li style={liStyle}>QS WUR ranking by subject- 29th </li>
+            <li style={liStyle}>Qs sustainability ranking- 344th</li>
+            <li style={liStyle}>Asia university ranking - 3rd</li>
+          </ul>
+        </p>
       </section>
 
       <section id="scholarship">
         <h2 style={h2Style}>Scholarship</h2>
         <p style={pStyle}>
-          Indian Institute of Technology Delhi also provides financial aid to
-          students who need financial assistance. Apart from the ST/SC/PWD
-          students, scholarships are also provided to brilliant students. The
-          institution offers merit prizes to deserving students like toppers of
-          departments. IIT Delhi offers scholarships for students of UG, PG, and
-          Ph.D. programs. The Ph.D. students are offered financial assistance
-          through Teaching/Research Assistantships.
+          IIT Madras also provide financial aid  to the student who  are financially strong
+          through many scholarship programs provided by government and privately
+          both but first they must be eligible for it because every scholarship have
+          particular  eligibility criteria in order to be awarded. <br />
+          IIT Madras Scholarship application programs filling process:-
+          <ul style={ulStyle}>
+            <li style={liStyle}>First you have to open the website of IIT Madras by clicking the link https://www.iitm.ac.in/</li>
+            <li style={liStyle}>Then the home page will open on your screen.</li>
+            <li style={liStyle}>After that you have to click on the option called <strong>Academics</strong> and a dialogue will appear on your screen.</li>
+            <li style={liStyle}>You have to click on the option called <strong>Academic Services</strong> and a few other options will open on your screen successfully.</li>
+            <li style={liStyle}>Click on the option called <strong>Scholarships and Financial Assistance</strong> anda new page with the details related to these scholarships will open on your screen. </li>
+            <li style={liStyle}>You can click on the <strong>Apply Online</strong> button after reading all of the information about this scholarship.</li>
+            <li style={liStyle}>The application form will open on your screen.</li>
+            <li style={liStyle}>You have to fill out the application form and upload all of the documents.</li>
+            <li style={liStyle}>Successfully apply for the scheme.</li>
+          </ul>
         </p>
 
-        <h3 className="th3" style={th3Style}>
-          IIT Delhi UG Scholarships, Eligibility Criteria, and Amount
-        </h3>
-        <div style={{ overflowX: "auto" }}>
-          <table style={tableStyle}>
-            <thead>
-              <tr>
-                <th style={thStyle}>Name of the Scholarship</th>
-                <th style={thStyle}>Eligibility Criteria</th>
-                <th style={thStyle}>Scholarship Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                {
-                  name: "Merit-cum-Means (MCM) Scholarships",
-                  eligibility:
-                    "For the General/OBC/EWS students of engineering and technology.",
-                  amount:
-                    "The MCM scholarship grants a scholarship of Rs. 1000 per month.",
-                },
-                {
-                  name: "Institute Merit Prizes and Certificates",
-                  eligibility:
-                    "The eligible students are top 7% of the 4-year B.Tech programme and 5-year Dual-Degree Programme, of each semester till the 8th/10th semester.",
-                  amount: "The Merit Prize offers a prize value of Rs. 2500.",
-                },
-                {
-                  name: "Donor Scholarships",
-                  eligibility:
-                    "These scholarships are offered by organizations, individuals, and trusts.",
-                  amount: "Varies based on the donor.",
-                },
-              ].map((item, index) => (
-                <tr key={index}>
-                  <td style={tdStyle}>{item.name}</td>
-                  <td style={tdStyle}>{item.eligibility}</td>
-                  <td style={tdStyle}>{item.amount}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
-        <h3 className="th3" style={th3Style}>
-          IIT Delhi Scholarship for PG Programmes
-        </h3>
-        <div style={{ overflowX: "auto" }}>
-          <table style={tableStyle}>
-            <thead>
-              <tr>
-                <th style={thStyle}>Degree</th>
-                <th style={thStyle}>Scholarship Details</th>
-                <th style={thStyle}>Scholarship Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                {
-                  degree: "M.Sc. Programmes",
-                  details:
-                    "As per the government rules, this scholarship is offered only to those students whose parents' gross income is less than ₹4.5 lac per annum.",
-                  amount:
-                    "A tuition fee exemption and Merit-cum-Means scholarship of Rs. 1000 per month is offered to the eligible 25% of the total strength of M.Sc. students.",
-                },
-                {
-                  degree: "M.Tech., M.S. (Research), and M.Des.",
-                  details:
-                    "No scholarship is available for the students in this category.",
-                  amount: "-",
-                },
-              ].map((item, index) => (
-                <tr key={index}>
-                  <td style={tdStyle}>{item.degree}</td>
-                  <td style={tdStyle}>{item.details}</td>
-                  <td style={tdStyle}>{item.amount}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Research Assistance</strong>
-        </h3>
-        <ul style={ulStyle}>
-          {[
-            "Research Assistance is provided to the students who are enrolled in the Ph.D. or research programs at IIT Delhi and are willing to work for the department.",
-            "Any student enrolled in the research-based programs on a full-time basis at IIT Delhi.",
-            "A minimum of INR 15,000 is awarded per month to students who can work about 20 hours a week.",
-            "For the students enrolled in the MS Research Programme, a sum of INR 24,000 is awarded per month to work 8 hours a week.",
-          ].map((item, index) => (
-            <li key={index} style={liStyle}>
-              {item}
-            </li>
-          ))}
-        </ul>
-
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Loan Scholarships</strong>
-        </h3>
-        <p style={pStyle}>
-          Besides, most of the students are able to get scholarships on the
-          basis of merits and academic qualifications at IIT Delhi. Many alumni
-          have contributed and instituted scholarships that repay the interest
-          on loans students have taken. Some of the loan scholarships are
-          mentioned below:
-        </p>
-        <ul style={ulStyle}>
-          {[
-            "Ved & Prem Lata Gulati Loan Scholarship",
-            "Smt. Sushma Lal Loan Scholarship",
-            "Smt. Sarada Warrior Loan Scholarship",
-            "Shrimati Dharam Devi Bhatia Loan Scholarship",
-            "Shri Motiram Bulchand Shivdasani Scholarship",
-            "Samir Anand and Batch of 88 Loan Scholarship",
-          ].map((item, index) => (
-            <li key={index} style={liStyle}>
-              {item}
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section id="campus">
-        <h2 style={h2Style}>Campus Facilities at IIT Delhi</h2>
-        <p style={pStyle}>
-          The campus of IIT Delhi is spread across an area of 320 acres, located
-          in the Hauz Khas area of South Delhi. The campus is in close proximity
-          to notable landmarks such as the Qutub Minar and Lotus Temple, and is
-          near other educational institutions like JNU and IIFT. The IIT Delhi
-          campus features a range of facilities including an amphitheatre, a
-          swimming pool, a music room, a robotics room, a club building, a
-          gymnasium hall, and a fully functional central library that is
-          accessible 24/7. These amenities contribute to a vibrant and
-          well-equipped campus environment.
-        </p>
-        <p style={pStyle}>
-          The campus is organized into several distinct areas for administrative
-          and logistical functions. The <strong>West Campus</strong> serves as
-          the hostel area, while the <strong>East Campus</strong> is designated
-          for residential purposes. The{" "}
-          <strong>Main Administrative Building</strong> handles administrative
-          functions, and the <strong>Academic Area</strong> is dedicated to
-          academic activities. This organization helps streamline operations and
-          supports the various needs of students and staff.
-        </p>
-        {/*<div style={imageContainerStyle}>
-          <img src="#" alt="Campus Image 1" style={imageStyle} />
-          <img src="#" alt="Campus Image 2" style={imageStyle} />
-        </div>*/}
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Hostel Facilities</strong>
-        </h3>
-        <p style={pStyle}>
-          The IIT Delhi hostels are well-equipped with a variety of amenities to
-          ensure a comfortable and supportive living environment for students.
-          There are 13 boys hostels and 5 girls hostels on campus. Each hostel
-          features a dining hall with a mess facility, a lounge for relaxation,
-          an indoor games room for recreational activities, and a reading room
-          for quiet study. These facilities are designed to provide students
-          with a balanced and enjoyable hostel experience. IIT Delhi has boys'
-          hostels inside the campus premises. Its hostel runs in a cooperative
-          mode, which means the operation is handled by elected student
-          leadership under the guidance of designated faculty.
-        </p>
-        <p style={pStyle}>
-          The girls' hostels offer similar facilities, including recreational
-          amenities such as indoor games, a common room with TV, a reading room,
-          and a dining hall. All rooms have internet connectivity.
-        </p>
-
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Campus Facilities</strong>
-        </h3>
-        <ul style={ulStyle}>
-          <li style={liStyle}>
-            <strong>IT Infrastructure:</strong>
-            <ul style={innerListStyle}>
-              <li style={liStyle}>
-                <strong>Network Type:</strong> State-of-the-art LAN with Fiber
-                Optics and enhanced CAT5/CAT6 UTP backbone
-              </li>
-              <li style={liStyle}>
-                <strong>Network Access Points:</strong> Over 9000 across the
-                campus
-              </li>
-              <li style={liStyle}>
-                <strong>Cisco Switches:</strong> About 265
-              </li>
-              <li style={liStyle}>
-                <strong>Virtual LANs:</strong> Approximately 75
-              </li>
-            </ul>
-          </li>
-          <li style={liStyle}>
-            <strong>Wi-Fi:</strong> Secure Wi-Fi available in the academic area,
-            main guest house, faculty guest house, RCA, and hospital
-          </li>
-          <li style={liStyle}>
-            <strong>Cafeteria:</strong> Several canteens located opposite
-            Aravali Hostel, in Himadri Hostel, and adjacent to Kumaon Hostel;
-            serves healthy and hygienic food; additional coffee and cold drinks
-            kiosks available
-          </li>
-          <li style={liStyle}>
-            <strong>Auditorium:</strong> Seating capacity of over 120; hosts
-            guest lectures, seminars, and other programs
-          </li>
-          <li style={liStyle}>
-            <strong>Alumni Associations:</strong> IITD Alumni Association
-            connects over 43,000 members worldwide through a network of national
-            and international chapters; one of the most active alumni
-            associations globally
-          </li>
-          <li style={liStyle}>
-            <strong>Classrooms:</strong> Fully air-conditioned; equipped with
-            LCD projectors
-          </li>
-          <li style={liStyle}>
-            <strong>Laboratories:</strong> Well-equipped laboratories,
-            workshops, and library facilities across departments
-          </li>
-          <li style={liStyle}>
-            <strong>Convenience Store:</strong> Stationery shop in the academic
-            area; Xeroxing and STD/ISD/PCO facilities available in all hostels
-          </li>
-          <li style={liStyle}>
-            <strong>Banks/ATMs:</strong> On-campus bank available for faculty
-            and student convenience
-          </li>
-          <li style={liStyle}>
-            <strong>Guest Room/Waiting Room:</strong> Guest house and waiting
-            room facilities for visiting faculty and family members of students
-          </li>
-        </ul>
-      </section>
-
-      <section id="alumni-network">
-        <h2 style={h2Style}>Alumni Network at IIT Delhi</h2>
-
-        <p style={pStyle}>
-          The IIT Delhi alumni network spans across various prominent
-          recruiters, showcasing the extensive reach and influence of our
-          graduates. Here is a snapshot of the number of alumni working with
-          some of the leading companies:
-        </p>
+        <h3 style={th3Style}>Scholarship Details</h3>
         <div
           style={{
             overflowX: "auto",
-            WebkitOverflowScrolling: "touch",
-            whiteSpace: "nowrap",
-            msOverflowStyle: "none",
-            scrollbarWidth: "none",
           }}
         >
           <table style={tableStyle}>
             <thead>
               <tr>
-                <th style={thStyle}>Recruiter</th>
-                <th style={thStyle}>No. of Alumni</th>
+                <th style={thStyle}>Name of the Scholarship</th>
+                <th style={thStyle}>Eligibility Criteria</th>
+                <th style={thStyle}>Award Scholarship</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td style={tdStyle}>Amazon</td>
-                <td style={tdStyle}>378</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Google</td>
-                <td style={tdStyle}>338</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Microsoft</td>
-                <td style={tdStyle}>332</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>IBM</td>
-                <td style={tdStyle}>317</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>TCS</td>
-                <td style={tdStyle}>312</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Accenture</td>
-                <td style={tdStyle}>195</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Goldman Sachs</td>
-                <td style={tdStyle}>164</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>McKinsey &amp; Co.</td>
-                <td style={tdStyle}>138</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Facebook</td>
-                <td style={tdStyle}>124</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>BCG</td>
-                <td style={tdStyle}>120</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Flipkart</td>
-                <td style={tdStyle}>108</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>AWS</td>
-                <td style={tdStyle}>90</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Bain &amp; Co.</td>
-                <td style={tdStyle}>66</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Uber</td>
-                <td style={tdStyle}>5</td>
-              </tr>
+              {[
+                {
+                  name: "Institute Merit-Cum-Means Scholarship",
+                  eligibility: "Family annual income should not exceed INR 4.5 Lakhs",
+                  award: "67% tuition exemption. Available for only 25% of students admitted. Renewal every semester requires a minimum GPA of 5.0. in the previous semester.",
+                },
+                {
+                  name: "Institute Free Studentship",
+                  eligibility: "Family annual income should not exceed INR 4.5 Lakhs",
+                  award: "67% tuition exemption. Available for only 25% of students admitted. Renewal every semester requires a minimum GPA of 5.0. in the previous semester.",
+                },
+                {
+                  name: "Institute National Prize",
+                  eligibility: "Based on JEE rank and parents’ monthly income not exceeding INR 4.5 Lakhs",
+                  award: "7% of accepted students are eligible. One-time donation of INR 1000.",
+                },
+                {
+                  name: "Institute SC/ST Scholarship",
+                  eligibility: "Family annual income should not exceed INR 4.5 Lakhs",
+                  award: "Free messing and pocket allowance of INR 250 per month, over and above tuition fee exemption. Renewal requires a minimum GPA of 5.0. in the previous semester.",
+                },
+                {
+                  name: "Girish Ready Scholarship",
+                  eligibility: "2 Scholarships on the basis of highest JEE rank and annual family income not exceeding INR 5 lakhs and 1 Scholarship on the basis of best all-round performance in the previous school years and annual family income not exceeding INR 5 lakhs",
+                  award: "INR 25,000 every year. Renewal of scholarship every semester requires a minimum GPA of 8.0. in the previous semester.",
+                },
+                {
+                  name: "Indian Women’s Association at Bonn Scholarship",
+                  eligibility: "On the basis of the highest JEE rank and annual family income not exceeding INR 5 lakhs ",
+                  award: "INR 1,250 to one B.Tech student only for 12 months.",
+                },
+                {
+                  name: "Sri V Ranga Raju Memorial Scholarship",
+                  eligibility: "Merit Cum Means, family income ≤ INR 5 lakhs",
+                  award: "INR 500 per month for 4 years. Renewal of scholarship every semester requires a minimum GPA of 5.0. in the previous semester.",
+                },
+                {
+                  name: "Kanchi Kamakoti Jagadguru Sri Chandrasekarendra Saraswati Endowment Award",
+                  eligibility: "Merit Cum Means, family income ≤ INR 5.5 lakhs",
+                  award: "One-time payment of INR 2500.",
+                },
+                {
+                  name: "M Sankaraisah and M Saradha (Mithigiri) Scholarship",
+                  eligibility: "On the basis of highest CGPA at the end of 4th semester of students of the B.Tech / Dual Degree   Electrical Engineering ",
+                  award: "One-time payment of INR 20,000.",
+                },
+                {
+                  name: "Dr K Vasantha Rau Scholarship",
+                  eligibility: "On the basis of the highest JEE rank and annual family income not exceeding INR 5.5 lakhs. Renewal is based on a GPA of 6.5 and above ",
+                  award: "INR 25,000 per annum to one student.",
+                },
+              ].map((row, index) => (
+                <tr key={index}>
+                  <td style={tdStyle}>{row.name}</td>
+                  <td style={tdStyle}>{row.eligibility}</td>
+                  <td style={tdStyle}>{row.award}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
-        <br />
+
+        <p style={pStyle}>There are also some other scholarships which are also provided by the
+          institution are give below:</p>
+
+        <h3 style={th3Style}>Scholarship Details</h3>
+        <div
+          style={{
+            overflowX: "auto",
+          }}
+        >
+          <table style={tableStyle}>
+            <thead>
+              <tr>
+                <th style={thStyle}>Scholarship</th>
+                <th style={thStyle}>Eligibility Criteria</th>
+                <th style={thStyle}>Amount of Scholarship</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                {
+                  scholarship:
+                    "Ministry of Social Justice and Empowerment, Central Sector Scholarship For SC students",
+                  eligibility:
+                    "Top 10 students based on JEE rank and parent’s income is not exceeding INR 4.5 Lakhs (only students of B.Tech & Dual Degree 5-yr students are eligible).",
+                  amount:
+                    "Personal PC: INR 45,000 one time; Living Expenses: INR 2,200 per month; Books & stationery: INR 3,000 per annum; Reimbursement of Tuition fees.",
+                },
+                {
+                  scholarship:
+                    "Ministry of Tribal Affairs, Govt. of India Scholarship For ST students",
+                  eligibility:
+                    "Top 5 students based on JEE rank and parent’s income is not exceeding INR 4.5 Lakhs (only students of B.Tech, Dual Degree, MBA & LLB students are eligible).",
+                  amount:
+                    "Personal PC: INR 45,000; one-time; Living Expenses: INR 2,200 per month; Books & stationery: INR 3,000 per annum; Reimbursement of Tuition fees. Renewal of the scholarship is subject to passing the final examination of each year.",
+                },
+                {
+                  scholarship: "Ministry of Minority Affairs, Merit-cum-Means Scholarship",
+                  eligibility:
+                    "Students from minority groups like Muslims, Christians, Sikhs, Buddhists, and Parsis who have secured admission and whose parent’s income does not exceed INR 2.5 Lakhs are eligible.",
+                  amount:
+                    "Maintenance Expenses @ Rs.10, 000/- per annum for hostellers and for day scholars Rs.5, 000/- Reimbursement of course fee of Rs.20, 000/- or the actual fees whichever is less. The scholarship amount will be sanctioned by the State Govt. 30% of the scholarship are reserved for girl students. Renewable subject to passing of the final examination of each year.",
+                },
+                {
+                  scholarship: "MHRD scholarship for single girl child",
+                  eligibility: "As per GoI norms",
+                  amount: "INR 40,000 per year",
+                },
+                {
+                  scholarship: "Pratibha Scholarship of Govt. of Andhra Pradesh",
+                  eligibility:
+                    "Open to B.Tech students. They should be native of the State of Andhra Pradesh and secured a minimum of first class with 60% marks in Intermediate / XII class or its equivalent with annual parental income not exceeding 1 Lakh",
+                  amount:
+                    "INR 20,000 per annum and renewable every year. Students should apply directly to AP Govt.",
+                },
+                {
+                  scholarship: "Aditya Birla Scholarship",
+                  eligibility:
+                    "The selection will be made by the Aditya Birla Group among the top 20 students in JEE Rank.",
+                  amount: "INR 60,000 per annum",
+                },
+                {
+                  scholarship: "Inlakhs Scholarship",
+                  eligibility:
+                    "Academic performance (CGPA of 9.0 & above) at the end of 2nd semester Selection by a Committee (One scholarship)",
+                  amount: "INR 25,000 per semester for a period of four years.",
+                },
+                {
+                  scholarship: "ST Engineering Scholarships",
+                  eligibility:
+                    "Offered to two B.Tech Students of II, III & IV Year, Amongst top 10% students of AE, CS, ME.",
+                  amount: "INR 80,000 per annum",
+                },
+                {
+                  scholarship: "OPJEMS",
+                  eligibility:
+                    "Selection among top 20 based on JEE rank. Higher semesters based on CGPA among top 20. ",
+                  amount: "INR 80,000 per annum",
+                },
+                {
+                  scholarship: "Shipping Corporation of India Scholarships",
+                  eligibility:
+                    "For all SC / ST / BPL students of B.Tech Naval Architecture ",
+                  amount:
+                    "INR 48,000 per annum or full tuition fee / hostel charges",
+                },
+                {
+                  scholarship: "TODAI Scholarship",
+                  eligibility: "Offered to two B.Tech Students of I, II, III & IV year amongst AE, EE, ME to excellent students.",
+                  amount: "2 Lakhs Japanese yen per year",
+                },
+                {
+                  scholarship: "Nissan Scholarship",
+                  eligibility:
+                    "Offered to two B.Tech / Dual Degree ",
+                  amount: "Students III & IV year INR 70,000 per annum",
+                },
+                {
+                  scholarship: "DAE, DGFS scholarship by DRDO",
+                  eligibility:
+                    "B.Tech Aerospace students Minimum CGPA of 7.0 Based on JEE Rank ",
+                  amount:
+                    "INR 5,000 per month for 4 years. One time book allowance of INR 10,000/-.",
+                },
+                {
+                  scholarship: "IIT Madras 72 batch Scholarship",
+                  eligibility: "Trust is providing interest free Educational loan to B.Tech students.",
+                  amount: "INR 25,000 per year",
+                },
+                {
+                  scholarship:
+                    "Inspire Scholarship (Department of Science and Technology, Government of India) ",
+                  eligibility: "All Students admitted to Dual Degree (B.S & M.S) – for 5 years ",
+                  amount: "INR 80,000 per annum per student",
+                },
+                {
+                  scholarship: "SSAN Ananya Educational Trust",
+                  eligibility:
+                    "Academic performance will be reviewed on periodic basis. Each beneficiary should ensure meeting basic minimum performance criteria (to be established later) to enable to continue the benefit of financial of the Trust.",
+                  amount: "Interest-free Educational Loans",
+                },
+              ].map((row, index) => (
+                <tr key={index}>
+                  <td style={tdStyle}>{row.scholarship}</td>
+                  <td style={tdStyle}>{row.eligibility}</td>
+                  <td style={tdStyle}>{row.amount}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="campus">
+        <h2 style={h2Style}>Campus Facilities at IIT Madras</h2>
+        <p style={pStyle}>
+          IIT Madras is a residential institute that stretched a 617 acre around
+          2.5 km² campuses that is formally a part of adjoin Guindy national
+          park. The main entrance of ITI Madras is on Sardar Patel road .the
+          campus is close to the Raj Bhawan, the official seat of the governor of
+          Tamil Nadu. <br /> <br />
+          The campus is 10km from the Chennai airport, 12 km from the
+          Chennai central railway station and it is well connected with bus
+          stands. Kasturba Nagar is the nearest station on the Chennai MRTS
+          line. <br /> <br />
+          Most of the campus is protected forest which is carved out of the
+          Guindy national park. The campus has the pride of having one of the
+          most elegant antelopes in the world – THE BLACKBUCK. The
+          campus is also home to the large number of Chital (spotted dear),
+          Bonnet Macaque, and other rare wildlife. <br /> <br />
+          IIT Madras has about 300 species of tree and plants with quite large
+          number of native wild species, which are unique to the tropical ,dry
+          evergreen vegetation. There are about 100 species of birds seen at
+          different times of the year .There are some resident species and as
+          well as few migrants like forest Wagtail, Pied Crested Cuckoo, Golden
+          Oriole etc. which are migratory birds. <br />
+          Some landmark of the this campus are :-
+          <h3
+            style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
+          >
+            <strong>GAJENDRA CIRCLE </strong>
+          </h3>
+          <p style={pStyle}>The 1st landmark that greets every visitor’s is GC/Gajendra
+            Circle.it is 2.5km from the gate the area from the main gate to GC
+            is the residential zone of campus where staff and faculty live
+            there. After GC there is academic zone with many departments,
+            laboratories, workshop and computer center that cover the large
+            area.at the end of campus you will see the hostel zone the
+            various facilities for the students.</p>
+
+          <h3
+            style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
+          >
+            <strong>HIMALAYA</strong>
+          </h3>
+          <p style={pStyle}>It is a giant building where all the messes are located and in front
+            there is a beautiful lawn where you can relax.</p>
+
+          <h3
+            style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
+          >
+            <strong>NEW ACADEMIC COMPLEX</strong>
+          </h3>
+          <p style={pStyle}>This building is constructed recently which is equipped with all
+            the latest technology classroom facilities. Presently there are
+            departments of mathematics, chemical engineering, metallurgical
+            and material engineering. </p>
+
+          <h3
+            style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
+          >
+            <strong>OTA</strong>
+          </h3>
+          <p style={pStyle}>It is Open air theatre, where every weekend movies are screened
+            by the film club. It lies between the GC and hostel zone. English,
+            Hindi, Tamil, and other regional language movie are screened
+            there. It is the same venue where the Saarang Pro-show are
+            held.</p>
+
+          <h3
+            style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
+          >
+            <strong>CLT</strong>
+          </h3>
+          <p style={pStyle}>The central lecture theatre is just opposite to oat in the middle of
+            the humanities and science block .there is a auditorium with a
+            capacity of about 400, which is used for almost every in house
+            activity in the institute. The LIT –SOC schedule use only this
+            venue.</p>
+
+          <h3
+            style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
+          >
+            <strong>CRC, RAMAN and RAMANUJAN BLOCKS</strong>
+          </h3>
+          <p style={pStyle}>It is the one of the places where most of our common classes
+            take place. The ground floor of the classroom is air conditions
+            and is open for the use for student till 1am only during the quiz
+            weeks to use as a hangout spot.</p>
+
+          <p style={pStyle}>There is also wellness community center, women forum, sports,
+            clubs, etc.</p>
+
+
+
+
+        </p>
+      </section>
+
+      <section id="departments">
+        <h2 style={h2Style}>IIT Madras Departments</h2>
+
+        <ul style={ulStyle}>
+          <li style={liStyle}>Aerospace engineering</li>
+          <li style={liStyle}>Mechanics and bio medical engineering</li>
+          <li style={liStyle}>Biotechnology</li>
+          <li style={liStyle}>Chemical engineering</li>
+          <li style={liStyle}>Civil  engineering</li>
+          <li style={liStyle}>Chemistry</li>
+          <li style={liStyle}>Computer science and engineering</li>
+          <li style={liStyle}>Data science and artificial intelligence</li>
+          <li style={liStyle}>Engineering design</li>
+          <li style={liStyle}>Electrical engineering</li>
+          <li style={liStyle}>Humanities and social science</li>
+          <li style={liStyle}>Management studies</li>
+          <li style={liStyle}>Mathematics</li>
+          <li style={liStyle}>Mechanical engineering</li>
+          <li style={liStyle}>Medical science and technology</li>
+          <li style={liStyle}>Metallurgical and material engineering</li>
+          <li style={liStyle}>Entrepreneurship</li>
+          <li style={liStyle}>Ocean engineering</li>
+          <li style={liStyle}>Physics </li>
+          <li style={liStyle}>Interdisciplinary (IDRP)</li>
+        </ul>
+
+        <h3
+          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
+        >
+          <strong>IIT Madras Faculty</strong>
+        </h3>
 
         <p style={pStyle}>
-          IITD Alumni Association is dedicated to bringing together the alumni
-          community on a common platform to build another channel of personal
-          and professional support to members through ‘self-help’ within the
-          community. IIT Delhi Alumni Association today has a membership of over
-          43,000 graduates from our alma mater and is growing at about 1,700
-          members a year. It is one of the most active alumni associations and
-          operates through a network of national and international chapters. Our
-          alumni are spread worldwide and figure amongst who’s who worldwide.
+          There are 266 professor, 144 associate professor ,1 librarian,41 chair
+          professor,5 professor (hag), 4 institute professor, inspire faculty. 3 Professors
+          of practice, and 1 visiting faculty.Cafeteria, a/c classroom, library, laboratories, hospital, central facilities Wi-Fi
+          campus sports complex auditorium hostel
         </p>
       </section>
     </div>
