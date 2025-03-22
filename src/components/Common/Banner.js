@@ -11,7 +11,7 @@ const Banner = () => {
         A Legacy of Excellence in Classes for IIT-JEE | Medical. Now learn from
         the best teachers of India
       </p>
-      <div className="button-container">
+      <div className="button-container12">
         <a
           href="https://www.iitacademy.in/Admission-form"
           target="_blank"

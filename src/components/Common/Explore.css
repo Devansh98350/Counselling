@@ -67,7 +67,8 @@
     font-weight: 700;
   }
 }
-.button-container .btn {
+.button-container12 .btn {
+  height: 40px;
   border-radius: 30px;
   padding: 4px 10px !important;
   position: relative;
