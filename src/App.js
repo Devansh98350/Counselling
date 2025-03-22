@@ -24,6 +24,8 @@ import Dental from "./components/Medical/Dental/Dental_main.js";
 import OtherM from "./components/Medical/OtherM/OtherM_main.js";
 import IIM from "./components/MBA/IIM/IIM_main.js";
 import MBA_IIT_NIT from "./components/MBA/MBA_IIT_NIT/MBA_IIT_NIT_main.js";
+import Blog from "./components/Blogs/Blog.js";
+import FullBlog from "./components/Blogs/Separate/FullBlog";
 
 function App() {
   return (
@@ -48,6 +50,8 @@ function App() {
         <Route path="/other-medical-college" element={<OtherM />} />
         <Route path="/iim-colleges" element={<IIM />} />
         <Route path="/mba-in-iit-nit-colleges" element={<MBA_IIT_NIT />} />
+        <Route path="/blogs" element={<Blog />} />
+        <Route path="/blogs/:link" element={<FullBlog />} />
       </Routes>
     </Router>
   );
