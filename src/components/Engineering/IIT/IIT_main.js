@@ -80,7 +80,7 @@ const Heading = [
     build:
       "https://tse1.mm.bing.net/th?id=OIP.ftsf8kbLMUasS4K7t53WrAHaEo&pid=Api&P=0&h=180",
     name: "IIT Roorkee",
-    link: "#",
+    link: "/iit-colleges/iit-roorkee",
   },
   {
     id: 8,
@@ -91,7 +91,7 @@ const Heading = [
     build:
       "https://tse4.mm.bing.net/th?id=OIP._LAeEz7wZyits3su1sFUfgHaEK&pid=Api&P=0&h=180",
     name: "IIT Dharwad",
-    link: "#",
+    link: "/iit-colleges/iit-dharwad",
   },
   {
     id: 9,
