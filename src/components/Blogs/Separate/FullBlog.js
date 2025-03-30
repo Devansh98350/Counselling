@@ -28,9 +28,9 @@ const FullBlog = () => {
       <>
         <Breadcrumb />
         <div className="container-fluid fullBlog-second">
-          <div className="row">
+          <div className="flex w-full">
             {/* Main blog content section */}
-            <div className="col-md-8 fullBlog">
+            <div className="w-2/3">
               <div className="fullBlogTitle">
                 <h3>{post.title}</h3>
                 <p>
@@ -50,7 +50,7 @@ const FullBlog = () => {
             </div>
 
             {/* Recent posts section */}
-            <div className="col-md-4 fullBlog-right">
+            <div className="w-1/3">
               <h3>Recent Posts</h3>
               {recentPosts.length > 0 ? (
                 // Mapping over the recent posts to display them
