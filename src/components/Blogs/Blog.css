@@ -1,12 +1,12 @@
 .blog-page-second {
   font-family: "Spline Sans", sans-serif;
-  padding-left: 120px !important;
-  padding-right: 120px !important;
+  padding-left: 3.5%;
+  margin-top: 0.5%;
 }
 
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 45vw));
   gap: 20px;
 }
 
@@ -102,7 +102,7 @@
 }
 
 .read-more {
-  margin-top: 20px;
+  margin-top: 18px;
   font-weight: 500;
   color: #111827;
   text-decoration: none;
@@ -111,7 +111,8 @@
 }
 
 .read-more:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: orange !important;
 }
 
 .zoomIn {
@@ -156,25 +157,24 @@
 @media only screen and (max-width: 767px) {
   .blog-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 90vw));
   }
 
   .blog-page-second {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: 4.5% !important;
   }
 }
 
 /* Tablet devices with a screen width between 768px and 1024px */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .blog-page-second {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    padding-left: 8% !important;
   }
 
   .blog-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 80vw));
+    margin-left: auto;
   }
 
   .blog-card {

@@ -4,7 +4,7 @@ import "./Blog.css";
 import Layout from "./../Layout";
 import posts from "./Separate/Posts";
 // to be changed
-import monoblog from "../../assests/home_page/IIT_Academy.webp";
+import monoblog from "../../assests/home_page/monoblog.png";
 import { IoIosVideocam } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa";
 import Breadcrumb from "../Breadcrumb";
@@ -23,7 +23,7 @@ const Blog = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <Layout title="Counselling Blogs - IIT Academy">
+    <Layout title="Counselling Blogs - IIT Academy" description="" keywords="">
       <Breadcrumb />
       <div className="blog-page-second">
         <div className="blog-grid">
@@ -40,7 +40,7 @@ const Blog = () => {
               </div>
 
               {/* Blog title */}
-              <div className="blog-row">
+              <div className="blog-row" style={{ marginBottom: "5px" }}>
                 <h2>{post.title}</h2>
               </div>
 
@@ -50,12 +50,15 @@ const Blog = () => {
               </div>
 
               {/* Blog footer with image and read more link */}
-              <div className="blog-row card-footer">
+              <div
+                className="blog-row card-footer"
+                style={{ marginBottom: "-10px" }}
+              >
                 <div className="img-and-team">
                   <div className="img-container">
                     <img src={monoblog} alt="IIT Academy Team" />
                   </div>
-                  <p>IIT Academy Team</p>
+                  <p style={{ marginTop: "10%" }}>IIT Academy Team</p>
                 </div>
                 <Link to={post.link} className="read-more">
                   Read more <FaArrowRight />
