@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Breadcrumbs from "../../../../../Breadcrumb";
+import Indore from "../../../../../../assests/components/IIT/banner/indore.jpg";
 
 function Header() {
   const [isCutoffDropdownOpen, setIsCutoffDropdownOpen] = useState(false);
@@ -17,7 +18,7 @@ function Header() {
           navbar.style.position = "fixed";
           navbar.style.top = "0";
           navbar.style.left = "0";
-          navbar.style.zIndex = "0";
+          navbar.style.zIndex = "100";
           navbar.style.width = "100%";
         } else {
           navbar.style.position = "relative";
@@ -42,8 +43,7 @@ function Header() {
           display: "flex",
           alignItems: "center",
           justifyContent: "flex-start",
-          backgroundImage:
-            'url("https://imgs.search.brave.com/vrCHshJEy0b3FhEkkcvLcNaW141JQDMkcx6xnmcYG78/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9k/L2RkL0lJVF9EZWxo/aV9FbnRyYW5jZS5q/cGc")',
+          backgroundImage: `url(${Indore})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -85,8 +85,8 @@ function Header() {
             }}
           >
             <img
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Indian_Institute_of_Technology_Delhi_Logo.svg/800px-Indian_Institute_of_Technology_Delhi_Logo.svg.png"
-              alt="IIT Delhi Logo"
+              src="https://www.iiti.ac.in/public/themes/iitindore/demos/update-logo.png"
+              alt="IIT Indore Logo"
               style={{
                 height: "100px",
                 marginRight: "20px",
@@ -107,7 +107,7 @@ function Header() {
                   fontWeight: "bold",
                 }}
               >
-                IIT Delhi: Admission 2024, Cutoff, Courses,
+                IIT Indore: Admission 2025, Cutoff, Courses,
               </h3>
               <h3
                 style={{
@@ -126,14 +126,13 @@ function Header() {
                   marginTop: "5px",
                 }}
               >
-                New Delhi | Autonomous University | Estd 2008
+                Indore | Autonomous University | Estd 2009
               </div>
             </div>
             <div
               style={{
                 backgroundColor: "#fff",
                 color: "#1d2f52",
-
                 borderRadius: "5px",
                 fontSize: "1.2rem",
                 fontWeight: "bold",
@@ -191,10 +190,10 @@ function Header() {
               flex-shrink: 0;
             }
           }
-            html {
+          html {
             scroll-behavior: smooth;
             scroll-padding-top: 60px;
-            }
+          }
         `}
       </style>
 
@@ -243,7 +242,7 @@ function Header() {
               <a href="#gen" style={dropdownLinkStyle}>
                 General
               </a>
-              <a href="#obc" style={dropdownLinkStyle}>
+              <a href="#OBC" style={dropdownLinkStyle}>
                 OBC
               </a>
             </div>
@@ -265,7 +264,7 @@ function Header() {
               style={{
                 position: "absolute",
                 backgroundColor: "#f9f9f9",
-                minWidth: "160px",
+                minWidth: "16d0px",
                 zIndex: "100",
               }}
             >

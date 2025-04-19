@@ -84,468 +84,330 @@ const Ranking = () => {
     marginLeft: "20px",
   };
 
+
   return (
     <div style={sectionStyle}>
-      <section id="ranking">
-        <h2 style={h2Style}>Ranking</h2>
-        <p style={pStyle}>
-          IIT Delhi is one of Asia's top engineering institutes and consistently
-          ranks among the best in both national and international rankings. As
-          per the NIRF rankings, IIT Delhi has consistently stayed in the top 3
-          engineering colleges in India. In the QS World University Rankings
-          2025, IIT Delhi ranks among the top 150 universities globally.
-        </p>
+    <section id="ranking">
+    <h2 style={h2Style}>Ranking</h2>
+    <table style={tableStyle}>
+        <thead>
+          <tr>
+            <th style={thStyle}>Ranking Agency</th>
+            <th style={thStyle}>Year</th>
+            <th style={thStyle}>Rank</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style={tdStyle}>QS Asian University Ranking - Southern Asia</td>
+            <td style={tdStyle}>2024</td>
+            <td style={tdStyle}>26</td>
+          </tr>
+          <tr>
+            <td style={tdStyle}>QS Asian University Ranking</td>
+            <td style={tdStyle}>2024</td>
+            <td style={tdStyle}>185</td>
+          </tr>
+          <tr>
+            <td style={tdStyle}>QS World University Ranking (Global)</td>
+            <td style={tdStyle}>2024</td>
+            <td style={tdStyle}>454</td>
+          </tr>
+          <tr>
+            <td style={tdStyle}>NIRF Engineering Ranking</td>
+            <td style={tdStyle}>2023</td>
+            <td style={tdStyle}>14</td>
+          </tr>
+          <tr>
+            <td style={tdStyle}>NIRF Overall Ranking</td>
+            <td style={tdStyle}>2023</td>
+            <td style={tdStyle}>28</td>
+          </tr>
+          <tr>
+            <td style={tdStyle}>NIRF Research Ranking</td>
+            <td style={tdStyle}>2023</td>
+            <td style={tdStyle}>21</td>
+          </tr>
+          <tr>
+            <td style={tdStyle}>QS World University Ranking by Subject (Electrical and Electronics)</td>
+            <td style={tdStyle}>2023</td>
+            <td style={tdStyle}>401-450</td>
+          </tr>
+        </tbody>
+      </table>
+      <p> </p>
+      <table style={tableStyle}>
+        <thead>
+          <tr>
+            <th style={thStyle}>Ranking Agency</th>
+            <th style={thStyle}>Year</th>
+            <th style={thStyle}>Rank</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style={tdStyle}>QS World University Ranking</td>
+            <td style={tdStyle}>2023</td>
+            <td style={tdStyle}>396</td>
+          </tr>
+          <tr>
+            <td style={tdStyle}>The Asia University Rankings</td>
+            <td style={tdStyle}>2022</td>
+            <td style={tdStyle}>87</td>
+          </tr>
+          <tr>
+            <td style={tdStyle}>THE World University Rankings</td>
+            <td style={tdStyle}>2022</td>
+            <td style={tdStyle}>401-500</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-        <h3 style={th3Style}>IIT Delhi International Ranking 2025</h3>
-        <div
-          className="table-wrapper"
-          style={{
-            overflowX: "auto",
-            WebkitOverflowScrolling: "touch",
-            whiteSpace: "nowrap",
-            msOverflowStyle: "none",
-            scrollbarWidth: "none",
-          }}
-        >
-          <table style={tableStyle}>
-            <tbody>
-              <tr>
-                <th style={thStyle}>Ranking Body</th>
-                <th style={thStyle}>Category</th>
-                <th style={thStyle}>Rank</th>
-              </tr>
-              {[
-                {
-                  body: "QS World Ranking 2025",
-                  category: "World University",
-                  rank: "150",
-                },
-                {
-                  body: "QS World Ranking 2024",
-                  category: "World University",
-                  rank: "197",
-                },
-                {
-                  body: "US News Ranking 2024",
-                  category: "Best Global Universities",
-                  rank: "689",
-                },
-                {
-                  body: "QS World Ranking 2023",
-                  category: "World University",
-                  rank: "174+",
-                },
-              ].map((item, index) => (
-                <tr key={index}>
-                  <td style={tdStyle}>{item.body}</td>
-                  <td style={tdStyle}>{item.category}</td>
-                  <td style={tdStyle}>{item.rank}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+    
+<section id="scholarship">
+<h2 style={h2Style}>Scholarship</h2>
+<p style={pStyle}> The Indian Institute of Technology Indore provides various scholarships across all programmes under multiple categories, such as merit-cum-means, SC/ST category, disabled students' category, etc. Some scholarships are also funded by reputed industry giants. IIT Indore offers a variety of scholarships and financial assistance for its students pursuing various UG and PG courses in the full-time mode. However, the student needs to satisfy the minimum eligibility and merit requirements to avail of the facilities of scholarships at IIT Indore. The table below mentions all IIT Indore scholarships, with downloadable details: </p>
+    
+<table style={tableStyle}>
+  <thead>
+    <tr>
+      <th style={thStyle}>Scholarship</th>
+      <th style={thStyle}>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style={tdStyle}>Merit-Cum-Means (MCM) Scholarship</td>
+      <td style={tdStyle}>For SC/ST students and economically backward General/OBC students.</td>
+    </tr>
+    <tr>
+      <td style={tdStyle}>Central Sector Scholarship (CSS) Scholarship</td>
+      <td style={tdStyle}>National Scholarship Portal offers the scholarships to SC/ST/OBC/PwD & economically backward students .</td>
+    </tr>
+    <tr>
+      <td style={tdStyle}>Foundation for Excellence (FFE) Scholarship</td>
+      <td style={tdStyle}>For meritorious and academically excellent students of any category.</td>
+    </tr>
+    <tr>
+      <td style={tdStyle}>National Handicapped Finance and Development Corporation (NHFDC) Scholarship</td>
+      <td style={tdStyle}>For students who are physically disabled in any form.</td>
+    </tr>
+    <tr>
+      <td style={tdStyle}>TCS Fellowship Scheme</td>
+      <td style={tdStyle}>For PhD scholars in the research field by TCS.</td>
+    </tr>
+    <tr>
+      <td style={tdStyle}>IBM PhD Fellowship Programme</td>
+      <td style={tdStyle}>For PhD scholars in the research field by IBM.</td>
+    </tr>
+  </tbody>
+</table>
+<div>
+<p><strong>Central Sector Scholarship (CSS) Scholarship:</strong></p>
+<ul>
+  <li>The Central Sector Scholarship Scheme is specifically offered to the financially weak SC/ST category students enrolled in the 1st year of the B.Tech programmes. </li>
+  <li>Students whose annual family income is less than INR 4.5 lakhs from all sources are eligible for the Central Sector Scholarship Scheme. </li>
+</ul>
+<p><strong>Merit-Cum-Means (MCM) Scholarship:</strong></p>
+<ul>
+  <li>The MCM Scholarship of IIT Indore is most popular among the students of the B.Tech and M.Sc. programmes. </li>
+  <li>However, the number of MCM Scholarships is restricted only to 25% of the students admitted.  </li>
+  <li>In order to be eligible for the MCM scholarship, the general category students should have an annual family income of INR 5 lakhs and INR 8 lakhs for the students of the OBC category. </li>
+  <li>The merits of the entrances and 12th standard are also considered for the selection of the scholarships at IIT Indore. </li>
+</ul>
 
-        <h3 style={th3Style}>IIT Delhi National Ranking 2024</h3>
-        <div
-          className="table-wrapper"
-          style={{
-            overflowX: "auto",
-            WebkitOverflowScrolling: "touch",
-            whiteSpace: "nowrap",
-            msOverflowStyle: "none",
-            scrollbarWidth: "none",
-          }}
-        >
-          <table style={tableStyle}>
-            <tbody>
-              <tr>
-                <th style={thStyle}>Ranking Body</th>
-                <th style={thStyle}>Category</th>
-                <th style={thStyle}>Rank</th>
-              </tr>
-              {[
-                {
-                  body: "India Today 2024",
-                  category: "Engineering",
-                  rank: "1",
-                },
-                {
-                  body: "The Week 2024",
-                  category: "Technical Universities",
-                  rank: "2",
-                },
-                { body: "NIRF 2023", category: "Engineering", rank: "2" },
-              ].map((item, index) => (
-                <tr key={index}>
-                  <td style={tdStyle}>{item.body}</td>
-                  <td style={tdStyle}>{item.category}</td>
-                  <td style={tdStyle}>{item.rank}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
 
-      <section id="scholarship">
-        <h2 style={h2Style}>Scholarship</h2>
-        <p style={pStyle}>
-          Indian Institute of Technology Delhi also provides financial aid to
-          students who need financial assistance. Apart from the ST/SC/PWD
-          students, scholarships are also provided to brilliant students. The
-          institution offers merit prizes to deserving students like toppers of
-          departments. IIT Delhi offers scholarships for students of UG, PG, and
-          Ph.D. programs. The Ph.D. students are offered financial assistance
-          through Teaching/Research Assistantships.
-        </p>
+<p><strong>Foundation for Excellence:</strong></p>
+<ul>
+  <li>The Foundation for Excellence scholarship is given to the students of IIT Indore who excel in academics and have excellent past academic records.</li>
+  <li>Students enrolled in the 1st year B.Tech/B.E. or integrated M.Tech programmes are eligible for the Foundation for Excellence Scholarship.</li>
+  <li>The basic requirements for the Foundation for Excellence are 70% in the 12th standard along with 152 marks in JEE Advanced.</li>
+  <li>Also, the applying student's annual family income should not exceed INR 1.80 lakhs.</li>
+</ul>
 
-        <h3 className="th3" style={th3Style}>
-          IIT Delhi UG Scholarships, Eligibility Criteria, and Amount
-        </h3>
-        <div style={{ overflowX: "auto" }}>
-          <table style={tableStyle}>
-            <thead>
-              <tr>
-                <th style={thStyle}>Name of the Scholarship</th>
-                <th style={thStyle}>Eligibility Criteria</th>
-                <th style={thStyle}>Scholarship Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                {
-                  name: "Merit-cum-Means (MCM) Scholarships",
-                  eligibility:
-                    "For the General/OBC/EWS students of engineering and technology.",
-                  amount:
-                    "The MCM scholarship grants a scholarship of Rs. 1000 per month.",
-                },
-                {
-                  name: "Institute Merit Prizes and Certificates",
-                  eligibility:
-                    "The eligible students are top 7% of the 4-year B.Tech programme and 5-year Dual-Degree Programme, of each semester till the 8th/10th semester.",
-                  amount: "The Merit Prize offers a prize value of Rs. 2500.",
-                },
-                {
-                  name: "Donor Scholarships",
-                  eligibility:
-                    "These scholarships are offered by organizations, individuals, and trusts.",
-                  amount: "Varies based on the donor.",
-                },
-              ].map((item, index) => (
-                <tr key={index}>
-                  <td style={tdStyle}>{item.name}</td>
-                  <td style={tdStyle}>{item.eligibility}</td>
-                  <td style={tdStyle}>{item.amount}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+<p><strong>National Handicapped Finance and Development Corporation (NHFDC) Scholarship:</strong></p>
+<ul>
+  <li>The NHFDC Scholarship is provided to students who are physically disabled in any form.</li>
+  <li>It aims to support differently-abled students in their educational journey.</li>
+</ul>
 
-        <h3 className="th3" style={th3Style}>
-          IIT Delhi Scholarship for PG Programmes
-        </h3>
-        <div style={{ overflowX: "auto" }}>
-          <table style={tableStyle}>
-            <thead>
-              <tr>
-                <th style={thStyle}>Degree</th>
-                <th style={thStyle}>Scholarship Details</th>
-                <th style={thStyle}>Scholarship Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                {
-                  degree: "M.Sc. Programmes",
-                  details:
-                    "As per the government rules, this scholarship is offered only to those students whose parents' gross income is less than ₹4.5 lac per annum.",
-                  amount:
-                    "A tuition fee exemption and Merit-cum-Means scholarship of Rs. 1000 per month is offered to the eligible 25% of the total strength of M.Sc. students.",
-                },
-                {
-                  degree: "M.Tech., M.S. (Research), and M.Des.",
-                  details:
-                    "No scholarship is available for the students in this category.",
-                  amount: "-",
-                },
-              ].map((item, index) => (
-                <tr key={index}>
-                  <td style={tdStyle}>{item.degree}</td>
-                  <td style={tdStyle}>{item.details}</td>
-                  <td style={tdStyle}>{item.amount}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+<p><strong>Samsung Star Scholarship:</strong></p>
+<ul>
+  <li>As per the name, the Samsung Star Scholarship is offered by Samsung India Electronics Private Limited to all the students/ graduates from all the Jawahar Navodaya Vidyalaya.</li>
+  <li>However, the Scholarship is only available for the students of B.Tech or dual degree programmes at IIT Indore.</li>
+  <li>The merit criterion of the Samsung Star Scholarship is based on the scores of JEE Advanced.</li>
+</ul>
 
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Research Assistance</strong>
-        </h3>
-        <ul style={ulStyle}>
-          {[
-            "Research Assistance is provided to the students who are enrolled in the Ph.D. or research programs at IIT Delhi and are willing to work for the department.",
-            "Any student enrolled in the research-based programs on a full-time basis at IIT Delhi.",
-            "A minimum of INR 15,000 is awarded per month to students who can work about 20 hours a week.",
-            "For the students enrolled in the MS Research Programme, a sum of INR 24,000 is awarded per month to work 8 hours a week.",
-          ].map((item, index) => (
-            <li key={index} style={liStyle}>
-              {item}
-            </li>
-          ))}
-        </ul>
+<p><strong>Other Scholarships:</strong></p>
+<ul>
+  <li>Apart from the scholarships offered by the institute, students of IIT Indore can also opt for several other scholarships offered by the Government of India or private sources. The main motive of the scholarships offered by Ministries of Government of India is to uplift socially backward students. The other scholarships include the following:</li>
+  <ul>
+    <li>DAAD Scholarship</li>
+    <li>Commonwealth Scholarship</li>
+    <li>NHFDC Scholarship</li>
+  </ul>
+</ul>
+</div>
+</section>
 
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Loan Scholarships</strong>
-        </h3>
-        <p style={pStyle}>
-          Besides, most of the students are able to get scholarships on the
-          basis of merits and academic qualifications at IIT Delhi. Many alumni
-          have contributed and instituted scholarships that repay the interest
-          on loans students have taken. Some of the loan scholarships are
-          mentioned below:
-        </p>
-        <ul style={ulStyle}>
-          {[
-            "Ved & Prem Lata Gulati Loan Scholarship",
-            "Smt. Sushma Lal Loan Scholarship",
-            "Smt. Sarada Warrior Loan Scholarship",
-            "Shrimati Dharam Devi Bhatia Loan Scholarship",
-            "Shri Motiram Bulchand Shivdasani Scholarship",
-            "Samir Anand and Batch of 88 Loan Scholarship",
-          ].map((item, index) => (
-            <li key={index} style={liStyle}>
-              {item}
-            </li>
-          ))}
-        </ul>
-      </section>
+<section id="campus">
+<h2 style={h2Style}>Campus</h2>
+<div>
+<p><strong>Medical/Hospital:</strong></p>
+<ul>
+  <li>IIT Indore has a dedicated health centre that offers daycare, emergency care, outpatient and trauma care services to the college community.</li>
+  <li>It provides important medical assistance to students, institute guests, employees and their dependents, etc.</li>
+  <li>The health centre has ambulances and a team of nurses and doctors.</li>
+</ul>
 
-      <section id="campus">
-        <h2 style={h2Style}>Campus Facilities at IIT Delhi</h2>
-        <p style={pStyle}>
-          The campus of IIT Delhi is spread across an area of 320 acres, located
-          in the Hauz Khas area of South Delhi. The campus is in close proximity
-          to notable landmarks such as the Qutub Minar and Lotus Temple, and is
-          near other educational institutions like JNU and IIFT. The IIT Delhi
-          campus features a range of facilities including an amphitheatre, a
-          swimming pool, a music room, a robotics room, a club building, a
-          gymnasium hall, and a fully functional central library that is
-          accessible 24/7. These amenities contribute to a vibrant and
-          well-equipped campus environment.
-        </p>
-        <p style={pStyle}>
-          The campus is organized into several distinct areas for administrative
-          and logistical functions. The <strong>West Campus</strong> serves as
-          the hostel area, while the <strong>East Campus</strong> is designated
-          for residential purposes. The{" "}
-          <strong>Main Administrative Building</strong> handles administrative
-          functions, and the <strong>Academic Area</strong> is dedicated to
-          academic activities. This organization helps streamline operations and
-          supports the various needs of students and staff.
-        </p>
-        {/*<div style={imageContainerStyle}>
-          <img src="#" alt="Campus Image 1" style={imageStyle} />
-          <img src="#" alt="Campus Image 2" style={imageStyle} />
-        </div>*/}
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Hostel Facilities</strong>
-        </h3>
-        <p style={pStyle}>
-          The IIT Delhi hostels are well-equipped with a variety of amenities to
-          ensure a comfortable and supportive living environment for students.
-          There are 13 boys hostels and 5 girls hostels on campus. Each hostel
-          features a dining hall with a mess facility, a lounge for relaxation,
-          an indoor games room for recreational activities, and a reading room
-          for quiet study. These facilities are designed to provide students
-          with a balanced and enjoyable hostel experience. IIT Delhi has boys'
-          hostels inside the campus premises. Its hostel runs in a cooperative
-          mode, which means the operation is handled by elected student
-          leadership under the guidance of designated faculty.
-        </p>
-        <p style={pStyle}>
-          The girls' hostels offer similar facilities, including recreational
-          amenities such as indoor games, a common room with TV, a reading room,
-          and a dining hall. All rooms have internet connectivity.
-        </p>
+<p><strong>Library:</strong></p>
+<ul>
+  <li>The library at IITI has a huge collection of 35,583+ books at present.</li>
+  <li>There are over 575 theses and dissertations at the library.</li>
+  <li>The IIT Indore library also provides Hindi and English print newspapers to the readers daily.</li>
+  <li>Users can access more than 2,540 e-journals, 7,600+ e-books along with 11 bibliographic databases like Math Sci Net, Sci Finder Scholar, etc.</li>
+</ul>
 
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Campus Facilities</strong>
-        </h3>
-        <ul style={ulStyle}>
-          <li style={liStyle}>
-            <strong>IT Infrastructure:</strong>
-            <ul style={innerListStyle}>
-              <li style={liStyle}>
-                <strong>Network Type:</strong> State-of-the-art LAN with Fiber
-                Optics and enhanced CAT5/CAT6 UTP backbone
-              </li>
-              <li style={liStyle}>
-                <strong>Network Access Points:</strong> Over 9000 across the
-                campus
-              </li>
-              <li style={liStyle}>
-                <strong>Cisco Switches:</strong> About 265
-              </li>
-              <li style={liStyle}>
-                <strong>Virtual LANs:</strong> Approximately 75
-              </li>
-            </ul>
-          </li>
-          <li style={liStyle}>
-            <strong>Wi-Fi:</strong> Secure Wi-Fi available in the academic area,
-            main guest house, faculty guest house, RCA, and hospital
-          </li>
-          <li style={liStyle}>
-            <strong>Cafeteria:</strong> Several canteens located opposite
-            Aravali Hostel, in Himadri Hostel, and adjacent to Kumaon Hostel;
-            serves healthy and hygienic food; additional coffee and cold drinks
-            kiosks available
-          </li>
-          <li style={liStyle}>
-            <strong>Auditorium:</strong> Seating capacity of over 120; hosts
-            guest lectures, seminars, and other programs
-          </li>
-          <li style={liStyle}>
-            <strong>Alumni Associations:</strong> IITD Alumni Association
-            connects over 43,000 members worldwide through a network of national
-            and international chapters; one of the most active alumni
-            associations globally
-          </li>
-          <li style={liStyle}>
-            <strong>Classrooms:</strong> Fully air-conditioned; equipped with
-            LCD projectors
-          </li>
-          <li style={liStyle}>
-            <strong>Laboratories:</strong> Well-equipped laboratories,
-            workshops, and library facilities across departments
-          </li>
-          <li style={liStyle}>
-            <strong>Convenience Store:</strong> Stationery shop in the academic
-            area; Xeroxing and STD/ISD/PCO facilities available in all hostels
-          </li>
-          <li style={liStyle}>
-            <strong>Banks/ATMs:</strong> On-campus bank available for faculty
-            and student convenience
-          </li>
-          <li style={liStyle}>
-            <strong>Guest Room/Waiting Room:</strong> Guest house and waiting
-            room facilities for visiting faculty and family members of students
-          </li>
-        </ul>
-      </section>
+<p><strong>I.T Infrastructure:</strong></p>
+<ul>
+  <li>The college has excellent IT Infrastructure facilities for the students.</li>
+</ul>
 
-      <section id="alumni-network">
-        <h2 style={h2Style}>Alumni Network at IIT Delhi</h2>
+<p><strong>Cafeteria:</strong></p>
+<ul>
+  <li>There are seven different eateries at the IIT Indore campus.</li>
+  <li>They include cafes, restaurants, and dining facilities offering multiple dishes, drinks, beverages, desserts, and more.</li>
+</ul>
 
-        <p style={pStyle}>
-          The IIT Delhi alumni network spans across various prominent
-          recruiters, showcasing the extensive reach and influence of our
-          graduates. Here is a snapshot of the number of alumni working with
-          some of the leading companies:
-        </p>
-        <div
-          style={{
-            overflowX: "auto",
-            WebkitOverflowScrolling: "touch",
-            whiteSpace: "nowrap",
-            msOverflowStyle: "none",
-            scrollbarWidth: "none",
-          }}
-        >
-          <table style={tableStyle}>
-            <thead>
-              <tr>
-                <th style={thStyle}>Recruiter</th>
-                <th style={thStyle}>No. of Alumni</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style={tdStyle}>Amazon</td>
-                <td style={tdStyle}>378</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Google</td>
-                <td style={tdStyle}>338</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Microsoft</td>
-                <td style={tdStyle}>332</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>IBM</td>
-                <td style={tdStyle}>317</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>TCS</td>
-                <td style={tdStyle}>312</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Accenture</td>
-                <td style={tdStyle}>195</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Goldman Sachs</td>
-                <td style={tdStyle}>164</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>McKinsey &amp; Co.</td>
-                <td style={tdStyle}>138</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Facebook</td>
-                <td style={tdStyle}>124</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>BCG</td>
-                <td style={tdStyle}>120</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Flipkart</td>
-                <td style={tdStyle}>108</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>AWS</td>
-                <td style={tdStyle}>90</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Bain &amp; Co.</td>
-                <td style={tdStyle}>66</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Uber</td>
-                <td style={tdStyle}>5</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <br />
+<p><strong>Auditorium:</strong></p>
+<ul>
+  <li>The college has an auditorium facility for events and seminars.</li>
+</ul>
 
-        <p style={pStyle}>
-          IITD Alumni Association is dedicated to bringing together the alumni
-          community on a common platform to build another channel of personal
-          and professional support to members through ‘self-help’ within the
-          community. IIT Delhi Alumni Association today has a membership of over
-          43,000 graduates from our alma mater and is growing at about 1,700
-          members a year. It is one of the most active alumni associations and
-          operates through a network of national and international chapters. Our
-          alumni are spread worldwide and figure amongst who’s who worldwide.
-        </p>
-      </section>
-    </div>
+<p><strong>Alumni Associations:</strong></p>
+<ul>
+  <li>IIT Indore currently boasts about 370 registered alumni, including both former undergraduate and graduate students.</li>
+  <li>Many alumni are engaged in nation-building by working in Public Sector Units and internationally renowned organizations, while some have taken up entrepreneurial ventures.</li>
+</ul>
+
+<p><strong>Wi-Fi:</strong></p>
+<ul>
+  <li>The college has a Wi-Fi facility for students and staff.</li>
+</ul>
+
+<p><strong>Boys Hostel:</strong></p>
+<ul>
+  <li>IIT Indore provides accommodation to students in five different hostel buildings known as the ‘Hall of Residence’ named after great personalities: C.V. Raman, Vikram Sarabhai, A.P.J Abdul Kalam, Devi Ahilya, and Homi Jahangir Bhabha.</li>
+  <li>IIT Indore offers 5 BHK units accommodating five students per bedroom.</li>
+  <li>The top 300 IIT-JEE scorers receive a fully-furnished 1 BHK apartment with single occupancy.</li>
+</ul>
+
+<p><strong>Girls Hostel:</strong></p>
+<ul>
+  <li>Accommodation is provided in the same five hostel buildings as for boys.</li>
+  <li>The same 5 BHK and 1 BHK single occupancy options apply.</li>
+</ul>
+
+<p><strong>Transport Facility:</strong></p>
+<ul>
+  <li>The IITI campus offers eco-friendly transport services through green vehicles.</li>
+  <li>Indian Institute of Technology, Indore provides transportation facilities to its students and faculty members, operating to and from the campus to multiple parts of Indore.</li>
+</ul>
+
+<p><strong>Convenience Store:</strong></p>
+<ul>
+  <li>IIT Indore campus has a store called ‘La Fresco Store’ that provides groceries and stationery to campus residents.</li>
+  <li>The store fulfills students' daily needs at affordable prices and operates from 10 a.m. to 6 p.m.</li>
+</ul>
+
+<p><strong>Banks/ATMs:</strong></p>
+<ul>
+  <li>Indian Institute of Technology, Indore provides banking facilities and ATMs for students and faculty members.</li>
+  <li>Banking services operate to and from the campus for convenient access.</li>
+</ul>
+</div>
+</section>
+
+<section id="alumni-network">
+<h2 style={h2Style}>Alumni</h2> 
+<p style = {pStyle}>
+IIT Indore currently boasts of about 370 registered alumni, including both former undergraduate and graduate students. A bountiful number of persons among these are successfully engaged in nation-building by advancing services to Public Sector Units and internationally renowned organizations, while some others have taken up entrepreneurial digressions.
+</p>
+<table style={tableStyle}>
+<thead>
+  <tr>
+    <th style={thStyle}>Name of Organizations</th>
+    <th style={thStyle}>Number of Alumni</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style={tdStyle}>Indian Institute of Technology Indore</td>
+    <td style={tdStyle}>263</td>
+  </tr>
+  <tr>
+    <td style={tdStyle}>E - Cell, IIT Indore</td>
+    <td style={tdStyle}>75</td>
+  </tr>
+  <tr>
+    <td style={tdStyle}>CFA Club - IIT Indore</td>
+    <td style={tdStyle}>63</td>
+  </tr>
+  <tr>
+    <td style={tdStyle}>Fluxus - Indore</td>
+    <td style={tdStyle}>53</td>
+  </tr>
+  <tr>
+    <td style={tdStyle}>The Programming Club, IIT Indore</td>
+    <td style={tdStyle}>49</td>
+  </tr>
+  <tr>
+    <td style={tdStyle}>Model United Nations, IIT Indore</td>
+    <td style={tdStyle}>47</td>
+  </tr>
+  <tr>
+    <td style={tdStyle}>Cynaptics Club, IIT Indore</td>
+    <td style={tdStyle}>44</td>
+  </tr>
+  <tr>
+    <td style={tdStyle}>Students Gymkhana - IIT Indore</td>
+    <td style={tdStyle}>42</td>
+  </tr>
+  <tr>
+    <td style={tdStyle}>Amazon</td>
+    <td style={tdStyle}>39</td>
+  </tr>
+  <tr>
+    <td style={tdStyle}>Electronics Club IIT Indore</td>
+    <td style={tdStyle}>37</td>
+  </tr>
+  <tr>
+    <td style={tdStyle}>Robotics Club, IIT Indore</td>
+    <td style={tdStyle}>36</td>
+  </tr>
+  <tr>
+    <td style={tdStyle}>Gaming Club, IIT Indore</td>
+    <td style={tdStyle}>35</td>
+  </tr>
+  <tr>
+    <td style={tdStyle}>Science & Technology Council, IIT Indore</td>
+    <td style={tdStyle}>32</td>
+  </tr>
+  <tr>
+    <td style={tdStyle}>IVDC Club</td>
+    <td style={tdStyle}>30</td>
+  </tr>
+  <tr>
+    <td style={tdStyle}>Training & Placement Cell, IIT Indore</td>
+    <td style={tdStyle}>24</td>
+  </tr>
+</tbody>
+</table> 
+</section>
+</div>
   );
 };
+
 
 export default Ranking;

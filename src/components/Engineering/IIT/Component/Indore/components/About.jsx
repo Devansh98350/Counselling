@@ -1,3 +1,4 @@
+// iit_indore/About.jsx
 import React from "react";
 
 const About = () => {
@@ -22,19 +23,15 @@ const About = () => {
     fontSize: "16px",
     lineHeight: "1.6",
   };
-  const ulStyle = {
-    lineHeight: "1.6",
-    listStyleType: "disc",
-    marginLeft: "20px",
-  };
+
   const tableStyle = {
     width: "80%",
     borderCollapse: "collapse",
-    margin: "0 auto",
-    marginBottom: "auto",
+    margin: "20px auto",
     border: "1px solid #ddd",
     fontSize: "1.2rem",
   };
+
   const tdStyle = {
     backgroundColor: "#f2f2f2",
     padding: "8px",
@@ -42,6 +39,7 @@ const About = () => {
     fontSize: "16px",
     lineHeight: "1.6",
   };
+
   const thStyle = {
     backgroundColor: "#1d2f52",
     color: "#fff",
@@ -50,301 +48,264 @@ const About = () => {
     fontSize: "16px",
     lineHeight: "1.6",
   };
-  const th3Style = { marginLeft: "5%", fontSize: "24px", fontWeight: "700" };
-  const liStyle = { fontSize: "16px", lineHeight: "1.6" };
 
   return (
     <div style={sectionStyle}>
       <section id="about">
-        <h2 style={h2Style}>About IIT Delhi</h2>
+        <h2 style = {h2Style}>About IIT Indore</h2>
         <p style={pStyle}>
-          IIT Delhi, popularly known as the Indian Institute of Technology
-          Delhi, is one of the most prestigious IIT institutions in India.
-          Established in 1961 as an engineering college, IIT Delhi was later
-          declared an institution of national importance under the Institutes of
-          Technology (Amendment) Act of 1963. It is one of the 23 IITs in the
-          country and was founded with the mission to be a center of excellence
-          for training, research, and development across various disciplines,
-          including engineering, science, technology, and humanities.
+          Indian Institute of Technology Indore, popularly known as IIT Indore or
+          IITI, was established in 2009. IIT Indore was founded by the Ministry of
+          Education, Government of India, and is an institute of national importance.
+          Located in Simrol, Indore, Madhya Pradesh, IIT Indore is one of the eight
+          new IITs initiated by the Government of India.
         </p>
         <p style={pStyle}>
-          In terms of rankings, IIT Delhi has consistently been recognized as
-          one of the top institutions in India and the world:
-        </p>
-        <ul style={ulStyle}>
-          <li style={liStyle}>
-            Ranked 2nd by the NIRF 2023 in the Engineering category.
-          </li>
-          <li style={liStyle}>Ranked 3rd overall by NIRF 2023.</li>
-          <li style={liStyle}>
-            Ranked 150th by the QS World University Ranking 2025, rising 47
-            places from its previous rank of 197.
-          </li>
-          <li style={liStyle}>
-            Ranked 1st by India Today 2023 in both the Engineering (Government)
-            category and overall Engineering category.
-          </li>
-        </ul>
-        <p style={pStyle}>
-          IIT Delhi accepts various national-level entrance exams for admission,
-          including JEE Main, JEE Advanced, GATE, UCEED, IIT JAM, and CAT, among
-          others.
+          IIT Indore has secured the 14th rank in the NIRF 2023 Rankings under the
+          'Engineering' category. QS World University Ranking 2025 has also ranked
+          IIT Indore 477.
         </p>
       </section>
 
       <section id="courses">
         <h2 style={h2Style}>Course Fees and Structure</h2>
         <p style={pStyle}>
-          The fee structure at IIT Delhi is composed of various components such
-          as tuition fees, hostel fees, library fees, canteen fees, etc. Some
-          components are charged only once, while others, like the tuition fee,
-          are paid semester-wise or annually. The total cost of fees depends on
-          the chosen course. The table below shows the fee breakdown for various
-          courses:
+          Indian Institute of Technology, Indore offers B.Tech, M.Tech, Dual Degrees, 
+          M.Sc., MS, and Ph.D. courses at the undergraduate, postgraduate, and doctoral levels. 
+          All the IIT Indore courses are offered in full-time mode except for 4 courses which 
+          are offered in online mode. IIT Indore UG courses include B.Tech and Dual Degree, 
+          while MS, M.Tech, and M.Sc. are IIT Indore PG courses.
         </p>
-        <h3 style={th3Style}>Fee Breakdown</h3>
-        <div
-          style={{
-            overflowX: "auto",
-            WebkitOverflowScrolling: "touch",
-            whiteSpace: "nowrap",
-            msOverflowStyle: "none",
-            scrollbarWidth: "none",
-          }}
-        >
-          <table style={tableStyle}>
-            <thead>
-              <tr>
-                <th style={thStyle}>Course</th>
-                <th style={thStyle}>Tuition Fee</th>
-                <th style={thStyle}>Hostel Fee</th>
-                <th style={thStyle}>One-time Fee</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                {
-                  course: "B.Tech",
-                  tuition: "INR 8-10L",
-                  hostel: "INR 4.58L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "M.Tech",
-                  tuition: "INR 3L",
-                  hostel: "INR 2.29L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "MA",
-                  tuition: "INR 3L",
-                  hostel: "INR 2.29L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "B.Des",
-                  tuition: "INR 8L",
-                  hostel: "INR 4.32L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "M.Des",
-                  tuition: "INR 3L",
-                  hostel: "INR 2.29L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "MBA",
-                  tuition: "INR 11.20L",
-                  hostel: "INR 2.29L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "MSc",
-                  tuition: "INR 30,000-3L",
-                  hostel: "INR 2.29L",
-                  oneTime: "INR 16,000",
-                },
-              ].map((row, index) => (
-                <tr key={index}>
-                  <td style={tdStyle}>{row.course}</td>
-                  <td style={tdStyle}>{row.tuition}</td>
-                  <td style={tdStyle}>{row.hostel}</td>
-                  <td style={tdStyle}>{row.oneTime}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
-        <h3>One-Time Charges (For Every Fresh Allotment)</h3>
-        <ul style={ulStyle}>
-          <li style={liStyle}>
-            Seat Allotment Charges (Non-refundable): INR 7,000
-          </li>
-          <li style={liStyle}>Security Deposit (Refundable): INR 15,000</li>
-        </ul>
-
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Per-Semester Charges</strong>
-        </h3>
         <p style={pStyle}>
-          Note: No pro-rata is applicable due to hostel operations being fully
-          cooperative in nature.
-        </p>
-        <ul style={ulStyle}>
-          <li style={liStyle}>
-            <strong>
-              Hostel Mess Charges (Include food, kitchen consumables, human
-              resources, IGL, and associated costs):
-            </strong>
-          </li>
-          <ul style={ulStyle}>
-            <li style={liStyle}>Old Hostel (Non-A/C): INR 35,000</li>
-            <li style={liStyle}>
-              New Hostels (Centralized A/C, only for non-MSc PG students): INR
-              35,000
-            </li>
-          </ul>
-          <li style={liStyle}>
-            <strong>Additional Charges:</strong>
-          </li>
-          <ul style={ulStyle}>
-            <li style={liStyle}>All students in old hostels: INR 8,600</li>
-            <li style={liStyle}>
-              All students in new hostels: INR 23,600 (Break-up: INR 8,600 + INR
-              15,000)
-            </li>
-          </ul>
-        </ul>
+          The IIT Indore courses are offered in various specializations in the Ph.D. program. 
+          The IIT Indore fee structure is different for different courses. The candidate must 
+          meet the eligibility criteria of IIT Indore to apply for the courses. 
+          Here are some famous degrees and their number of courses provided: 
+        </p>  
+        <table style={tableStyle}>
+          <thead>
+            <tr>
+              <th style={thStyle}>Degrees</th>
+              <th style={thStyle}>No of Courses</th>
+            </tr>
+          </thead>
+          <tbody>
+            {}
+            <tr>
+              <td style={tdStyle}>B.E / B.Tech</td>
+              <td style={tdStyle}>15</td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>Msc</td>
+              <td style={tdStyle}>10</td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>M.E. / M.Tech</td>
+              <td style={tdStyle}>21</td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>MS</td>
+              <td style={tdStyle}>6</td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>PHD</td>
+              <td style={tdStyle}>2</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p style={pStyle}>Student can check the exam accepted by the IIT Indore of its degree: </p>
+        <table style={tableStyle}>
+          <thead>
+            <tr>
+              <th style={thStyle}>Degrees</th>
+              <th style={thStyle}>Exams</th>
+            </tr>
+          </thead>
+          <tbody>
+            {}
+            <tr>
+              <td style={tdStyle}>B.E / B.Tech</td>
+              <td style={tdStyle}>JEE MAIN, JEE ADVANCE </td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>Msc</td>
+              <td style={tdStyle}>GATE, IIT JAM </td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>M.E. / M.Tech</td>
+              <td style={tdStyle}>GATE, JEE MAIN, JEE ADVANCE </td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>MS</td>
+              <td style={tdStyle}>JAM </td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>PHD</td>
+              <td style={tdStyle}>GATE, UGC NET, CSIR NET</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p style = {pStyle}>Here is the tuition fee of some of the famous degrees provide by the IIT Indore: </p>
+        <table style={tableStyle}>
+          <thead>
+            <tr>
+              <th style={thStyle}>Degrees</th>
+              <th style={thStyle}>Tuition Fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            {}
+            <tr>
+              <td style={tdStyle}>B.E / B.Tech</td>
+              <td style={tdStyle}>8L </td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>Msc</td>
+              <td style={tdStyle}>50K - 2L </td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>M.E. / M.Tech</td>
+              <td style={tdStyle}>25K - 2.78L</td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>MS</td>
+              <td style={tdStyle}>30K</td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>PHD</td>
+              <td style={tdStyle}>2.5L</td>
+            </tr>
+          </tbody>
+        </table>
+
+      <h2 style ={h2Style}>Fee Structure</h2>
+      <p style = {pStyle}>IIT Indore fee structure for different programmes lies between INR 20,000 and INR 800,000. While candidates can pay the fee annually or semester-wise depending on ask during admissions, there are a few components which are paid only once, namely one-time fee. The below table mentions the total tuition fee that students are required to pay at IIT Indore for all courses. Students who wish to take out the annual or semester fee amount can divide the amount by the number of years the course is valid for (for annual fee) and by double the number of years the course is valid for (to calculate the semester-wise fee). Check IIT Indore fees below: </p>
+      <table style={tableStyle}>
+          <thead>
+            <tr>
+              <th style={thStyle}>Degrees</th>
+              <th style={thStyle}>Tuition Fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            {}
+            <tr>
+              <td style={tdStyle}>B.E / B.Tech</td>
+              <td style={tdStyle}>8L </td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>Msc</td>
+              <td style={tdStyle}>20 K-1.56 L  </td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>M.E. / M.Tech</td>
+              <td style={tdStyle}>28 K-1.56 L </td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>MS</td>
+              <td style={tdStyle}>28K </td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>PHD</td>
+              <td style={tdStyle}>2.41L</td>
+            </tr>
+          </tbody>
+        </table>     
+
+        <table style={tableStyle}>
+          <thead>
+            <tr>
+              <th style={thStyle}>Fee Components</th>
+              <th style={thStyle}>Amount (for 4 years) </th>
+            </tr>
+          </thead>
+          <tbody>
+            {}
+            <tr>
+              <td style={tdStyle}>Tuition 
+The tuition fee is calculated on the basis of 1st semester. Actual amount may vary. 
+</td>
+              <td style={tdStyle}>8L </td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>Hostel 
+The fees might include components other than hostel fees.
+
+</td>
+              <td style={tdStyle}>2.68 L  </td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>One-time payment includes Refundable Security Deposits, Admission Fee, Grade Sheets Fee, Smart Card fee, Medical Examination Fee, Degree Certificate Fee, Convocation Fee, Alumni Association Membership</td>
+              <td style={tdStyle}>18.1K </td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>Other Fees</td>
+              <td style={tdStyle}>50.4K</td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>Total Fee</td>  
+              <td style={tdStyle}>11.37L</td>
+            </tr>
+          </tbody>
+        </table> 
+        <h4>*These are estimated fees information. Actual values may differ.</h4>
       </section>
 
       <section id="admission">
-        <h2 style={h2Style}>Admission</h2>
-        <p style={pStyle}>
-          Admission to IIT Delhi is based on national entrance tests. The
-          institute offers a variety of programs at the undergraduate (UG),
-          postgraduate (PG), and doctoral levels. Admission to the B.Tech
-          program is determined by JEE Advanced scores, followed by JoSAA
-          counseling. For B.Des at the UG level, students can apply through
-          UCEED.
-        </p>
-        <p style={pStyle}>
-          IIT Delhi also offers M.Tech, MSc, M.Des, and MBA programs. Admission
-          to these programs requires qualifying exams like GATE, IIT JAM, UCEED,
-          and CAT, respectively. The institute also offers EMBA and MPP programs
-          at the PG level, where selection is based on an interview round. For
-          Ph.D. programs, IIT Delhi accepts GATE, CSIR, UGC NET, CEED, ICAR, and
-          DST INSPIRE fellowship scores.
-        </p>
-
-        <h3 style={th3Style}>Eligibility and Selection Criteria</h3>
-        <div style={{ overflowX: "auto" }}>
-          <table style={tableStyle}>
-            <thead>
-              <tr>
-                <th style={thStyle}>Course</th>
-                <th style={thStyle}>Eligibility Criteria</th>
-                <th style={thStyle}>Selection Criteria</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style={tdStyle}>B.Tech</td>
-                <td style={tdStyle}>
-                  Passed class 10+2 with PCM with a minimum of 75% from a
-                  recognized board
-                </td>
-                <td style={tdStyle}>
-                  JEE Main + JEE Advanced + JoSAA Counseling
-                </td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>B.Des</td>
-                <td style={tdStyle}>
-                  Passed class 10+2 with a minimum of 60% marks (40% for
-                  reserved categories)
-                </td>
-                <td style={tdStyle}>UCEED scores + Counseling</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>M.Tech</td>
-                <td style={tdStyle}>
-                  Minimum of 60% marks or 6.00 CGPA on a 10-point scale (5%
-                  relaxation for SC/ST/PWD)
-                </td>
-                <td style={tdStyle}>
-                  GATE score + COAP counseling + Written Test + Interview
-                </td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>MS</td>
-                <td style={tdStyle}>
-                  Minimum of 60% marks or 6.00 CGPA on a 10-point scale (5%
-                  relaxation for SC/ST/PWD)
-                </td>
-                <td style={tdStyle}>GATE</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>M.Sc.</td>
-                <td style={tdStyle}>
-                  At least 55% marks or 5.5 CGPA (5% relaxation for SC/ST/PH)
-                </td>
-                <td style={tdStyle}>IIT JAM + JOAPS Counseling</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>MBA</td>
-                <td style={tdStyle}>
-                  Bachelor's degree or its equivalent with at least 60% marks
-                </td>
-                <td style={tdStyle}>
-                  CAT scores + Group Discussion + Interview Round
-                </td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>M.Des</td>
-                <td style={tdStyle}>
-                  B.Tech/B.Des/B.Arch or equivalent with at least 60% marks
-                </td>
-                <td style={tdStyle}>CEED score + Interview</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Ph.D.</td>
-                <td style={tdStyle}>
-                  At least 60% marks or 6.00 CGPA (5% relaxation for SC/ST/PWD)
-                  in master's degree or an equivalent
-                </td>
-                <td style={tdStyle}>
-                  GATE/CSIR/UGC NET/ICAR/ICMR/CEED/DST-INSPIRE fellowship +
-                  Written Test + Interview
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Application Process</strong>
-        </h3>
-        <p style={pStyle}>
-          The application process for IIT Delhi is as follows:
-        </p>
-        <ul style={ulStyle}>
-          <li style={liStyle}>
-            Fill in the application form on the IIT Delhi official website.
-          </li>
-          <li style={liStyle}>Pay the application fee.</li>
-          <li style={liStyle}>Submit the necessary documents.</li>
-          <li style={liStyle}>
-            Attend the counseling session (if applicable).
-          </li>
+      <h2 style={h2Style}>Admission</h2>
+      <p style = {pStyle}>Indian Institute of Technology, Indore (IITI) provides admissions to B.Tech. Dual Degree, MS, M.Tech., M.Sc., and Ph.D.. The candidates should appear in the relevant entrance examination before applying for admission at IIT Indore. Admission to B.Tech. Is based on the scores of JEE Mains and JEE Advanced. Then the qualified candidates have to attend the JoSAA counselling process. </p>
+      <p style = {pStyle}>Apart from the B.Tech program, IIT Indore also offers UG, PG, and Doctoral courses, namely B.Tech, M.Tech, MSc, and PhD. Admission to various UG and PG programs at IIT Indore is done through national entrance exams. Admissions to IIT Indore are determined by several national entrance tests, including JEE Main, JEE Advanced, GATE, IIT JAM, UGC NET, and CSIR NET, as well as counseling and in-person interviews.  </p>
+      <p style = {pStyle}>IIT Indore M.Tech admissions are GATE score-based and seats are allocated as per COAP counselling. IIT Indore Ph.D. admissions are done based on an entrance exam conducted by the institute followed by a PI round. IIT Indore Ph.D. program candidates are also evaluated with valid GATE, CEED, UGC, or CSIR exam scores.</p>
+      <p style = {pStyle}>IIT Indore admissions to PG programmes are based on the marks secured by the candidate in GATE or JAM. For IIT Indore admissions, Candidates are shortlisted based on the qualifying entrance examination scores and past academic records. The candidate must meet the IIT Indore eligibility criteria before applying for the courses. The details of IIT Indore admissions are mentioned below. </p>
+      <p style={pStyle}> How to fill out the IIT Indore application form 2024?</p>
+        <ul>
+          <li>The candidates can apply for admission by visiting the official college website.</li>
+          <li>A unique application number will be assigned to each applicant.</li>
+          <li>Applicants should fill out the IIT Indore application form with valid required information.</li>
+          <li>The candidate should submit the required documents.</li>
+          <li>Then submit the application form after paying the fees.</li>
         </ul>
-      </section>
-    </div>
+      <p style = {pStyle}>Eligibility & Selection</p>
+      <p style = {pStyle}>While merit is the basic eligibility for all the courses offered at IIT Indore, admission to each one of them is entrance exam-based. The institute considers the scores of various entrance exams conducted at the national level. The table below lists the entrance exams that are valid for IIT Indore admissions 2024 to various courses:</p>
+      <table style={tableStyle}>
+        <thead>
+          <tr>
+            <th style={thStyle}>Course Name</th>
+            <th style={thStyle}>Eligibility</th>
+            <th style={thStyle}>Selection Criteria</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style={tdStyle}>B.Tech</td>
+            <td style={tdStyle}>
+              Class 12 in Science stream with Chemistry, Physics, and Mathematics as compulsory subjects
+            </td>
+            <td style={tdStyle}>JEE Main + JEE Advanced + JOSAA Counselling</td>
+          </tr>
+          <tr>
+            <td style={tdStyle}>M.Tech</td>
+            <td style={tdStyle}>B.Tech or BE/MCA/ MSc/AMIETE with 60% aggregate or 6.0 CPI</td>
+            <td style={tdStyle}>GATE + COAP Counselling</td>
+          </tr>
+          <tr>
+            <td style={tdStyle}>MSc</td>
+            <td style={tdStyle}>Bachelor's degree in the Science stream with a minimum of 55% aggregate</td>
+            <td style={tdStyle}>IIT-JAM + CCMN counselling</td>
+          </tr>
+          <tr>
+            <td style={tdStyle}>PhD</td>
+            <td style={tdStyle}>
+              Master's degree in a relevant discipline with a minimum of 60% to 70% aggregate or 6.0 to 7.0 CPI
+            </td>
+            <td style={tdStyle}>GATE/NET/CEED/INSPIRE</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
   );
 };
 
