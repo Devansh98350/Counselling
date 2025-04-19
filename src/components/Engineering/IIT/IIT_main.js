@@ -69,7 +69,7 @@ const Heading = [
     build:
       "https://tse4.explicit.bing.net/th?id=OIP.Nj3dd-ErO9sYiLlT-Idz-QHaFj&pid=Api&P=0&h=180",
     name: "IIT Kharagpur",
-    link: "#",
+    link: "/iit-colleges/iit-kharagpur",
   },
   {
     id: 7,
