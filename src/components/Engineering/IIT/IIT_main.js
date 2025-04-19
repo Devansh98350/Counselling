@@ -122,7 +122,7 @@ const Heading = [
     logo: "https://tse3.mm.bing.net/th?id=OIP.rcvV4YZWtADzn3oERjUg0QAAAA&pid=Api&P=0&h=180",
     build: "https://addeducation.in/wp-content/uploads/2022/11/IIT-Indore.jpg",
     name: "IIT Indore",
-    link: "#",
+    link: "/iit-colleges/iit-indore",
   },
   {
     id: 12,
@@ -144,7 +144,7 @@ const Heading = [
     build:
       "https://tse2.mm.bing.net/th?id=OIP.J764KZBtowcsdLsBfdzBkQHaDg&pid=Api&P=0&h=180",
     name: "IIT (BHU) Varanasi",
-    link: "#",
+    link: "/iit-colleges/iit-bhu",
   },
   {
     id: 14,
@@ -199,7 +199,7 @@ const Heading = [
     build:
       "https://tse3.mm.bing.net/th?id=OIP.LbJBs2PkZj0jzdi7EZzk5QHaEH&pid=Api&P=0&h=180",
     name: "IIT Jodhpur",
-    link: "#",
+    link: "/iit-colleges/iit-jodhpur",
   },
   {
     id: 19,
@@ -210,7 +210,7 @@ const Heading = [
     build:
       "https://tse4.mm.bing.net/th?id=OIP.T-5jMpZ0s1d9zJea6ZLYIAAAAA&pid=Api&P=0&h=180",
     name: "IIT Tirupati",
-    link: "#",
+    link: "/iit-colleges/iit-tirupati",
   },
   {
     id: 20,
@@ -221,7 +221,7 @@ const Heading = [
     build:
       "https://resize.indiatvnews.com/en/resize/newbucket/715_-/2017/10/iitbhilai-1509125865.jpg",
     name: "IIT Bhilai",
-    link: "#",
+    link: "/iit-colleges/iit-bhilai",
   },
   {
     id: 21,
@@ -232,7 +232,7 @@ const Heading = [
     build:
       "https://tse2.mm.bing.net/th?id=OIP.OFpZtRqMdxyXG54GBGNP7QHaEK&pid=Api&P=0&h=180",
     name: "IIT Jammu",
-    link: "#",
+    link: "/iit-colleges/iit-jammu",
   },
   {
     id: 22,
@@ -243,7 +243,7 @@ const Heading = [
     build:
       "https://tse3.mm.bing.net/th?id=OIP.7fM6jDU98UjTNwERogyuSwHaDt&pid=Api&P=0&h=180",
     name: "IIT Palakkad",
-    link: "#",
+    link: "/iit-colleges/iit-palakkad",
   },
   {
     id: 23,
@@ -254,7 +254,7 @@ const Heading = [
     build:
       "https://tse2.mm.bing.net/th?id=OIP.ecnHj-b7fNisjkEYyDX_VgHaFj&pid=Api&P=0&h=180",
     name: "IIT Goa",
-    link: "#",
+    link: "/iit-colleges/iit-goa",
   },
 ];
 const MarginInformation = styled.div`

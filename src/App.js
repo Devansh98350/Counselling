@@ -18,6 +18,14 @@ import IIT_ROORKEE from "./components/Engineering/IIT/Component/Roorkee/roorkee.
 import IIT_DHARWAD from "./components/Engineering/IIT/Component/Dharwad/dharwad.js";
 import IIT_ROPAR from "./components/Engineering/IIT/Component/Ropar/ropar.js";
 import IIT_KHARAGPUR from "./components/Engineering/IIT/Component/Kharagpur/kharagpur.js";
+import IIT_INDORE from "./components/Engineering/IIT/Component/Indore/indore.js";
+import IIT_BHU from "./components/Engineering/IIT/Component/Bhu/bhu.js";
+import IIT_JODHPUR from "./components/Engineering/IIT/Component/Jodhpur/jodhpur.js";
+import IIT_TIRUPATI from "./components/Engineering/IIT/Component/Tirupati/tirupati.js";
+import IIT_BHILAI from "./components/Engineering/IIT/Component/Bhilai/bhilai.js";
+import IIT_JAMMU from "./components/Engineering/IIT/Component/Jammu/jammu.js";
+import IIT_PALAKKAD from "./components/Engineering/IIT/Component/Palakkad/palakkad.js";
+import IIT_GOA from "./components/Engineering/IIT/Component/Goa/goa.js";
 import NITS from "./components/Engineering/NIT/NIT_main.js";
 import IIITS from "./components/Engineering/IIIT/IIIT_main.js";
 import CFTIS from "./components/Engineering/CFTI/CFTI_main";
@@ -48,6 +56,14 @@ function App() {
         <Route path="/iit-colleges/iit-dharwad" element={<IIT_DHARWAD />} />
         <Route path="/iit-colleges/iit-ropar" element={<IIT_ROPAR />} />
         <Route path="/iit-colleges/iit-kharagpur" element={<IIT_KHARAGPUR />} />
+        <Route path="/iit-colleges/iit-indore" element={<IIT_INDORE />} />
+        <Route path="/iit-colleges/iit-bhu" element={<IIT_BHU />} />
+        <Route path="/iit-colleges/iit-jodhpur" element={<IIT_JODHPUR />} />
+        <Route path="/iit-colleges/iit-tirupati" element={<IIT_TIRUPATI />} />
+        <Route path="/iit-colleges/iit-bhilai" element={<IIT_BHILAI />} />
+        <Route path="/iit-colleges/iit-jammu" element={<IIT_JAMMU />} />
+        <Route path="/iit-colleges/iit-palakkad" element={<IIT_PALAKKAD />} />
+        <Route path="/iit-colleges/iit-goa" element={<IIT_GOA />} />
         <Route path="/nit-colleges" element={<NITS />} />
         <Route path="/iiit-colleges" element={<IIITS />} />
         <Route path="/cfti-colleges" element={<CFTIS />} />
