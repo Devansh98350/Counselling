@@ -102,7 +102,7 @@ const Heading = [
     build:
       "https://www.wishusucess.com/wp-content/uploads/2020/06/IIT-Ropar-640x334.jpg",
     name: "IIT Ropar",
-    link: "#",
+    link: "/iit-colleges/iit-ropar",
   },
   {
     id: 10,

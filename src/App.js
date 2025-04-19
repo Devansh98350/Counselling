@@ -16,6 +16,7 @@ import IIT_KANPUR from "./components/Engineering/IIT/Component/Kanpur/kanpur.js"
 import IIT_MADRAS from "./components/Engineering/IIT/Component/Madras/madras.js";
 import IIT_ROORKEE from "./components/Engineering/IIT/Component/Roorkee/roorkee.js";
 import IIT_DHARWAD from "./components/Engineering/IIT/Component/Dharwad/dharwad.js";
+import IIT_ROPAR from "./components/Engineering/IIT/Component/Ropar/ropar.js";
 import NITS from "./components/Engineering/NIT/NIT_main.js";
 import IIITS from "./components/Engineering/IIIT/IIIT_main.js";
 import CFTIS from "./components/Engineering/CFTI/CFTI_main";
@@ -44,6 +45,7 @@ function App() {
         <Route path="/iit-colleges/iit-kanpur" element={<IIT_KANPUR />} />
         <Route path="/iit-colleges/iit-roorkee" element={<IIT_ROORKEE />} />
         <Route path="/iit-colleges/iit-dharwad" element={<IIT_DHARWAD />} />
+        <Route path="/iit-colleges/iit-ropar" element={<IIT_ROPAR />} />
         <Route path="/nit-colleges" element={<NITS />} />
         <Route path="/iiit-colleges" element={<IIITS />} />
         <Route path="/cfti-colleges" element={<CFTIS />} />
