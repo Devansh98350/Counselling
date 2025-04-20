@@ -22,11 +22,13 @@ const About = () => {
     fontSize: "16px",
     lineHeight: "1.6",
   };
+
   const ulStyle = {
     lineHeight: "1.6",
     listStyleType: "disc",
     marginLeft: "20px",
   };
+
   const tableStyle = {
     width: "80%",
     borderCollapse: "collapse",
@@ -35,6 +37,7 @@ const About = () => {
     border: "1px solid #ddd",
     fontSize: "1.2rem",
   };
+
   const tdStyle = {
     backgroundColor: "#f2f2f2",
     padding: "8px",
@@ -42,6 +45,7 @@ const About = () => {
     fontSize: "16px",
     lineHeight: "1.6",
   };
+
   const thStyle = {
     backgroundColor: "#1d2f52",
     color: "#fff",
@@ -50,59 +54,56 @@ const About = () => {
     fontSize: "16px",
     lineHeight: "1.6",
   };
+
   const th3Style = { marginLeft: "5%", fontSize: "24px", fontWeight: "700" };
   const liStyle = { fontSize: "16px", lineHeight: "1.6" };
 
   return (
     <div style={sectionStyle}>
       <section id="about">
-        <h2 style={h2Style}>About IIT Delhi</h2>
-        <p style={pStyle}>
-          IIT Delhi, popularly known as the Indian Institute of Technology
-          Delhi, is one of the most prestigious IIT institutions in India.
-          Established in 1961 as an engineering college, IIT Delhi was later
-          declared an institution of national importance under the Institutes of
-          Technology (Amendment) Act of 1963. It is one of the 23 IITs in the
-          country and was founded with the mission to be a center of excellence
-          for training, research, and development across various disciplines,
-          including engineering, science, technology, and humanities.
-        </p>
-        <p style={pStyle}>
-          In terms of rankings, IIT Delhi has consistently been recognized as
-          one of the top institutions in India and the world:
-        </p>
+        <h2 style={h2Style}>About IIT BHU</h2>
         <ul style={ulStyle}>
-          <li style={liStyle}>
-            Ranked 2nd by the NIRF 2023 in the Engineering category.
-          </li>
-          <li style={liStyle}>Ranked 3rd overall by NIRF 2023.</li>
-          <li style={liStyle}>
-            Ranked 150th by the QS World University Ranking 2025, rising 47
-            places from its previous rank of 197.
-          </li>
-          <li style={liStyle}>
-            Ranked 1st by India Today 2023 in both the Engineering (Government)
-            category and overall Engineering category.
-          </li>
-        </ul>
-        <p style={pStyle}>
-          IIT Delhi accepts various national-level entrance exams for admission,
-          including JEE Main, JEE Advanced, GATE, UCEED, IIT JAM, and CAT, among
-          others.
-        </p>
+    <li>
+      History & Establishment: Founded as Banaras Engineering College (BENCO) in 1919. 
+      Later merged with MINMET & TECHNO to form IT-BHU in 1968 and was officially designated as IIT BHU in 2012.
+    </li>
+    <li>
+      Rankings: Ranked 531 in QS World University Rankings 2025 and 8th in The Week 2023 (Technical category).
+    </li>
+    <li>
+      Courses & Admission: Offers B.Tech, B.Arch, M.Tech, Pharm, MSc, PhD, Integrated M.Tech (IMD), 
+      and Integrated Dual Degree (IDD) programs. B.Tech admissions are based on JEE Advanced & JoSAA counselling.
+    </li>
+    <li>
+      Placements 2024: On the first day of placements, the highest package offered was ₹1.68 crore per annum. 
+      A total of 1,044 offers were received, including 310 pre-placement offers (PPOs). 
+      Major recruiters included Qualcomm, Uber, Goldman Sachs, and Google.
+    </li>
+  </ul>
       </section>
 
       <section id="courses">
         <h2 style={h2Style}>Course Fees and Structure</h2>
         <p style={pStyle}>
-          The fee structure at IIT Delhi is composed of various components such
-          as tuition fees, hostel fees, library fees, canteen fees, etc. Some
-          components are charged only once, while others, like the tuition fee,
-          are paid semester-wise or annually. The total cost of fees depends on
-          the chosen course. The table below shows the fee breakdown for various
-          courses:
-        </p>
-        <h3 style={th3Style}>Fee Breakdown</h3>
+    Indian Institute of Technology Varanasi offers programmes like Undergraduate, Postgraduate, 
+    and PhD programmes, with 15 departments and 3 inter-disciplinary schools. Under these departments 
+    and schools, the courses include B.Tech, B.Arch, M.Tech, M.Pharm, MSc, PhD, Integrated M.Tech (IMD), 
+    and Integrated Dual Degree (IDD). IIT BHU Varanasi also offers 2 certification courses in online mode, 
+    which include Multiphase Flows and Literature and Coping Skills. IIT BHU offers B.Tech, M.Tech, B.Arch, 
+    Dual Degrees, M.Pharm, PhD, and many other courses at undergraduate, postgraduate, and doctoral levels.
+  </p>
+
+  <p style={pStyle}>
+    IIT BHU courses are offered in streams of engineering and architecture, pharmacy, science, arts, 
+    humanities, and social sciences. IIT BHU UG courses include B.Tech, B.Arch, and B.Tech M.Tech, while 
+    IIT BHU Varanasi PG courses include M.Tech and M.Pharm. Candidates willing to get admission must take 
+    part in the IIT Varanasi admissions 2024 process before the last date of application. To apply for 
+    these courses, candidates must fulfill the basic eligibility criteria set by the institute. Candidates 
+    can refer to the information below to know about IIT BHU popular programmes, IIT Varanasi eligibility, 
+    and IIT BHU courses and fees.
+  </p>
+  
+        <h3 style={th3Style}>Course Breakdown</h3>
         <div
           style={{
             overflowX: "auto",
@@ -113,132 +114,147 @@ const About = () => {
           }}
         >
           <table style={tableStyle}>
-            <thead>
-              <tr>
-                <th style={thStyle}>Course</th>
-                <th style={thStyle}>Tuition Fee</th>
-                <th style={thStyle}>Hostel Fee</th>
-                <th style={thStyle}>One-time Fee</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                {
-                  course: "B.Tech",
-                  tuition: "INR 8-10L",
-                  hostel: "INR 4.58L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "M.Tech",
-                  tuition: "INR 3L",
-                  hostel: "INR 2.29L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "MA",
-                  tuition: "INR 3L",
-                  hostel: "INR 2.29L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "B.Des",
-                  tuition: "INR 8L",
-                  hostel: "INR 4.32L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "M.Des",
-                  tuition: "INR 3L",
-                  hostel: "INR 2.29L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "MBA",
-                  tuition: "INR 11.20L",
-                  hostel: "INR 2.29L",
-                  oneTime: "INR 16,000",
-                },
-                {
-                  course: "MSc",
-                  tuition: "INR 30,000-3L",
-                  hostel: "INR 2.29L",
-                  oneTime: "INR 16,000",
-                },
-              ].map((row, index) => (
-                <tr key={index}>
-                  <td style={tdStyle}>{row.course}</td>
-                  <td style={tdStyle}>{row.tuition}</td>
-                  <td style={tdStyle}>{row.hostel}</td>
-                  <td style={tdStyle}>{row.oneTime}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <thead>
+            <tr>
+            <th style={thStyle}>Course</th>
+            <th style={thStyle}>Number of Courses</th>
+            </tr>
+        </thead>
+        <tbody>
+            {[
+            { course: "B.E./B.Tech", count: 24 },
+            { course: "M.Pharma", count: 5 },
+            { course: "M.E./M.Tech", count: 51 },
+            { course: "M.Sc.", count: 2 },
+            { course: "B.Arch", count: 1 },
+            { course: "Ph.D", count: 2 },
+            ].map((row, index) => (
+            <tr key={index}>
+                <td style={tdStyle}>{row.course}</td>
+                <td style={tdStyle}>{row.count}</td>
+            </tr>
+            ))}
+        </tbody>
+        </table>
         </div>
+        
+        <br></br>
+        <table style={tableStyle}>
+        <thead>
+            <tr>
+            <th style={thStyle}>Course</th>
+            <th style={thStyle}>Eligibility Criteria</th>
+            </tr>
+        </thead>
+        <tbody>
+            {[
+            { course: "B.E./B.Tech", criteria: "10+2 with a minimum of 75% marks + JEE Advanced" },
+            { course: "M.Pharma", criteria: "Passed B.Pharma with at least 55% marks" },
+            { course: "M.E./M.Tech", criteria: "10+2 with 75% marks + Graduation with 60% marks + GATE, JEE Main, JEE Advanced, ICAR AIEEA, GPAT" },
+            { course: "M.Sc.", criteria: "IIT JAM, CUET-PG" },
+            { course: "B.Arch", criteria: "10+2 with JEE Advanced + For SC/ST/PWD candidates, 10% relaxation in marks" },
+            { course: "Ph.D", criteria: "Master's degree in the relevant discipline with 60% marks or 6.0 CPI OR Bachelor's degree with 75% marks or 7.5 CPI" },
+            ].map((row, index) => (
+            <tr key={index}>
+                <td style={tdStyle}>{row.course}</td>
+                <td style={tdStyle}>{row.criteria}</td>
+            </tr>
+            ))}
+        </tbody>
+        </table>
 
-        <h3>One-Time Charges (For Every Fresh Allotment)</h3>
-        <ul style={ulStyle}>
-          <li style={liStyle}>
-            Seat Allotment Charges (Non-refundable): INR 7,000
-          </li>
-          <li style={liStyle}>Security Deposit (Refundable): INR 15,000</li>
-        </ul>
+        <h3 style={th3Style}>Fee Breakdown</h3>
+        <table style={tableStyle}>
+        <thead>
+            <tr>
+            <th style={thStyle}>Course</th>
+            <th style={thStyle}>Tuition Fee</th>
+            <th style={thStyle}>Hostel Fee (Without Mess)</th>
+            <th style={thStyle}>One-Time Fee</th>
+            <th style={thStyle}>Total Mess Fee</th>
+            </tr>
+        </thead>
+        <tbody>
+            {[
+            { course: "B.Tech", tuition: "INR 3,17,464 – INR 8,50,800", hostel: "INR 32,000 – INR 39,500", oneTime: "INR 14,750 – INR 15,250", mess: "NA" },
+            { course: "M.Tech", tuition: "INR 40,000", hostel: "INR 17,000", oneTime: "INR 11,250", mess: "NA" },
+            { course: "B.Arch", tuition: "INR 3,96,830", hostel: "INR 39,500", oneTime: "INR 15,250", mess: "NA" },
+            { course: "M.Pharma", tuition: "INR 40,000", hostel: "INR 17,000", oneTime: "INR 11,250", mess: "NA" },
+            { course: "M.Sc.", tuition: "INR 40,000", hostel: "INR 17,000", oneTime: "INR 11,250", mess: "NA" },
+            ].map((row, index) => (
+            <tr key={index}>
+                <td style={tdStyle}>{row.course}</td>
+                <td style={tdStyle}>{row.tuition}</td>
+                <td style={tdStyle}>{row.hostel}</td>
+                <td style={tdStyle}>{row.oneTime}</td>
+                <td style={tdStyle}>{row.mess}</td>
+            </tr>
+            ))}
+        </tbody>
+        </table>
 
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Per-Semester Charges</strong>
-        </h3>
-        <p style={pStyle}>
-          Note: No pro-rata is applicable due to hostel operations being fully
-          cooperative in nature.
-        </p>
-        <ul style={ulStyle}>
-          <li style={liStyle}>
-            <strong>
-              Hostel Mess Charges (Include food, kitchen consumables, human
-              resources, IGL, and associated costs):
-            </strong>
-          </li>
-          <ul style={ulStyle}>
-            <li style={liStyle}>Old Hostel (Non-A/C): INR 35,000</li>
-            <li style={liStyle}>
-              New Hostels (Centralized A/C, only for non-MSc PG students): INR
-              35,000
-            </li>
-          </ul>
-          <li style={liStyle}>
-            <strong>Additional Charges:</strong>
-          </li>
-          <ul style={ulStyle}>
-            <li style={liStyle}>All students in old hostels: INR 8,600</li>
-            <li style={liStyle}>
-              All students in new hostels: INR 23,600 (Break-up: INR 8,600 + INR
-              15,000)
-            </li>
-          </ul>
-        </ul>
+        <br></br>
+        <table style={tableStyle}>
+        <thead>
+            <tr>
+            <th style={thStyle}>Course</th>
+            <th style={thStyle}>Tuition Fees</th>
+            <th style={thStyle}>Eligibility</th>
+            <th style={thStyle}>Entrance Exams</th>
+            </tr>
+        </thead>
+        <tbody>
+            {[
+            { course: "B.E./B.Tech (24 courses)", tuition: "₹8L - ₹10L", eligibility: "10+2 with 75% marks", exams: "JEE Main, JEE Advanced" },
+            { course: "M.Pharma (5 courses)", tuition: "₹40K", eligibility: "-", exams: "GPAT" },
+            { course: "M.E./M.Tech (51 courses)", tuition: "₹40K - ₹10L", eligibility: "10+2 with 75% marks, Graduation with 60% marks", exams: "GATE, JEE Main + 3 More" },
+            { course: "M.Sc. (2 courses)", tuition: "₹40K", eligibility: "-", exams: "IIT JAM, CUET-PG" },
+            { course: "B.Arch (1 course)", tuition: "₹10L", eligibility: "10+2 with 50% marks", exams: "JEE Advanced" },
+            { course: "Ph.D. (2 courses)", tuition: "₹88.4K", eligibility: "-", exams: "-" },
+            ].map((row, index) => (
+            <tr key={index}>
+                <td style={tdStyle}>{row.course}</td>
+                <td style={tdStyle}>{row.tuition}</td>
+                <td style={tdStyle}>{row.eligibility}</td>
+                <td style={tdStyle}>{row.exams}</td>
+            </tr>
+            ))}
+        </tbody>
+        </table>
+
       </section>
 
       <section id="admission">
         <h2 style={h2Style}>Admission</h2>
-        <p style={pStyle}>
-          Admission to IIT Delhi is based on national entrance tests. The
-          institute offers a variety of programs at the undergraduate (UG),
-          postgraduate (PG), and doctoral levels. Admission to the B.Tech
-          program is determined by JEE Advanced scores, followed by JoSAA
-          counseling. For B.Des at the UG level, students can apply through
-          UCEED.
+        <p>
+            Indian Institute of Technology Banaras Hindu University, Varanasi (IIT BHU) offers admission to B.Tech, M.Tech, dual degrees, M.Pharma, and many other courses. The institute conducts B.Tech admissions based on valid JEE Advanced scores, and candidates must register for the JoSAA counselling process to secure a seat at IIT BHU. For M.Tech admissions, selection is based on the candidate’s performance in GATE. Similarly, the selection process for M.Pharm requires valid GPAT scores. IIT BHU PhD admissions are conducted based on GATE, GPAT, NET LS, CSIR, UGC NET JRF, ICMR JRF, DBT-JRF, or DST-INSPIRE fellowship. Candidates must meet the eligibility criteria set by the institute to secure admission. 
         </p>
-        <p style={pStyle}>
-          IIT Delhi also offers M.Tech, MSc, M.Des, and MBA programs. Admission
-          to these programs requires qualifying exams like GATE, IIT JAM, UCEED,
-          and CAT, respectively. The institute also offers EMBA and MPP programs
-          at the PG level, where selection is based on an interview round. For
-          Ph.D. programs, IIT Delhi accepts GATE, CSIR, UGC NET, CEED, ICAR, and
-          DST INSPIRE fellowship scores.
+
+        <p>
+            The IIT BHU admission process for 2024 requires candidates to visit the official website of the respective entrance examination, fill out the application form with all necessary details, scan and upload the required documents, and finally pay the application fees. For PhD courses, candidates must visit the official website of IIT BHU and complete the application form there. At the undergraduate level, IIT BHU offers B.Tech, B.Arch, and B.Tech + M.Tech programs with course durations ranging from 4 to 5 years. The eligibility criteria and seat intake details are provided in the table below.
         </p>
+        <table style={tableStyle}>
+      <thead>
+        <tr>
+          <th style={thStyle}>Course</th>
+          <th style={thStyle}>Seat Intake</th>
+          <th style={thStyle}>Eligibility Criteria</th>
+        </tr>
+      </thead>
+      <tbody>
+        {[
+          { course: "B.Tech", seatIntake: "75 - 156", eligibility: "10+2 with 75% marks + JEE Advanced" },
+          { course: "B.Arch", seatIntake: "26", eligibility: "10+2 qualified + JEE Advanced" },
+          { course: "B.Tech + M.Tech", seatIntake: "17 - 52", eligibility: "10+2 qualified + JEE Advanced" },
+        ].map((row, index) => (
+          <tr key={index}>
+            <td style={tdStyle}>{row.course}</td>
+            <td style={tdStyle}>{row.seatIntake}</td>
+            <td style={tdStyle}>{row.eligibility}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
 
         <h3 style={th3Style}>Eligibility and Selection Criteria</h3>
         <div style={{ overflowX: "auto" }}>
@@ -253,96 +269,39 @@ const About = () => {
             <tbody>
               <tr>
                 <td style={tdStyle}>B.Tech</td>
-                <td style={tdStyle}>
-                  Passed class 10+2 with PCM with a minimum of 75% from a
-                  recognized board
-                </td>
-                <td style={tdStyle}>
-                  JEE Main + JEE Advanced + JoSAA Counseling
-                </td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>B.Des</td>
-                <td style={tdStyle}>
-                  Passed class 10+2 with a minimum of 60% marks (40% for
-                  reserved categories)
-                </td>
-                <td style={tdStyle}>UCEED scores + Counseling</td>
+                <td style={tdStyle}>Passed class 12 with PCM, 75% marks</td>
+                <td style={tdStyle}>JEE Advanced + JoSAA Counseling</td>
               </tr>
               <tr>
                 <td style={tdStyle}>M.Tech</td>
-                <td style={tdStyle}>
-                  Minimum of 60% marks or 6.00 CGPA on a 10-point scale (5%
-                  relaxation for SC/ST/PWD)
-                </td>
-                <td style={tdStyle}>
-                  GATE score + COAP counseling + Written Test + Interview
-                </td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>MS</td>
-                <td style={tdStyle}>
-                  Minimum of 60% marks or 6.00 CGPA on a 10-point scale (5%
-                  relaxation for SC/ST/PWD)
-                </td>
-                <td style={tdStyle}>GATE</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>M.Sc.</td>
-                <td style={tdStyle}>
-                  At least 55% marks or 5.5 CGPA (5% relaxation for SC/ST/PH)
-                </td>
-                <td style={tdStyle}>IIT JAM + JOAPS Counseling</td>
+                <td style={tdStyle}>B.Tech with 60% marks</td>
+                <td style={tdStyle}>GATE + COAP Counseling</td>
               </tr>
               <tr>
                 <td style={tdStyle}>MBA</td>
-                <td style={tdStyle}>
-                  Bachelor's degree or its equivalent with at least 60% marks
-                </td>
-                <td style={tdStyle}>
-                  CAT scores + Group Discussion + Interview Round
-                </td>
+                <td style={tdStyle}>Bachelor's degree with 60% marks</td>
+                <td style={tdStyle}>CAT + Interview</td>
               </tr>
               <tr>
-                <td style={tdStyle}>M.Des</td>
-                <td style={tdStyle}>
-                  B.Tech/B.Des/B.Arch or equivalent with at least 60% marks
-                </td>
-                <td style={tdStyle}>CEED score + Interview</td>
-              </tr>
-              <tr>
-                <td style={tdStyle}>Ph.D.</td>
-                <td style={tdStyle}>
-                  At least 60% marks or 6.00 CGPA (5% relaxation for SC/ST/PWD)
-                  in master's degree or an equivalent
-                </td>
-                <td style={tdStyle}>
-                  GATE/CSIR/UGC NET/ICAR/ICMR/CEED/DST-INSPIRE fellowship +
-                  Written Test + Interview
-                </td>
+                <td style={tdStyle}>M.Sc</td>
+                <td style={tdStyle}>B.Sc with 55% marks</td>
+                <td style={tdStyle}>IIT JAM</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <h3
-          style={{ marginTop: "10px", fontSize: "20px", marginBottom: "10px" }}
-        >
-          <strong>Application Process</strong>
-        </h3>
-        <p style={pStyle}>
-          The application process for IIT Delhi is as follows:
-        </p>
-        <ul style={ulStyle}>
-          <li style={liStyle}>
-            Fill in the application form on the IIT Delhi official website.
-          </li>
-          <li style={liStyle}>Pay the application fee.</li>
-          <li style={liStyle}>Submit the necessary documents.</li>
-          <li style={liStyle}>
-            Attend the counseling session (if applicable).
-          </li>
-        </ul>
+      
+        <h3 style ={th3Style}>IIT BHU Varanasi UG Admission Process</h3>
+      <ul>
+        <li>The candidate must meet the IIT BHU Varanasi eligibility criteria.</li>
+        <li>The candidate must appear and qualify for the JEE Advanced examination.</li>
+        <li>If the candidate qualifies JEE Advanced, they must register for JoSAA counselling on the official website.</li>
+        <li>The candidate must select IIT BHU Varanasi as the preferred college in the counselling process.</li>
+        <li>Candidates must also qualify for the Architecture Aptitude Test (AAT) to enroll in the B.Arch programme.</li>
+        <li>Seats will be allotted to candidates based on their performance in the entrance examination.</li>
+        <li>Finally, the candidate must submit documents for verification and pay the IIT BHU Varanasi fees.</li>
+      </ul>
       </section>
     </div>
   );

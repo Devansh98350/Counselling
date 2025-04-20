@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Bhu from "../../../../../../assests/components/IIT/banner/bhu.jpg";
 import Breadcrumbs from "../../../../../Breadcrumb";
-
 function Header() {
   const [isCutoffDropdownOpen, setIsCutoffDropdownOpen] = useState(false);
   const [isPlacementDropdownOpen, setIsPlacementDropdownOpen] = useState(false);
@@ -17,7 +17,7 @@ function Header() {
           navbar.style.position = "fixed";
           navbar.style.top = "0";
           navbar.style.left = "0";
-          navbar.style.zIndex = "0";
+          navbar.style.zIndex = "100";
           navbar.style.width = "100%";
         } else {
           navbar.style.position = "relative";
@@ -42,8 +42,7 @@ function Header() {
           display: "flex",
           alignItems: "center",
           justifyContent: "flex-start",
-          backgroundImage:
-            'url("https://imgs.search.brave.com/vrCHshJEy0b3FhEkkcvLcNaW141JQDMkcx6xnmcYG78/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9k/L2RkL0lJVF9EZWxo/aV9FbnRyYW5jZS5q/cGc")',
+          backgroundImage: `url(${Bhu})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -85,8 +84,8 @@ function Header() {
             }}
           >
             <img
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Indian_Institute_of_Technology_Delhi_Logo.svg/800px-Indian_Institute_of_Technology_Delhi_Logo.svg.png"
-              alt="IIT Delhi Logo"
+              src="https://iitbhu.ac.in/contents/iitbhu/img/other/iit_logo_original.png"
+              alt="IIT BHU Logo"
               style={{
                 height: "100px",
                 marginRight: "20px",
@@ -107,7 +106,7 @@ function Header() {
                   fontWeight: "bold",
                 }}
               >
-                IIT Delhi: Admission 2024, Cutoff, Courses,
+                IIT BHU: Admission 2025, Cutoff, Courses,
               </h3>
               <h3
                 style={{
@@ -126,14 +125,13 @@ function Header() {
                   marginTop: "5px",
                 }}
               >
-                New Delhi | Autonomous University | Estd 2008
+                Varanasi | Autonomous University | Estd 1919
               </div>
             </div>
             <div
               style={{
                 backgroundColor: "#fff",
                 color: "#1d2f52",
-
                 borderRadius: "5px",
                 fontSize: "1.2rem",
                 fontWeight: "bold",
@@ -145,58 +143,11 @@ function Header() {
                 flexDirection: "column",
               }}
             >
-              4.2 ★
+              4.4 ★
             </div>
           </div>
         </div>
       </header>
-
-      <style>
-        {`
-          .navbar a {
-            position: relative;
-          }
-
-          .navbar a::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 4px;
-            width: 100%;
-            background-color: #1d2f52;
-            transform: scaleX(0);
-            transition: transform 300ms ease;
-          }
-
-          .navbar a:hover::before {
-            transform: scaleX(1);
-          }
-
-          @media (max-width: 600px) {
-            .navbar {
-              max-height: 50vh;
-              overflow-y: visible;
-              overflow-x: auto;
-              -webkit-overflow-scrolling: touch !important;
-              white-space: nowrap;
-              background-color: white;
-              -ms-overflow-style: none;
-              scrollbar-width: none;
-            }
-            .th3 {
-              margin-left: auto !important;
-            }
-            .navbar a {
-              flex-shrink: 0;
-            }
-          }
-            html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 60px;
-            }
-        `}
-      </style>
 
       <div
         id="navbar"
