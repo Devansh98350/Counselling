@@ -75,9 +75,9 @@ const Services = () => {
   ];
 
   return (
-    <section className="relative py-8 md:py-12 px-4 overflow-hidden">
+    <section className="relative py-0 md:py-2 px-4 overflow-hidden">
       <header className="text-center py-4 px-4  mx-auto">
-        <h1 className="text-4xl md:text-5xl text-primary font-bold mb-6">
+        <h1 className="text-4xl md:text-5xl text-blue-700 font-bold mb-6">
           Our Services
         </h1>
         <p className="text-lg md:text-xl mb-0 md:px-8 leading-relaxed text-justify md:text-center">

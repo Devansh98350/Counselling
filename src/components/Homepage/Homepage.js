@@ -9,6 +9,7 @@ import Banner from "../Common/Banner";
 import Explore from "../Common/Explore";
 import Services from "./Services";
 import Count from "./Count";
+import WhoAreWe from "./WhoAreWe";
 
 const Homepage = () => {
   useEffect(() => {
@@ -36,6 +37,7 @@ const Homepage = () => {
         </div>
       </div>
       <Services />
+      <WhoAreWe />
       <Count />
       <SessionForm />
       <NewsletterForm />

@@ -14,7 +14,7 @@ const ServiceCard = ({ image, title, description }) => {
         <h2 className="text-2xl font-semibold text-primary mb-2 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-0 after:w-10 after:h-[3px] after:bg-secondary after:transition-all after:duration-300 group-hover:after:w-[60px] text-center">
           {title}
         </h2>
-        <p className="text-base text-slate-600 leading-relaxed flex-grow text-justify">
+        <p className="text-base leading-relaxed flex-grow text-justify">
           {description}
         </p>
       </div>
